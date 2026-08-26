@@ -1,0 +1,2957 @@
+[
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 1,
+  "text": "Na frase \"O livro que comprei é excelente\", a oração subordinada desempenha função de:",
+  "alternatives": [
+   "Substantiva objetiva direta",
+   "Adjetiva restritiva",
+   "Adverbial causal",
+   "Coordenada explicativa"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 2,
+  "text": "Assinale a alternativa em que a concordância verbal está correta de acordo com a norma-padrão:",
+  "alternatives": [
+   "Faltou recursos para finalizar o projeto de TI.",
+   "Fazem muitos anos que atuo na área de tecnologia.",
+   "Devem existir novos servidores na prefeitura.",
+   "Houveram muitos problemas técnicos na rede."
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 3,
+  "text": "O elemento coesivo responsável por introduzir uma ideia de oposição ou contraste (ex: porém, todavia, contudo) é classificado como:",
+  "alternatives": [
+   "Conjunção subordinativa causal",
+   "Conjunção coordenativa adversativa",
+   "Conjunção coordenativa explicativa",
+   "Pronome relativo restritivo"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 4,
+  "text": "Assinale a alternativa em que o uso da crase é obrigatório:",
+  "alternatives": [
+   "Entreguei o relatório a ele ontem.",
+   "Fomos a Curitiba participar de um congresso de tecnologia.",
+   "Fiquei cara a cara com o analista de sistemas.",
+   "Visitei a matriz da empresa à revelia dos diretores."
+  ],
+  "correct": 3,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 5,
+  "text": "Quanto à acentuação gráfica, assinale a palavra que é acentuada pela mesma regra de \"paroxítona terminada em ditongo\":",
+  "alternatives": [
+   "Café",
+   "Chapéu",
+   "História",
+   "Pássaro"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 6,
+  "text": "Na oração \"Os técnicos resolveram o problema rapidamente\", o termo destacado sintaticamente exerce a função de:",
+  "alternatives": [
+   "Sujeito simples",
+   "Objeto direto",
+   "Adjunto adverbial de modo",
+   "Predicativo do sujeito"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 7,
+  "text": "Assinale a alternativa em que todas as palavras estão grafadas corretamente:",
+  "alternatives": [
+   "Exceção, paralização, ansiedade",
+   "Analisar, excesso, pretensão",
+   "Pesquisa, impercível, quilograma",
+   "Ascensão, cinto (de segurança), excessão"
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 8,
+  "text": "O processo de formação da palavra \"infraestrutura\" por acréscimo de elemento antes do radical é denominado:",
+  "alternatives": [
+   "Derivação sufixal",
+   "Derivação prefixal",
+   "Composição por aglutinação",
+   "Parassíntese"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 9,
+  "text": "No trecho \"O Diretor afirmou que o sistema seria atualizado\", a oração subordinada substantiva destacada classifica-se como:",
+  "alternatives": [
+   "Subjetiva",
+   "Objetiva Direta",
+   "Completiva Nominal",
+   "Predicativa"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 10,
+  "text": "Assinale a alternativa em que a pontuação (uso de vírgulas) está rigorosamente correta:",
+  "alternatives": [
+   "O analista, de TI, concluiu a tarefa rapidamente.",
+   "Servidores da prefeitura, participaram da reunião ontem.",
+   "Quando o sistema caiu, todos os usuários reclamaram.",
+   "A reunião ocorreu na segunda-feira, no entanto, faltou pauta."
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 11,
+  "text": "Se 5 analistas concluem um projeto de software em 12 dias, trabalhando no mesmo ritmo, em quantos dias 6 analistas concluiriam o mesmo projeto?",
+  "alternatives": [
+   "8 dias",
+   "10 dias",
+   "15 dias",
+   "Impossível calcular"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 13,
+  "text": "Uma licitação de equipamentos de TI sofreu um reajuste de 20% em cima de um valor inicial de R$ 5.000,00. Qual passou a ser o novo valor?",
+  "alternatives": [
+   "R$ 5.200,00",
+   "R$ 5.500,00",
+   "R$ 6.000,00",
+   "R$ 6.500,00"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 14,
+  "text": "O Mínimo Múltiplo Comum (MMC) entre os números 12 e 18 é:",
+  "alternatives": [
+   "6",
+   "24",
+   "36",
+   "72"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 15,
+  "text": "Em uma Progressão Aritmética (PA) onde o primeiro termo é 3 e a razão é 4, qual é o quinto termo dessa sequência?",
+  "alternatives": [
+   "15",
+   "19",
+   "23",
+   "27"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 16,
+  "text": "Se 40% dos 80 candidatos inscritos em um concurso são da área de tecnologia, quantos candidatos não são da área de tecnologia?",
+  "alternatives": [
+   "32",
+   "40",
+   "48",
+   "50"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 17,
+  "text": "Quantas comissões de 3 pessoas podem ser formadas a partir de um grupo de 6 analistas disponíveis?",
+  "alternatives": [
+   "10",
+   "15",
+   "20",
+   "60"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 18,
+  "text": "Qual é a média aritmética ponderada das notas de um candidato que tirou 6,5 na prova de peso 2 e 9,0 na prova de peso 3?",
+  "alternatives": [
+   "7,5",
+   "7,8",
+   "8,0",
+   "8,2"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 20,
+  "text": "No que tange à lógica proposicional, se a proposição  é verdadeira e a proposição  é falsa, o valor lógico da conjunção  (\"P e Q\") é:",
+  "alternatives": [
+   "Verdadeiro",
+   "Falso",
+   "Indeterminado",
+   "Nenhuma das anteriores"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 21,
+  "text": "No Microsoft Excel, qual função é utilizada para retornar a média aritmética de um intervalo de células (por exemplo, de A1 até A10)?",
+  "alternatives": [
+   "SOMA",
+   "MÉDIA (ou AVERAGE)",
+   "CONT.SE",
+   "MÁXIMO"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 22,
+  "text": "No sistema operacional Windows, qual atalho de teclado é comumente utilizado para copiar um arquivo ou texto selecionado?",
+  "alternatives": [
+   "Ctrl + C",
+   "Ctrl + V",
+   "Ctrl + X",
+   "Ctrl + Z"
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 23,
+  "text": "Um software malicioso que se disfarça de programa legítimo e útil para enganar o usuário e instalar portas dos fundos (backdoors) é chamado de:",
+  "alternatives": [
+   "Vírus de setor de boot",
+   "Cavalo de Troia (Trojan)",
+   "Worm de rede",
+   "Ransomware de criptografia"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 24,
+  "text": "No Microsoft Word, qual guia da faixa de opções concentra as ferramentas de verificação ortográfica, controle de alterações e contagem de palavras?",
+  "alternatives": [
+   "Página Inicial",
+   "Inserir",
+   "Revisão",
+   "Exibição"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 25,
+  "text": "Protocolo de rede utilizado para a transferência segura de páginas web criptografadas através de certificados digitais:",
+  "alternatives": [
+   "HTTP",
+   "HTTPS",
+   "FTP",
+   "SMTP"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 26,
+  "text": "Sobre a Certificação Digital e Assinatura Digital, é correto afirmar que:",
+  "alternatives": [
+   "A assinatura digital garante a autenticidade, integridade e o não-repúdio do documento.",
+   "Certificados digitais dispensam o uso de chaves criptográficas assimétricas.",
+   "O formato de assinatura digital invalida qualquer tipo de arquivo PDF.",
+   "Apenas arquivos do bloco de notas suportam assinatura digital."
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 27,
+  "text": "No explorador de arquivos do Windows, qual tecla de atalho permite renomear imediatamente o arquivo ou pasta selecionada?",
+  "alternatives": [
+   "F2",
+   "F5",
+   "F11",
+   "Delete"
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 28,
+  "text": "Ferramentas de busca na internet utilizam robôs conhecidos como crawlers ou spiders para:",
+  "alternatives": [
+   "Apagar arquivos infectados do computador do usuário.",
+   "Indexar páginas web e atualizar os bancos de dados dos buscadores.",
+   "Criptografar e-mails corporativos automaticamente.",
+   "Substituir roteadores Wi-Fi locais."
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 29,
+  "text": "O conceito de segurança da informação conhecido como Confidencialidade assegura que:",
+  "alternatives": [
+   "A informação só pode ser acessada por pessoas autorizadas.",
+   "Os dados nunca sofrem alterações acidentais.",
+   "O sistema estará sempre disponível para uso contínuo.",
+   "O usuário não pode negar a autoria de uma transação."
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 30,
+  "text": "Em redes de computadores, o dispositivo de interconexão que opera na camada de rede (Camada 3 do modelo OSI) roteando pacotes entre redes distintas é o:",
+  "alternatives": [
+   "Hub",
+   "Switch não gerenciável",
+   "Roteador (Router)",
+   "Cabo coaxial"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 31,
+  "text": "O município de Ponta Grossa está localizado em qual importante região fisiográfica e econômica do Estado do Paraná?",
+  "alternatives": [
+   "Região Metropolitana de Londrina",
+   "Campos Gerais do Paraná",
+   "litoral paranaense",
+   "Extremo Oeste do Paraná"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 32,
+  "text": "Qual é o principal rio que banha a região de Ponta Grossa e desempenha papel vital nos recursos hídricos locais?",
+  "alternatives": [
+   "Rio Iguaçu",
+   "Rio Tibagi",
+   "Rio Paranapanema",
+   "Rio Piquiri"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 33,
+  "text": "Ponta Grossa destaca-se nacionalmente na economia e na infraestrutura logística por ser considerada um importante polo:",
+  "alternatives": [
+   "Portuário marítimo",
+   "Agroindustrial e de escoamento de cargas (entrecarga ferroviária e rodoviária)",
+   "Exclusivamente extrativista de petróleo",
+   "Produtor de café de exportação litorânea"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 34,
+  "text": "A formação geológica famosa na região de Ponta Grossa que atrai turistas e pesquisadores pelas formações rochosas esculpidas pela erosão é o parque estadual de:",
+  "alternatives": [
+   "Vila Velha",
+   "Guaratuba",
+   "Ilha do Mel",
+   "Iguaçu"
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 35,
+  "text": "Em termos demográficos e políticos, Ponta Grossa ocupa qual posição aproximada em número de habitantes no Estado do Paraná?",
+  "alternatives": [
+   "É a capital do Estado.",
+   "É o menor município em população da região sul.",
+   "Está entre os municípios mais populosos e economicamente expressivos do Paraná.",
+   "Possui menos de 5.000 habitantes."
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 36,
+  "text": "O conjunto de leis municipais fundamentais que organiza a autonomia, a estrutura dos poderes e as competências do município de Ponta Grossa é denominado:",
+  "alternatives": [
+   "Constituição Federal de 1988",
+   "Lei Orgânica do Município de Ponta Grossa",
+   "Estatuto dos Servidores Federais",
+   "Código Penal Brasileiro"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 37,
+  "text": "Historicamente, o povoamento e o desenvolvimento inicial dos Campos Gerais e de Ponta Grossa estão fortemente associados a qual atividade econômica do período colonial brasileiro?",
+  "alternatives": [
+   "Ciclo do Ouro em Minas Gerais",
+   "Rota dos Tropeiros (passagem de gado entre o Sul e as feiras de Sorocaba)",
+   "Extração de borracha na Amazônia",
+   "Plantação intensiva de cana-de-açúcar no Nordeste"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 38,
+  "text": "No cenário político-administrativo brasileiro, a competência para legislar sobre assuntos de interesse local e organizar os serviços públicos municipais cabe primordialmente à:",
+  "alternatives": [
+   "Câmara Municipal de Vereadores e à Prefeitura",
+   "Assembleia Legislativa do Estado",
+   "Presidência da República",
+   "Polícia Federal"
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 39,
+  "text": "As inovações tecnológicas recentes e a transformação digital na gestão pública municipal visam prioritariamente:",
+  "alternatives": [
+   "Aumentar a burocracia e a emissão de documentos impressos em papel.",
+   "Garantir a eficiência, a transparência e a agilidade no atendimento ao cidadão através de portais digitais.",
+   "Eliminar totalmente a necessidade de servidores públicos.",
+   "Restringir o acesso à informação pública."
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 40,
+  "text": "De acordo com as diretrizes de sustentabilidade e meio ambiente aplicadas aos municípios modernos, a gestão de resíduos sólidos urbanos exige:",
+  "alternatives": [
+   "Descarte em rios próximos aos centros urbanos.",
+   "Práticas de coleta seletiva, reciclagem e destinação final ambientalmente adequada.",
+   "Queima de lixo a céu aberto em áreas residenciais.",
+   "Omissão do poder público municipal."
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 41,
+  "text": "Assinale a alternativa em que a palavra apresenta ditongo:",
+  "alternatives": [
+   "Saúde",
+   "Piche",
+   "Pai",
+   "Raiz"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 42,
+  "text": "Indique a alternativa em que a regência do verbo \"aspirar\" (no sentido de almejar, desejar) está correta de acordo com a norma-padrão:",
+  "alternatives": [
+   "O analista aspirou o cargo público com dedicação.",
+   "O analista aspirou ao cargo público com dedicação.",
+   "O analista aspirou com o cargo público.",
+   "O analista aspirou por cargo público."
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 43,
+  "text": "Se todos os analistas são estudiosos e alguns estudiosos são aprovados, logicamente podemos concluir que:",
+  "alternatives": [
+   "Todos os aprovados são analistas.",
+   "Nenhum analista é aprovado.",
+   "Pode existir analista que seja aprovado.",
+   "Todos os estudiosos são analistas."
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 44,
+  "text": "Qual é o próximo termo da sequência lógica numérica: 2, 6, 12, 20, 30, ...?",
+  "alternatives": [
+   "38",
+   "40",
+   "42",
+   "46"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 45,
+  "text": "No pacote Microsoft Office, o aplicativo utilizado especificamente para a criação de apresentações de slides multimídia é o:",
+  "alternatives": [
+   "Microsoft Word",
+   "Microsoft Excel",
+   "Microsoft PowerPoint",
+   "Microsoft Access"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 46,
+  "text": "Assinale a alternativa correta quanto ao emprego dos porquês na frase: \"Não sei _________ o sistema caiu, mas os técnicos já estão investigando o _________\":",
+  "alternatives": [
+   "porque / porquê",
+   "por que / porquê",
+   "por quê / porque",
+   "porquê / por quê"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 47,
+  "text": "O imposto de competência municipal que incide sobre a prestação de serviços de informática e congêneres é o:",
+  "alternatives": [
+   "IPTU",
+   "IPVA",
+   "ISS (Imposto Sobre Serviços)",
+   "ICMS"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 48,
+  "text": "Em uma matriz 3x3, o número total de elementos (posições) que compõem essa matriz é:",
+  "alternatives": [
+   "3",
+   "6",
+   "9",
+   "12"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 49,
+  "text": "Assinale a alternativa que apresenta um exemplo de período composto por coordenação:",
+  "alternatives": [
+   "O analista estudou muito e foi aprovado no concurso.",
+   "Espero que você faça uma excelente prova amanhã.",
+   "O sistema que travou ontem já foi normalizado.",
+   "Caso haja novas vagas, divulgaremos o edital."
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras1 Gemini",
+  "label": "Gemini Outras S1",
+  "number": 50,
+  "text": "Qual é a principal finalidade da Lei de Acesso à Informação (LAI - Lei nº 12.527/2011) no âmbito público?",
+  "alternatives": [
+   "Ocultar dados financeiros de prefeituras e órgãos públicos.",
+   "Garantir o direito fundamental de acesso aos cidadãos às informações públicas geradas pelos órgãos do governo.",
+   "Regulamentar o desenvolvimento de softwares privados.",
+   "Substituir a Lei Geral de Proteção de Dados (LGPD)."
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 1,
+  "text": "Assinale a alternativa em que a palavra apresenta encontros vocálicos classificados corretamente como ditongo crescente:",
+  "alternatives": [
+   "Pa-ís",
+   "Gló-ria",
+   "Sa-ú-de",
+   "Co-elho"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 2,
+  "text": "Na frase \"O analista entregou o relatório ao chefe\", o termo destacado sintaticamente exerce a função de:",
+  "alternatives": [
+   "Objeto direto",
+   "Objeto indireto",
+   "Sujeito simples",
+   "Adjunto adnominal"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 3,
+  "text": "Assinale a alternativa em que a concordância nominal está estritamente correta:",
+  "alternatives": [
+   "Seguem anexo os relatórios técnicos solicitados.",
+   "É proibido entrada de pessoas não autorizadas na sala de servidores.",
+   "Ela mesma corrigiu os erros do sistema.",
+   "Havia bastantes candidatos concorrendo à vaga de TI."
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 4,
+  "text": "O processo de formação da palavra \"aguardente\" (formada pela união de água + ardente, com perda de fonemas) é denominado:",
+  "alternatives": [
+   "Derivação parassintética",
+   "Composição por aglutinação",
+   "Composição por justaposição",
+   "Derivação regressiva"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 5,
+  "text": "No período \"Estudou muito para que fosse aprovado\", a oração subordinada destacada classifica-se morfologicamente como:",
+  "alternatives": [
+   "Subordinada adverbial causal",
+   "Subordinada adverbial final",
+   "Subordinada substantiva objetiva direta",
+   "Coordenada explicativa"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 6,
+  "text": "Assinale a alternativa em que todas as palavras estão grafadas corretamente:",
+  "alternatives": [
+   "Reivindicação, adivinhar, sutil",
+   "Exceção, empecilho, excessão",
+   "Paralização, isenção, pretenção",
+   "Xuxu, chuchu, encharcar"
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 7,
+  "text": "A função da linguagem centrada no próprio código utilizada para explicá-lo (como definir uma palavra usando a própria língua) é chamada de:",
+  "alternatives": [
+   "Emocional ou expressiva",
+   "Metalinguística",
+   "Fática",
+   "Apelativa ou conativa"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 8,
+  "text": "Assinale a alternativa em que o pronome oblíquo átono está colocado de acordo com a norma-padrão (próclise obrigatória por palavra atrativa):",
+  "alternatives": [
+   "Não informaram-me sobre a mudança no sistema.",
+   "Contar-lhe-ei a verdade amanhã.",
+   "Jamais o encontraria naquela sala.",
+   "Entregou-me o documento assinado."
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 9,
+  "text": "Quanto à pontuação, assinale a frase em que o uso da vírgula separa corretamente uma oração subordinada adjetiva explicativa:",
+  "alternatives": [
+   "Os analistas que trabalharam no turno da noite ganharam folga.",
+   "O servidor público, que demonstrou competência, foi promovido.",
+   "Quando o sistema falhou todos correram.",
+   "João comprou computadores novos para o laboratório."
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 10,
+  "text": "No texto dissertativo-argumentativo, o parágrafo que tem como finalidade principal sintetizar os argumentos discutidos e reafirmar a tese inicial é o:",
+  "alternatives": [
+   "Introdução",
+   "Desenvolvimento",
+   "Conclusão",
+   "Título"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 11,
+  "text": "Se 6 máquinas iguais produzem um lote de componentes em 4 dias, em quantos dias 8 máquinas com a mesma capacidade produzirão o mesmo lote?",
+  "alternatives": [
+   "2 dias",
+   "3 dias",
+   "5 dias",
+   "6 dias"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 13,
+  "text": "Um equipamento de TI que custava R$ 2.400,00 teve um desconto de 15% em uma liquidação. Qual foi o valor pago pelo equipamento?",
+  "alternatives": [
+   "R$ 2.000,00",
+   "R$ 2.040,00",
+   "R$ 2.100,00",
+   "R$ 2.220,00"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 14,
+  "text": "O Máximo Divisor Comum (MDC) entre os números 24 e 36 é:",
+  "alternatives": [
+   "6",
+   "12",
+   "18",
+   "24"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 15,
+  "text": "Dada uma Progressão Aritmética (PA) onde o primeiro termo é 2 e o décimo termo é 29, qual é a razão dessa PA?",
+  "alternatives": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 16,
+  "text": "Se em um grupo de 50 profissionais de tecnologia, 30 sabem programar em Java e 20 em Python, sendo que 10 dominam ambas as linguagens, quantos profissionais não dominam nenhuma dessas duas linguagens?",
+  "alternatives": [
+   "0",
+   "5",
+   "10",
+   "15"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 17,
+  "text": "Quantas senhas de 2 letras distintas podem ser formadas utilizando as letras A, B, C e D?",
+  "alternatives": [
+   "6",
+   "12",
+   "16",
+   "24"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 18,
+  "text": "A média aritmética simples de cinco notas obtidas por um aluno em avaliações de rede foi 7,4. Se quatro dessas notas foram 6,0, 7,0, 8,0 e 8,5, qual foi a quinta nota?",
+  "alternatives": [
+   "6,5",
+   "7,0",
+   "7,5",
+   "8,0"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 19,
+  "text": "Resolvendo a equação de 2º grau x² − 5x + 6 = 0, as raízes reais da equação são:",
+  "alternatives": [
+   "1 e 6",
+   "2 e 3",
+   "-2 e -3",
+   "0 e 5"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 20,
+  "text": "Na lógica proposicional, a negação da proposição \"Todo analista é estudioso\" é equivalente a:",
+  "alternatives": [
+   "Nenhum analista é estudioso.",
+   "Algum analista não é estudioso.",
+   "Todo analista não é estudioso.",
+   "Algum analista é estudioso."
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 21,
+  "text": "No Microsoft Excel, qual operador matemático é utilizado para indicar exponenciação (por exemplo, 2 elevado à potência 3)?",
+  "alternatives": [
+   "^",
+   "*",
+   "//",
+   "#"
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 22,
+  "text": "No sistema operacional Windows, o atalho de teclado composto pelas teclas Ctrl + Shift + Esc abre diretamente qual utilitário do sistema?",
+  "alternatives": [
+   "Explorador de Arquivos",
+   "Gerenciador de Tarefas",
+   "Painel de Controle clássico",
+   "Prompt de Comando"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 23,
+  "text": "Um tipo de software malicioso que sequestra os dados do computador (geralmente criptografando os arquivos do usuário) e exige o pagamento de resgate financeiro em criptomoedas é chamado de:",
+  "alternatives": [
+   "Adware",
+   "Ransomware",
+   "Keylogger",
+   "Worm"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 24,
+  "text": "No Microsoft Word, qual é a tecla de atalho padrão utilizada para acionar o comando Localizar (Find) de palavras no texto?",
+  "alternatives": [
+   "Ctrl + B",
+   "Ctrl + L (ou Ctrl + F)",
+   "Ctrl + P",
+   "Ctrl + S"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 25,
+  "text": "Em redes de computadores, o protocolo responsável pela tradução de nomes de domínios legíveis (como www.pontagrossa.pr.gov.br) em endereços IP numéricos é o:",
+  "alternatives": [
+   "DHCP",
+   "DNS",
+   "FTP",
+   "HTTP"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 26,
+  "text": "Na segurança da informação, o princípio que garante que o autor de uma transação ou mensagem não possa negar posteriormente a sua autoria é conhecido como:",
+  "alternatives": [
+   "Confidencialidade",
+   "Disponibilidade",
+   "Não-repúdio (ou irretratabilidade)",
+   "Criptografia simétrica"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 27,
+  "text": "No explorador de arquivos do Windows, para selecionar múltiplos arquivos descontinuados (separados) na mesma pasta, o usuário deve manter pressionada a tecla:",
+  "alternatives": [
+   "Shift",
+   "Alt",
+   "Ctrl",
+   "Tab"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 28,
+  "text": "Qual dispositivo de rede opera na camada física/enlace conectando computadores em uma rede local (LAN) através de cabos de par trançado sem realizar roteamento inteligente de pacotes?",
+  "alternatives": [
+   "Roteador de Borda",
+   "Switch / Hub",
+   "Servidor DNS primário",
+   "Gateway de Nuvem"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 29,
+  "text": "O conceito de Disponibilidade em segurança da informação assegura que:",
+  "alternatives": [
+   "Os dados permaneçam sigilosos contra ataques externos.",
+   "A informação esteja acessível e utilizável sob demanda por usuários autorizados sempre que necessário.",
+   "Os arquivos não sofram alterações indevidas.",
+   "As senhas sejam trocadas a cada 30 dias."
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 30,
+  "text": "Em planilhas eletrônicas (Excel / LibreOffice Calc), o resultado da fórmula =SE(5>3; \"Aprovado\"; \"Reprovado\") será:",
+  "alternatives": [
+   "Aprovado",
+   "Reprovado",
+   "Erro de sintaxe",
+   "5"
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 31,
+  "text": "Ponta Grossa faz divisa com diversos municípios paranaenses. Qual cidade vizinha destaca-se por formar, junto com Ponta Grossa e outros municípios, o núcleo urbano e industrial dos Campos Gerais?",
+  "alternatives": [
+   "Paranaguá",
+   "Castro",
+   "Foz do Iguaçu",
+   "Maringá"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 32,
+  "text": "O relevo característico da região de Ponta Grossa e dos Campos Gerais apresenta formações de planalto compostas por cuestas e solos propícios à agricultura intensiva, inserindo-se na unidade geomorfológica do:",
+  "alternatives": [
+   "Primeiro Planalto Paranaense (Planalto de Curitiba)",
+   "Segundo Planalto Paranaense (Planalto Paleozoico)",
+   "Terceiro Planalto Paranaense (Planalto de Guarapuava)",
+   "Planície Litorânea"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 33,
+  "text": "Na infraestrutura de transportes, Ponta Grossa é historicamente reconhecida como um entroncamento:",
+  "alternatives": [
+   "Rodoferroviário de grande relevância para escoamento de safras e cargas do sul do país.",
+   "Exclusivamente fluvial conectado à bacia amazônica.",
+   "Aéreo internacional de voos transatlânticos.",
+   "Marítimo de águas profundas."
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 34,
+  "text": "O Parque Estadual de Vila Velha, principal atração turística natural de Ponta Grossa, é internacionalmente famoso por suas formações areníticas chamadas de:",
+  "alternatives": [
+   "Furnas, Lagoa Dourada e Arenitos esculpidos",
+   "Canyons basálticos e geysers termais",
+   "Dunas litorâneas e restingas",
+   "Recifes de corais fósseis"
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 35,
+  "text": "Em termos econômicos regionais, Ponta Grossa destaca-se pelo forte setor sucroenergético, madeireiro, alimentício e pela forte presença de:",
+  "alternatives": [
+   "Indústrias multinacionais de diversos segmentos instaladas em seus distritos industriais.",
+   "Exploração exclusiva de carvão mineral de subsolo profundo.",
+   "Extração artesanal de ouro aluvial.",
+   "Refinaria petrolífera costeira."
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 36,
+  "text": "De acordo com a Lei Orgânica do Município de Ponta Grossa, o poder legislativo municipal é exercido por:",
+  "alternatives": [
+   "Tribunal de Contas do Estado",
+   "Câmara Municipal de Vereadores",
+   "Secretaria de Administração",
+   "Conselho de Cidadãos"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 37,
+  "text": "O tropeirismo teve papel fundacional na formação histórica do município de Ponta Grossa e dos Campos Gerais entre os séculos XVIII e XIX, servindo principalmente para:",
+  "alternatives": [
+   "Transportar tropas militares para guerras de fronteira no norte do país.",
+   "Conduzir rebanhos de muares e gado desde a região Sul até as feiras de Sorocaba, em São Paulo.",
+   "Estabelecer linhas telegráficas submarinas.",
+   "Extrair borracha nativa para exportação europeia."
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 38,
+  "text": "Conforme a Constituição Federal e a organização político-administrativa brasileira, o prefeito municipal é o chefe do:",
+  "alternatives": [
+   "Poder Legislativo",
+   "Poder Executivo",
+   "Poder Judiciário",
+   "Ministério Público"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 39,
+  "text": "A implantação de portais de transparência e sistemas de governo eletrônico nos municípios brasileiros atende diretamente aos princípios constitucionais da administração pública, com destaque para o princípio da:",
+  "alternatives": [
+   "Impessoalidade sigilosa",
+   "Publicidade e moralidade",
+   "Centralização burocrática",
+   "Omissão informativa"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 40,
+  "text": "Na gestão ambiental urbana moderna, a coleta seletiva de lixo e a implementação de programas de reciclagem têm como objetivo principal:",
+  "alternatives": [
+   "Aumentar a poluição dos mananciais hídricos locais.",
+   "Reduzir o volume de resíduos destinados a aterros sanitários e promover a sustentabilidade ecológica.",
+   "Viabilizar a queima descontrolada de plásticos em áreas públicas.",
+   "Encarecer a taxa de limpeza pública urbana."
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 41,
+  "text": "Assinale a alternativa em que a divisão silábica está correta:",
+  "alternatives": [
+   "sub-li-mi-nar",
+   "ad-vo-ga-do",
+   "trans-tor-no",
+   "pi-cô-te"
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 42,
+  "text": "Assinale a alternativa em que o verbo \"obedecer\" foi empregado com regência correta de acordo com a norma-padrão:",
+  "alternatives": [
+   "O motorista obedeceu o sinal vermelho.",
+   "O programador obedeceu ao protocolo de segurança.",
+   "Os analistas obedeceram a ordem do diretor.",
+   "Devemos obedecer com as leis municipais."
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 43,
+  "text": "Se a premissa \"Todo computador possui processador\" é verdadeira, é correto deduzir logicamente que:",
+  "alternatives": [
+   "Se um objeto não possui processador, então ele não é um computador.",
+   "Todos os processadores são computadores.",
+   "Nenhum computador possui processador.",
+   "Se um objeto possui processador, ele obrigatoriamente é um computador."
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 44,
+  "text": "Qual é o número que completa a sequência lógica numérica: 3, 5, 9, 17, 33, ...?",
+  "alternatives": [
+   "49",
+   "65",
+   "71",
+   "81"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 45,
+  "text": "No pacote Microsoft Office, o programa de banco de dados relacional voltado para criação de tabelas, consultas e formulários é o:",
+  "alternatives": [
+   "Microsoft Word",
+   "Microsoft PowerPoint",
+   "Microsoft Access",
+   "Microsoft Outlook"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 46,
+  "text": "Assinale a alternativa que preenche corretamente as lacunas da frase: \"_______ não foi entregue o relatório técnico?\" / \"Ninguém sabe _______.\"",
+  "alternatives": [
+   "Por que / por que",
+   "Por quê / porque",
+   "Por que / por quê",
+   "Porquê / por que"
+  ],
+  "correct": 2,
+  "topic": "Geral",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 47,
+  "text": "O imposto federal brasileiro que incide sobre a importação de produtos estrangeiros e sobre a circulação de mercadorias em âmbito estadual, respectivamente, são:",
+  "alternatives": [
+   "IPTU e ISS",
+   "Imposto de Importação (II) e ICMS",
+   "IPVA e ITBI",
+   "IR e IPI"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 48,
+  "text": "O determinante de uma matriz quadrada de ordem 2, cujos elementos da diagonal principal são 3 e 4, e da diagonal secundária são 1 e 2, vale:",
+  "alternatives": [
+   "8",
+   "10",
+   "12",
+   "14"
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 49,
+  "text": "Assinale a alternativa que apresenta um exemplo de período composto por subordinação:",
+  "alternatives": [
+   "O analista programou o sistema e testou as rotinas.",
+   "É fundamental que a equipe cumpra os prazos do projeto.",
+   "O servidor caiu, mas foi reiniciado rapidamente.",
+   "Ou o sistema é atualizado, ou ocorrerão falhas de segurança."
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "Simulado Outras2 Gemini",
+  "label": "Gemini Outras S2",
+  "number": 50,
+  "text": "A Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) tem como principal objetivo:",
+  "alternatives": [
+   "Proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural relativos ao tratamento de dados pessoais.",
+   "Regulamentar exclusivamente a compra e venda de hardwares de computadores no varejo.",
+   "Permitir a comercialização irrestrita de dados cadastrais de cidadãos por empresas privadas.",
+   "Substituir a Lei Orgânica Municipal em prefeituras."
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 1,
+  "text": "Qual algoritmo de criptografia simétrica de bloco é amplamente utilizado e substituiu o antigo DES, operando com chaves de 128, 192 ou 256 bits?",
+  "alternatives": [
+   "MD5",
+   "SHA-1",
+   "AES",
+   "RSA"
+  ],
+  "correct": 2,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 2,
+  "text": "Sobre a função hash criptográfica MD5, assinale a alternativa correta:",
+  "alternatives": [
+   "É uma função de mão dupla, permitindo descriptografar o texto original facilmente.",
+   "Gera um valor de resumo (digest) com tamanho fixo de 128 bits.",
+   "É considerada altamente segura contra colisões nos dias de hoje.",
+   "É utilizada exclusivamente para criptografia simétrica de arquivos confidenciais."
+  ],
+  "correct": 1,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 3,
+  "text": "O algoritmo RSA é um dos pilares da criptografia:",
+  "alternatives": [
+   "Simétrica de chave única.",
+   "Assimétrica (de chave pública e privada).",
+   "Baseada em função hash sem chave.",
+   "Utilizada apenas para compactação de dados em smart-cards."
+  ],
+  "correct": 1,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 4,
+  "text": "Dispositivos físicos de hardware no formato de cartão que armazenam chaves criptográficas e certificados digitais de forma segura são conhecidos como:",
+  "alternatives": [
+   "Web Services",
+   "Smart-cards",
+   "Webservices SOAP",
+   "Repositórios GIT"
+  ],
+  "correct": 1,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 5,
+  "text": "Em Java, qual modificador de acesso permite que um atributo ou método seja visto apenas pelas classes do mesmo pacote e pelas subclasses, mesmo que estejam em pacotes diferentes?",
+  "alternatives": [
+   "private",
+   "public",
+   "protected",
+   "static"
+  ],
+  "correct": 2,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 6,
+  "text": "O framework Spring Boot tem como principal objetivo:",
+  "alternatives": [
+   "Compilar códigos em linguagem Dart para aplicativos móveis.",
+   "Facilitar a configuração e o setup de aplicações Spring através de convenções e autoconfiguração.",
+   "Substituir completamente o banco de dados relacional por arquivos XML.",
+   "Executar testes de aceitação de usuário de forma visual."
+  ],
+  "correct": 1,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 7,
+  "text": "Na linguagem Dart, amplamente utilizada com o Flutter, a palavra-chave async é usada para:",
+  "alternatives": [
+   "Definir uma função assíncrona que retorna um Future.",
+   "Bloquear a thread principal até que o banco de dados responda.",
+   "Criar variáveis estáticas que não podem ser alteradas.",
+   "Instanciar classes abstratas diretamente."
+  ],
+  "correct": 0,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 8,
+  "text": "Qual componente do ecossistema Spring é focado na gerência de persistência de dados utilizando JPA (Java Persistence API)?",
+  "alternatives": [
+   "Spring Security",
+   "Spring MVC",
+   "Spring Data JPA",
+   "Spring Boot Admin"
+  ],
+  "correct": 2,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 9,
+  "text": "O framework Flutter utiliza a linguagem Dart e adota uma abordagem baseada em:",
+  "alternatives": [
+   "Widgets para a construção de interfaces de usuário reativas.",
+   "Páginas JSP para renderização no lado do servidor.",
+   "Arquitetura monolítica baseada estritamente em COBOL.",
+   "Scripts em Shell para automação de rede."
+  ],
+  "correct": 0,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 10,
+  "text": "Sobre a arquitetura de três camadas (3-tier), assinale a alternativa que descreve corretamente a separação:",
+  "alternatives": [
+   "Camada de Apresentação, Camada de Negócio (Lógica) e Camada de Dados.",
+   "Camada de Hardware, Camada de Sistema Operacional e Camada de Rede.",
+   "Camada de Código Fonte, Camada de Versão e Camada de Produção.",
+   "Camada de Criptografia, Camada de Hash e Camada de Assinatura."
+  ],
+  "correct": 0,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 11,
+  "text": "Qual estrutura de dados opera sob o princípio LIFO (Last In, First Out - O último que entra é o primeiro que sai)?",
+  "alternatives": [
+   "Fila (Queue)",
+   "Pilha (Stack)",
+   "Árvore Binária (Tree)",
+   "Tabela Hash (Dictionary)"
+  ],
+  "correct": 1,
+  "topic": "Estruturas de Dados",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 12,
+  "text": "Em estruturas de dados, a estrutura FIFO (First In, First Out - O primeiro que entra é o primeiro que sai) caracteriza qual elemento?",
+  "alternatives": [
+   "Pilha",
+   "Fila",
+   "Heap",
+   "Grafo"
+  ],
+  "correct": 1,
+  "topic": "Estruturas de Dados",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 13,
+  "text": "Sobre a recursividade em programação, é correto afirmar que:",
+  "alternatives": [
+   "É uma técnica onde uma função chama a si mesma para resolver um problema menor.",
+   "Substitui obrigatoriamente qualquer banco de dados relacional.",
+   "Impede o uso de variáveis locais em qualquer hipótese.",
+   "É um padrão de arquitetura de software para microsserviços."
+  ],
+  "correct": 0,
+  "topic": "Estruturas de Dados",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 14,
+  "text": "Qual estrutura de dados não linear organiza os elementos em uma relação hierárquica de pai e filho?",
+  "alternatives": [
+   "Lista Encadeada",
+   "Fila de Prioridade",
+   "Árvore (Tree)",
+   "Vetor (Array)"
+  ],
+  "correct": 2,
+  "topic": "Estruturas de Dados",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 15,
+  "text": "O princípio da Orientação a Objetos que esconde os detalhes internos de funcionamento de um objeto e expõe apenas uma interface controlada é chamado de:",
+  "alternatives": [
+   "Herança",
+   "Polimorfismo",
+   "Encapsulamento",
+   "Instanciação"
+  ],
+  "correct": 2,
+  "topic": "POO",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 16,
+  "text": "Quando uma classe herda características de outra, permitindo a reutilização de atributos e métodos, aplicamos o conceito de:",
+  "alternatives": [
+   "Polimorfismo",
+   "Herança",
+   "Abstração",
+   "Conexão JDBC"
+  ],
+  "correct": 1,
+  "topic": "POO",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 17,
+  "text": "Em POO, uma classe que não pode ser instanciada diretamente e serve apenas como modelo base para outras classes filhas é chamada de:",
+  "alternatives": [
+   "Classe Concreta",
+   "Classe Abstrata",
+   "Classe Estática",
+   "Classe Final"
+  ],
+  "correct": 1,
+  "topic": "POO",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 18,
+  "text": "Qual linguagem de marcação é a base para a estruturação de páginas web exibidas em navegadores?",
+  "alternatives": [
+   "Java",
+   "SQL",
+   "HTML",
+   "JSON"
+  ],
+  "correct": 2,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 19,
+  "text": "O formato leve de intercâmbio de dados baseado em pares de atributo-valor, amplamente derivado do JavaScript, é o:",
+  "alternatives": [
+   "XML",
+   "JSON",
+   "WSDL",
+   "SOAP"
+  ],
+  "correct": 1,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 20,
+  "text": "A tecnologia que permite a atualização assíncrona de páginas web, enviando e recuperando dados de um servidor em segundo plano sem recarregar a página inteira, é o:",
+  "alternatives": [
+   "AJAX",
+   "JDBC",
+   "TCP/IP",
+   "DDL"
+  ],
+  "correct": 0,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 21,
+  "text": "Os comandos CREATE, ALTER e DROP pertencem a qual sublinguagem dos Bancos de Dados Relacionais?",
+  "alternatives": [
+   "DML (Data Manipulation Language)",
+   "DDL (Data Definition Language)",
+   "DCL (Data Control Language)",
+   "TCL (Transaction Control Language)"
+  ],
+  "correct": 1,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 22,
+  "text": "Qual comando SQL é utilizado para consultar e recuperar dados armazenados em uma ou mais tabelas?",
+  "alternatives": [
+   "INSERT",
+   "UPDATE",
+   "SELECT",
+   "DELETE"
+  ],
+  "correct": 2,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 23,
+  "text": "O processo de organização de dados em um banco de dados relacional para reduzir redundâncias e inconsistências é chamado de:",
+  "alternatives": [
+   "Normalização",
+   "Indexação",
+   "Criptografia simétrica",
+   "Serialização"
+  ],
+  "correct": 0,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 24,
+  "text": "Uma restrição (constraint) em banco de dados relacional que garante a unicidade de identificação de cada linha de uma tabela é a:",
+  "alternatives": [
+   "Chave Estrangeira (Foreign Key)",
+   "Chave Primária (Primary Key)",
+   "Trigger de inserção",
+   "Visão (View)"
+  ],
+  "correct": 1,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 25,
+  "text": "Na UML, um diagrama que descreve o comportamento dinâmico do sistema através da troca de mensagens entre objetos ao longo do tempo é o:",
+  "alternatives": [
+   "Diagrama de Classes",
+   "Diagrama de Sequência",
+   "Diagrama de Implantação",
+   "Diagrama de Componentes"
+  ],
+  "correct": 1,
+  "topic": "UML/Modelagem",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 26,
+  "text": "O Diagrama de Classes na UML pertence à categoria de diagramas:",
+  "alternatives": [
+   "Estruturais",
+   "Comportamentais",
+   "De Interação",
+   "De Temporização"
+  ],
+  "correct": 0,
+  "topic": "UML/Modelagem",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 27,
+  "text": "O padrão arquitetural que organiza o sistema em camadas independentes (como Apresentação, Domínio e Infraestrutura), isolando as regras de negócio de detalhes externos, é amplamente conhecido como:",
+  "alternatives": [
+   "Arquitetura em Camadas (Layered Architecture)",
+   "Algoritmo de Hashing",
+   "Arquitetura Monolítica sem padrão",
+   "Protocolo TCP/IP"
+  ],
+  "correct": 0,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 28,
+  "text": "Sobre o estilo arquitetural REST para Webservices, assinale a correta:",
+  "alternatives": [
+   "Utiliza estritamente o protocolo SOAP sobre XML obrigatório.",
+   "Baseia-se no protocolo HTTP utilizando os métodos padrão (GET, POST, PUT, DELETE) e costuma trafegar dados em JSON.",
+   "Exige a utilização de smart-cards para validação de requisições.",
+   "É incompatível com aplicações web modernas."
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 29,
+  "text": "No Domain-Driven Design (DDD), um objeto que possui uma identidade conceitual única que persiste ao longo do tempo e cujos atributos podem mudar é denominado:",
+  "alternatives": [
+   "Value Object",
+   "Entity (Entidade)",
+   "Repository",
+   "DTO"
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 30,
+  "text": "Os padrões de projeto (Design Patterns) que tratam da criação de objetos, tentando torná-la independente de como os objetos são criados e representados, são classificados como:",
+  "alternatives": [
+   "Padrões Estruturais",
+   "Padrões Comportamentais",
+   "Padrões de Criação (Creational)",
+   "Padrões de Testabilidade"
+  ],
+  "correct": 2,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 31,
+  "text": "No framework Scrum, quem é o responsável por gerenciar o Product Backlog, maximizar o valor do produto e ordenar os itens de acordo com as prioridades do negócio?",
+  "alternatives": [
+   "Scrum Master",
+   "Product Owner (PO)",
+   "Desenvolvedor",
+   "Stakeholder externo"
+  ],
+  "correct": 1,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 32,
+  "text": "O evento do Scrum voltado para a inspeção do incremento de produto gerado na Sprint junto aos stakeholders é chamado de:",
+  "alternatives": [
+   "Sprint Planning",
+   "Daily Scrum",
+   "Sprint Review (Revisão da Sprint)",
+   "Sprint Retrospective"
+  ],
+  "correct": 2,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 33,
+  "text": "A metodologia ágil XP (eXtreme Programming) destaca-se por práticas de engenharia de software voltadas à qualidade, tais como:",
+  "alternatives": [
+   "Desenvolvimento orientado a testes (TDD), Programação em Dupla (Pair Programming) e refatoração contínua.",
+   "Utilização exclusiva de contratos rígidos e documentação em cascata de longo prazo.",
+   "Omitir qualquer tipo de teste automatizado até o dia do lançamento.",
+   "Proibir reuniões diárias e entregas parciais."
+  ],
+  "correct": 0,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 34,
+  "text": "Qual tipo de teste de software foca em testar componentes ou unidades individuais de código (como métodos ou classes isoladas) de forma automatizada?",
+  "alternatives": [
+   "Teste de Unidade",
+   "Teste de Sistema",
+   "Teste de Carga",
+   "Teste de Aceitação"
+  ],
+  "correct": 0,
+  "topic": "Testes de Software",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 35,
+  "text": "O teste executado após uma modificação no código (como correção de bug) para assegurar que nenhuma nova falha foi introduzida em funcionalidades que já funcionavam chama-se:",
+  "alternatives": [
+   "Teste de Fumaça",
+   "Teste de Regressão",
+   "Teste de Usabilidade",
+   "Teste de Estresse"
+  ],
+  "correct": 1,
+  "topic": "Testes de Software",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 36,
+  "text": "Os testes que validam se o sistema atende aos requisitos de negócio sob a ótica do usuário final ou cliente são conhecidos como:",
+  "alternatives": [
+   "Testes de Integração de Hardware",
+   "Testes de Aceitação",
+   "Testes de Compilação",
+   "Testes de DDL"
+  ],
+  "correct": 1,
+  "topic": "Testes de Software",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 37,
+  "text": "No Git, qual comando é utilizado para salvar e registrar as alterações locais preparadas (staged) no repositório local acompanhadas de uma mensagem descritiva?",
+  "alternatives": [
+   "git clone",
+   "git pull",
+   "git commit",
+   "git push"
+  ],
+  "correct": 2,
+  "topic": "Git/Versionamento",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 38,
+  "text": "Qual comando do Git baixa as alterações de um repositório remoto e as mescla imediatamente com o ramo (branch) local atual?",
+  "alternatives": [
+   "git fetch",
+   "git pull",
+   "git push",
+   "git init"
+  ],
+  "correct": 1,
+  "topic": "Git/Versionamento",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 39,
+  "text": "Para criar uma cópia de trabalho local a partir de um repositório remoto existente na nuvem, utiliza-se o comando:",
+  "alternatives": [
+   "git clone",
+   "git commit",
+   "git status",
+   "git merge"
+  ],
+  "correct": 0,
+  "topic": "Git/Versionamento",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 40,
+  "text": "O que significa a sigla SOA em arquitetura de software?",
+  "alternatives": [
+   "Service-Oriented Architecture (Arquitetura Orientada a Serviços)",
+   "Secure Object Application",
+   "Simple Online Algorithm",
+   "System Operation Automation"
+  ],
+  "correct": 0,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 41,
+  "text": "Em Webservices, o padrão SOAP diferencia-se do REST por:",
+  "alternatives": [
+   "Utilizar estritamente o formato XML para estruturar as mensagens de requisição e resposta sobre protocolos variados.",
+   "Ser leve e não necessitar de definições em WSDL.",
+   "Funcionar exclusivamente no navegador web sem suporte a servidores.",
+   "Substituir a linguagem SQL em bancos relacionais."
+  ],
+  "correct": 0,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 42,
+  "text": "Qual estrutura de dados utiliza nós onde cada elemento aponta para o próximo (e opcionalmente para o anterior), permitindo alocação dinâmica de memória?",
+  "alternatives": [
+   "Vetor estático (Array)",
+   "Lista Encadeada (Linked List)",
+   "Tabela Hash fixa",
+   "Matriz bidimensional"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 43,
+  "text": "No contexto de algoritmos de ordenação, qual algoritmo possui complexidade de pior caso O(n²), mas é amplamente estudado por sua simplicidade?",
+  "alternatives": [
+   "Bubble Sort (Método da Bolha)",
+   "Merge Sort",
+   "Quick Sort otimizado",
+   "Heapsort"
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 44,
+  "text": "Em Java, o mecanismo que impede que threads concorrentes acessem simultaneamente um bloco de código crítico gerando inconsistências é acionado pela palavra-chave:",
+  "alternatives": [
+   "synchronized",
+   "abstract",
+   "volatile dinâmico",
+   "transient"
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 45,
+  "text": "No Spring Framework, a anotação utilizada para marcar uma classe como um componente de serviço de negócio genérico gerenciado pelo container é:",
+  "alternatives": [
+   "@RestController",
+   "@Service",
+   "@Repository",
+   "@Entity"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 46,
+  "text": "O que caracteriza o conceito de herança múltipla em linguagens de programação?",
+  "alternatives": [
+   "Uma classe herdar características e comportamentos de mais de uma classe super/pai simultaneamente.",
+   "Uma classe não poder ter métodos privados.",
+   "O uso exclusivo de variáveis globais estáticas.",
+   "A compilação cruzada entre Java e Dart."
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 47,
+  "text": "Em modelagem de dados, a chave estrangeira (Foreign Key) tem como função principal:",
+  "alternatives": [
+   "Criptografar as senhas dos usuários do sistema.",
+   "Estabelecer e garantir a integridade referencial entre duas tabelas relacionadas.",
+   "Substituir a necessidade de índices de texto.",
+   "Gerar relatórios automáticos em formato JSON."
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 48,
+  "text": "Sobre o comando GIT PULL, ele é composto internamente pela execução sequencial de quais dois comandos fundamentais?",
+  "alternatives": [
+   "git add e git commit",
+   "git fetch e git merge",
+   "git push e git clone",
+   "git status e git log"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 49,
+  "text": "O padrão de projeto (Design Pattern) criacional que garante que uma classe tenha apenas uma instância em toda a aplicação e fornece um ponto de acesso global para ela é o:",
+  "alternatives": [
+   "Factory Method",
+   "Singleton",
+   "Observer",
+   "Strategy"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico1 Gemini",
+  "label": "Gemini Específicos S1",
+  "number": 50,
+  "text": "No contexto de metodologias ágeis, o gráfico que mostra a quantidade de trabalho restante em um projeto ao longo do tempo da Sprint é chamado de:",
+  "alternatives": [
+   "Burn-down Chart",
+   "Diagrama de Gantt estático",
+   "Matriz SWOT",
+   "Fluxograma de Caixa Preta"
+  ],
+  "correct": 0,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 1,
+  "text": "Em Java, o modificador de acesso protected garante visibilidade para:",
+  "alternatives": [
+   "Apenas a própria classe.",
+   "A própria classe, subclasses e classes do mesmo pacote.",
+   "Exclusivamente classes de pacotes externos.",
+   "Qualquer classe do sistema sem restrições."
+  ],
+  "correct": 1,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 2,
+  "text": "No Spring Framework, a anotação utilizada para injetar dependências automaticamente em atributos, construtores ou métodos é:",
+  "alternatives": [
+   "@SpringBootApplication",
+   "@RestController",
+   "@Autowired",
+   "@Entity"
+  ],
+  "correct": 2,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 3,
+  "text": "Qual anotação do Spring MVC / Boot é utilizada em nível de classe para definir que ela é um controlador web cujos métodos retornam dados (como JSON ou XML) diretamente no corpo da resposta HTTP?",
+  "alternatives": [
+   "@Controller tradicional com páginas JSP",
+   "@RestController",
+   "@Repository",
+   "@Configuration"
+  ],
+  "correct": 1,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 4,
+  "text": "No Spring Data JPA, interfaces que estendem JpaRepository fornecem nativamente:",
+  "alternatives": [
+   "Apenas a compilação de código Dart.",
+   "Métodos prontos de CRUD (Create, Read, Update, Delete) e paginação sem necessidade de implementação manual.",
+   "Configuração de segurança de rede baseada em smart-cards.",
+   "Execução de testes de carga em tempo real."
+  ],
+  "correct": 1,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 5,
+  "text": "O Spring Security atua principalmente controlando:",
+  "alternatives": [
+   "Apenas a compactação de arquivos ZIP no servidor.",
+   "Autenticação e Autorização em aplicações baseadas no ecossistema Spring.",
+   "O mapeamento de tabelas relacionais em código SQL puro.",
+   "A criação automática de diagramas UML."
+  ],
+  "correct": 1,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 6,
+  "text": "Na linguagem Dart, o modificador final difere de const porque:",
+  "alternatives": [
+   "final é definido em tempo de compilação obrigatoriamente.",
+   "final permite atribuir um valor uma única vez em tempo de execução, enquanto const é uma constante em tempo de compilação.",
+   "const não pode ser usada em funções assíncronas.",
+   "final serve apenas para métodos estáticos."
+  ],
+  "correct": 1,
+  "topic": "Dart/Flutter",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 7,
+  "text": "No Flutter, a interface do usuário (UI) é construída inteiramente combinando elementos fundamentais chamados de:",
+  "alternatives": [
+   "Servlets",
+   "Widgets",
+   "Triggers",
+   "Views SQL"
+  ],
+  "correct": 1,
+  "topic": "Dart/Flutter",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 8,
+  "text": "Em Dart, para lidar com operações assíncronas (como requisições de rede ou leitura de banco de dados) de forma fluida, utiliza-se frequentemente os conceitos de:",
+  "alternatives": [
+   "Future e async/await",
+   "Thread.sleep() estático",
+   "Pointer direto de memória C++",
+   "DDL e DML"
+  ],
+  "correct": 0,
+  "topic": "Dart/Flutter",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 9,
+  "text": "O ecossistema Flutter permite o desenvolvimento de aplicativos compilados nativamente para quais plataformas a partir de uma única base de código?",
+  "alternatives": [
+   "Apenas para sistemas operacionais baseados em MS-DOS.",
+   "Mobile (Android e iOS), Web e Desktop.",
+   "Exclusivamente para microcontroladores de hardware embarcado.",
+   "Apenas para servidores Linux sem interface gráfica."
+  ],
+  "correct": 1,
+  "topic": "Dart/Flutter",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 10,
+  "text": "Na Arquitetura em Camadas clássica (3-tier), qual camada deve conter obrigatoriamente as regras de negócio centrais da aplicação?",
+  "alternatives": [
+   "Camada de Apresentação (View)",
+   "Camada de Domínio / Negócio",
+   "Camada de Driver de Rede",
+   "Camada de Interface do Usuário"
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 11,
+  "text": "No Domain-Driven Design (DDD), um objeto caracterizado exclusivamente pelos seus atributos (sem identidade única conceitual) é denominado:",
+  "alternatives": [
+   "Entity (Entidade)",
+   "Value Object (Objeto de Valor)",
+   "Aggregate Root principal",
+   "Service de infraestrutura"
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 12,
+  "text": "O padrão de projeto criacional Singleton garante que:",
+  "alternatives": [
+   "Uma classe tenha múltiplas instâncias dinâmicas simultâneas.",
+   "Uma classe tenha apenas uma única instância em toda a aplicação e forneça um ponto de acesso global para ela.",
+   "Objetos sejam criados por subclasses sem conhecer suas classes concretas.",
+   "O código seja executado em várias threads paralelas."
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 13,
+  "text": "Qual padrão de projeto comportamental permite definir um mecanismo de subscrição para notificar múltiplos objetos sobre quaisquer eventos que aconteçam no objeto que estão observando?",
+  "alternatives": [
+   "Observer",
+   "Adapter",
+   "Factory Method",
+   "Builder"
+  ],
+  "correct": 0,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 14,
+  "text": "O que caracteriza uma arquitetura orientada a serviços (SOA)?",
+  "alternatives": [
+   "O uso exclusivo de arquivos binários locais fechados.",
+   "A estruturação do software em serviços fracamente acoplados que se comunicam através de protocolos de rede.",
+   "A proibição do uso de bancos de dados relacionais.",
+   "A execução de todo o processamento em um único arquivo monolítico."
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 15,
+  "text": "O padrão arquitetural que separa a representação da informação da interação do usuário com o sistema, dividindo-se em Model, View e Controller, é o:",
+  "alternatives": [
+   "MVC",
+   "TCP/IP",
+   "DDL/DML",
+   "SOAP/WSDL"
+  ],
+  "correct": 0,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 16,
+  "text": "Em Webservices, o padrão REST diferencia-se do SOAP por:",
+  "alternatives": [
+   "Exigir obrigatoriamente um contrato em XML chamado WSDL.",
+   "Ser mais leve, focado em recursos e utilizar métodos HTTP padrão (GET, POST, etc.) com múltiplos formatos (JSON, XML).",
+   "Funcionar exclusivamente sobre redes locais sem acesso à internet.",
+   "Impedir o uso de requisições assíncronas."
+  ],
+  "correct": 1,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 17,
+  "text": "O arquivo descritivo baseado em XML utilizado para descrever os serviços web no padrão SOAP é denominado:",
+  "alternatives": [
+   "JSON Schema",
+   "WSDL (Web Services Description Language)",
+   "Git Ignore",
+   "Script de Migração SQL"
+  ],
+  "correct": 1,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 18,
+  "text": "O código de status HTTP que indica que uma requisição foi bem-sucedida e um novo recurso foi criado com sucesso é:",
+  "alternatives": [
+   "200 OK",
+   "201 Created",
+   "400 Bad Request",
+   "500 Internal Server Error"
+  ],
+  "correct": 1,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 19,
+  "text": "O código de status HTTP 404 Not Found indica que:",
+  "alternatives": [
+   "O servidor encontrou um erro interno inesperado.",
+   "O recurso solicitado não foi encontrado no servidor.",
+   "O cliente não possui autorização (falta de token).",
+   "A requisição foi processada com sucesso absoluto."
+  ],
+  "correct": 1,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 20,
+  "text": "Em bancos de dados relacionais, o mecanismo que acelera a recuperação de dados em uma tabela a partir de colunas específicas, à custa de espaço em disco adicional, é o:",
+  "alternatives": [
+   "Backup incremental",
+   "Índice (Index)",
+   "Trigger de exclusão",
+   "Algoritmo de hash MD5"
+  ],
+  "correct": 1,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 21,
+  "text": "O comando SQL utilizado para remover permanentemente a estrutura e os dados de uma tabela inteira do banco de dados é:",
+  "alternatives": [
+   "DELETE FROM tabela",
+   "DROP TABLE tabela",
+   "UPDATE tabela SET...",
+   "SELECT * FROM tabela"
+  ],
+  "correct": 1,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 22,
+  "text": "O conceito de transações seguras em bancos de dados relacionais é regido pelo acrônimo ACID, onde a letra I refere-se a:",
+  "alternatives": [
+   "Integridade de rede",
+   "Isolamento (Isolation)",
+   "Indexação automática",
+   "Instanciação de objetos"
+  ],
+  "correct": 1,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 23,
+  "text": "Uma View (Visão) em banco de dados relacional é:",
+  "alternatives": [
+   "Uma tabela física duplicada em outro servidor.",
+   "Uma consulta armazenada (virtual) baseada no resultado de uma instrução SQL.",
+   "Um arquivo de log de transações corrompidas.",
+   "Uma chave primária composta."
+  ],
+  "correct": 1,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 24,
+  "text": "Na modelagem de dados, a relação do tipo \"Muitos para Muitos\" (N:M) entre duas tabelas é implementada fisicamente através de:",
+  "alternatives": [
+   "Uma coluna de texto simples na primeira tabela.",
+   "Uma tabela associativa (ou tabela de junção) contendo as chaves estrangeiras de ambas as tabelas.",
+   "A eliminação de chaves primárias.",
+   "O uso exclusivo de arquivos JSON."
+  ],
+  "correct": 1,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 25,
+  "text": "O pilar da POO que permite que uma classe exponha apenas o que é essencial para o uso externo e oculte os detalhes de implementação internos é o:",
+  "alternatives": [
+   "Polimorfismo",
+   "Encapsulamento",
+   "Herança múltipla direta",
+   "Algoritmo de ordenação"
+  ],
+  "correct": 1,
+  "topic": "POO",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 26,
+  "text": "Em árvores binárias de busca (BST), cada nó possui no máximo:",
+  "alternatives": [
+   "Um filho",
+   "Dois filhos (geralmente denominados esquerda e direita)",
+   "Quatro filhos simétricos",
+   "Uma quantidade ilimitada de nós irmãos"
+  ],
+  "correct": 1,
+  "topic": "POO",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 27,
+  "text": "Qual estrutura de dados é mais indicada para implementar algoritmos de busca em largura (BFS) em grafos?",
+  "alternatives": [
+   "Pilha (Stack)",
+   "Fila (Queue)",
+   "Variável inteira estática",
+   "Tabela hash linear"
+  ],
+  "correct": 1,
+  "topic": "POO",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 28,
+  "text": "O algoritmo de ordenação conhecido como Quicksort baseia-se em qual estratégia fundamental de projeto de algoritmos?",
+  "alternatives": [
+   "Força Bruta sequencial",
+   "Divisão e Conquista (Divide and Conquer)",
+   "Busca exaustiva linear",
+   "Criptografia simétrica de bloco"
+  ],
+  "correct": 1,
+  "topic": "POO",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 29,
+  "text": "A criptografia assimétrica utiliza um par de chaves complementares, conhecidas como:",
+  "alternatives": [
+   "Chave única compartilhada e chave de rede.",
+   "Chave pública e chave privada.",
+   "Chave MD5 e chave SHA-1.",
+   "Chave primária e chave estrangeira."
+  ],
+  "correct": 1,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 30,
+  "text": "No contexto de segurança, a assinatura digital de um documento eletrônico garante primordialmente:",
+  "alternatives": [
+   "Autenticidade, integridade e não-repúdio.",
+   "Compactação automática do arquivo para ocupar menos espaço.",
+   "Tradução imediata do documento para outros idiomas.",
+   "Criptografia simétrica com chave de 8 bits."
+  ],
+  "correct": 0,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 31,
+  "text": "Qual algoritmo de hash criptográfico gera um resumo de mensagem de 160 bits, sendo sucessor direto do MD5, embora também apresente vulnerabilidades conhecidas a colisões?",
+  "alternatives": [
+   "AES-256",
+   "SHA-1",
+   "RSA-2048",
+   "HTTP Secure"
+  ],
+  "correct": 1,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 32,
+  "text": "Dispositivos baseados em microprocessadores integrados (semelhantes a cartões de crédito inteligentes) utilizados para armazenamento seguro de certificados digitais e assinaturas são chamados de:",
+  "alternatives": [
+   "Smart-cards",
+   "Hubs de rede",
+   "Repositórios Git remotos",
+   "Servidores proxy reversos"
+  ],
+  "correct": 0,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 33,
+  "text": "O teste de software executado de forma automatizada em componentes isolados (como funções ou métodos individuais) é classificado como:",
+  "alternatives": [
+   "Teste de Aceitação",
+   "Teste de Unidade",
+   "Teste de Sistema end-to-end",
+   "Teste de Carga e Estresse"
+  ],
+  "correct": 1,
+  "topic": "Testes de Software",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 34,
+  "text": "A prática de desenvolvimento ágil onde os desenvolvedores escrevem os testes automatizados antes de escrever o código de produção funcional é conhecida como:",
+  "alternatives": [
+   "TDD (Test-Driven Development)",
+   "DDD (Domain-Driven Design)",
+   "SQL Injection",
+   "Programação em Cascata"
+  ],
+  "correct": 0,
+  "topic": "Testes de Software",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 35,
+  "text": "Qual tipo de teste avalia o comportamento do sistema sob condições extremas de carga e número de acessos simultâneos para identificar gargalos de performance?",
+  "alternatives": [
+   "Teste de Usabilidade visual",
+   "Teste de Desempenho / Carga",
+   "Teste de Regressão sintática",
+   "Teste unitário de classes"
+  ],
+  "correct": 1,
+  "topic": "Testes de Software",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 36,
+  "text": "No GIT, o comando utilizado para criar uma ramificação (branch) nova e alternar imediatamente para ela em um único comando é:",
+  "alternatives": [
+   "git clone",
+   "git checkout -b <nome> (ou git switch -c <nome>)",
+   "git push origin master",
+   "git status"
+  ],
+  "correct": 1,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 37,
+  "text": "No Scrum, o evento de planejamento realizado no início de cada Sprint para definir o escopo e as tarefas que serão executadas é chamado de:",
+  "alternatives": [
+   "Sprint Review",
+   "Sprint Planning",
+   "Retrospectiva da Sprint",
+   "Daily Standup"
+  ],
+  "correct": 1,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 38,
+  "text": "No framework Scrum, o papel responsável por garantir que o time siga os valores e práticas do Scrum, removendo impedimentos e facilitando os eventos, é o:",
+  "alternatives": [
+   "Product Owner",
+   "Scrum Master",
+   "Stakeholder financeiro",
+   "Administrador do Banco de Dados"
+  ],
+  "correct": 1,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 39,
+  "text": "O conceito de Refatoração em engenharia de software consiste em:",
+  "alternatives": [
+   "Reescrever o sistema inteiro em outra linguagem a cada 3 meses.",
+   "Reestruturar o código fonte interno existente para melhorar sua legibilidade e manutenibilidade sem alterar seu comportamento externo observável.",
+   "Deletar todos os testes automatizados para acelerar o deploy.",
+   "Ocultar bugs encontrados em produção."
+  ],
+  "correct": 1,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 40,
+  "text": "Na UML, qual diagrama estrutural mostra as classes do sistema, seus atributos, operações e os relacionamentos entre elas?",
+  "alternatives": [
+   "Diagrama de Classes",
+   "Diagrama de Sequência temporal",
+   "Diagrama de Casos de Uso",
+   "Diagrama de Atividades"
+  ],
+  "correct": 0,
+  "topic": "UML/Modelagem",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 41,
+  "text": "O diagrama de Casos de Uso na UML tem como finalidade principal:",
+  "alternatives": [
+   "Descrever a infraestrutura de servidores físicos na nuvem.",
+   "Modelar o comportamento funcional do sistema sob a ótica dos atores externos (usuários ou outros sistemas).",
+   "Especificar o código fonte em linguagem Java linha por linha.",
+   "Controlar as versões de arquivos no GIT."
+  ],
+  "correct": 1,
+  "topic": "UML/Modelagem",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 42,
+  "text": "O que significa a sigla JSON?",
+  "alternatives": [
+   "Java Source Open Network",
+   "JavaScript Object Notation",
+   "Joint System Operation Node",
+   "Just Simple Online Name"
+  ],
+  "correct": 1,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 43,
+  "text": "A tecnologia AJAX (Asynchronous JavaScript and XML) permite primordialmente:",
+  "alternatives": [
+   "Atualizar partes de uma página web de forma assíncrona sem precisar recarregar a página inteira no navegador.",
+   "Criptografar discos rígidos inteiros com senhas biométricas.",
+   "Compilar aplicativos nativos para sistemas operacionais embarcados antigos.",
+   "Substituir protocolos de rede em camadas de enlace."
+  ],
+  "correct": 0,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 44,
+  "text": "Em Java, a palavra-chave static aplicada a um atributo de uma classe indica que:",
+  "alternatives": [
+   "O atributo pertence à classe em si, sendo compartilhado por todas as instâncias, e não a um objeto específico.",
+   "O valor do atributo nunca poderá ser lido por métodos externos.",
+   "O atributo será armazenado obrigatoriamente em um cartão smart-card externo.",
+   "O atributo é exclusivo de instâncias filhas abstratas."
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 45,
+  "text": "Qual é a principal função da instrução SQL GROUP BY?",
+  "alternatives": [
+   "Ordenar os resultados de uma consulta em ordem alfabética decrescente.",
+   "Agrupar linhas que possuem valores em comum em colunas especificadas para aplicação de funções de agregação (como SUM, COUNT, AVG).",
+   "Deletar registros duplicados de tabelas auxiliares.",
+   "Criar restrições de chave estrangeira automaticamente."
+  ],
+  "correct": 1,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 46,
+  "text": "No contexto de versionamento com GIT, o que significa um conflito de merge (merge conflict)?",
+  "alternatives": [
+   "Quando dois desenvolvedores alteram exatamente as mesmas linhas de um arquivo de maneiras diferentes e o Git não consegue mesclar automaticamente.",
+   "Quando a senha do repositório remoto expira.",
+   "Quando o código Java apresenta erro de compilação de sintaxe.",
+   "Quando o servidor web cai por falta de memória RAM."
+  ],
+  "correct": 0,
+  "topic": "Git/Versionamento",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 47,
+  "text": "Em metodologias ágeis (XP), o conceito de Pair Programming (Programação em Dupla) consiste em:",
+  "alternatives": [
+   "Dois programadores trabalharem juntos na mesma estação de trabalho, um escrevendo o código (driver) e o outro revisando ativamente (navigator).",
+   "Dividir a equipe em duas partes para competir quem entrega o software mais rápido.",
+   "Desenvolver o sistema em dois servidores redundantes em paralelo.",
+   "Contratar dois gerentes de projeto para o mesmo escopo."
+  ],
+  "correct": 0,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 48,
+  "text": "O padrão de projeto criacional Factory Method propõe:",
+  "alternatives": [
+   "A criação de uma interface para criar objetos, mas permitindo que as subclasses decidam qual classe instanciar.",
+   "A criação de instâncias globais únicas imutáveis.",
+   "O mapeamento de tabelas relacionais em objetos complexos.",
+   "A execução de testes de aceitação automatizados."
+  ],
+  "correct": 0,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 49,
+  "text": "O protocolo seguro de transferência de hipertexto (HTTPS) opera nativamente na camada de transporte/aplicação utilizando qual porta padrão por padrão?",
+  "alternatives": [
+   "Porta 80",
+   "Porta 443",
+   "Porta 21",
+   "Porta 22"
+  ],
+  "correct": 1,
+  "topic": "Geral",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "Simulado Específico2 Gemini",
+  "label": "Gemini Específicos S2",
+  "number": 50,
+  "text": "Em arquitetura de software limpa (Clean Architecture), a regra de dependência dita que o fluxo de código fonte deve apontar:",
+  "alternatives": [
+   "Das camadas externas de detalhes (como banco de dados e UI) para dentro, em direção às regras de negócio centrais (domínio), que não devem saber nada sobre o mundo externo.",
+   "De dentro para fora, obrigando o núcleo de negócios a conhecer frameworks web específicos.",
+   "Apenas para bibliotecas de terceiros hospedadas na nuvem.",
+   "Sem nenhuma regra estrutural definida, permitindo acoplamento total."
+  ],
+  "correct": 0,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ }
+]

@@ -1,0 +1,2957 @@
+[
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 1,
+  "text": "Sobre algoritmos de hash criptográficos, assinale a alternativa CORRETA:",
+  "alternatives": [
+   "MD5 produz hash de 256 bits e é considerado seguro para assinaturas digitais atuais.",
+   "SHA-1 gera hash de 160 bits e possui vulnerabilidades conhecidas de colisão.",
+   "RSA é um algoritmo de hash simétrico usado para verificação de integridade.",
+   "A criptografia simétrica utiliza par de chaves pública/privada para hash."
+  ],
+  "correct": 1,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 2,
+  "text": "A certificação digital no padrão ICP-Brasil utiliza:",
+  "alternatives": [
+   "Apenas criptografia simétrica (AES-256) para assinatura de documentos.",
+   "Infraestrutura de Chaves Públicas (PKI) com certificados X.509 v3.",
+   "Certificados autoassinados sem necessidade de Autoridade Certificadora.",
+   "Algoritmo MD5 para geração de resumo dos certificados."
+  ],
+  "correct": 1,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 3,
+  "text": "Qual das afirmações sobre certificados digitais A1 e A3 é FALSA?",
+  "alternatives": [
+   "A1: armazenado em software (arquivo .pfx), validade típica de 1 ano.",
+   "A3: armazenado em hardware (token/cartão inteligente), validade até 3 anos.",
+   "A1 permite portabilidade entre máquinas sem hardware adicional.",
+   "A3 exige smart-card ou token criptográfico com geração de chaves no dispositivo."
+  ],
+  "correct": 2,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 4,
+  "text": "Em uma assinatura digital baseada em RSA, o remetente:",
+  "alternatives": [
+   "Criptografa a mensagem com a chave pública do destinatário.",
+   "Criptografa o hash da mensagem com sua própria chave privada.",
+   "Criptografa o hash da mensagem com a chave pública do destinatário.",
+   "Criptografa a mensagem com sua chave privada e envia o texto cifrado."
+  ],
+  "correct": 1,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 5,
+  "text": "Sobre smart-cards para certificação digital, é INCORRETO afirmar:",
+  "alternatives": [
+   "A geração do par de chaves ocorre dentro do chip, sem exportação da chave privada.",
+   "Possuem sistema operacional de cartão (ex.: Java Card) para applets de segurança.",
+   "São vulneráveis a extração de chave privada por engenharia reversa simples.",
+   "Atendem a normas como ISO/IEC 7816 e FIPS 140-2/3."
+  ],
+  "correct": 2,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 6,
+  "text": "Em Java, a interface `java.util.List` permite:",
+  "alternatives": [
+   "Elementos duplicados e mantém ordem de inserção.",
+   "Apenas elementos únicos e ordem de inserção.",
+   "Elementos duplicados mas não garante ordem.",
+   "Acesso indexado apenas em `ArrayList`, não em `LinkedList`."
+  ],
+  "correct": 0,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 7,
+  "text": "Sobre Generics em Java, o código `List<? super Number> lista` permite adicionar:",
+  "alternatives": [
+   "`Integer`, `Double`, `Number`, `Object`.",
+   "Apenas `Number` e suas subclasses.",
+   "`Integer`, `Double`, `Number` (mas não `Object`).",
+   "Qualquer tipo, pois `? super` aceita tudo."
+  ],
+  "correct": 2,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 8,
+  "text": "No Spring Boot, a anotação `@SpringBootApplication` combina:",
+  "alternatives": [
+   "`@Configuration`, `@EnableAutoConfiguration`, `@ComponentScan`.",
+   "`@Controller`, `@Service`, `@Repository`, `@Component`.",
+   "`@Autowired`, `@Qualifier`, `@Value`, `@PostConstruct`.",
+   "`@Transactional`, `@Cacheable`, `@Async`, `@Scheduled`."
+  ],
+  "correct": 0,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 9,
+  "text": "O `Spring Data JPA` permite criar repositórios apenas declarando interfaces. Qual método NÃO seria derivado automaticamente pelo nome?",
+  "alternatives": [
+   "`findByNomeContainingIgnoreCase(String nome)`",
+   "`deleteById(Long id)`",
+   "`customComplexQueryComJoinESubselect()`",
+   "`findTop5ByOrderByDataCriacaoDesc()`"
+  ],
+  "correct": 2,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 10,
+  "text": "Em Spring Security, o filtro `UsernamePasswordAuthenticationFilter` é responsável por:",
+  "alternatives": [
+   "Validar tokens JWT no header Authorization.",
+   "Processar formulário de login (username/password) e popular `SecurityContext`.",
+   "Verificar roles/authorities via `@PreAuthorize`.",
+   "Gerenciar sessão HTTP e cookies de remember-me."
+  ],
+  "correct": 1,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 11,
+  "text": "Em Dart, a palavra-chave `late` indica que:",
+  "alternatives": [
+   "A variável é constante em tempo de compilação.",
+   "A variável não nula será inicializada antes do primeiro uso.",
+   "A variável é opcional e pode ser nula.",
+   "A variável usa inferência de tipo dinâmico."
+  ],
+  "correct": 1,
+  "topic": "Dart/Flutter",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 12,
+  "text": "No Flutter, qual widget é imutável e não possui estado interno mutável?",
+  "alternatives": [
+   "`StatefulWidget`",
+   "`StatelessWidget`",
+   "`InheritedWidget`",
+   "`State<T>`"
+  ],
+  "correct": 1,
+  "topic": "Dart/Flutter",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 13,
+  "text": "O mecanismo `Future`/`async`/`await` em Dart serve para:",
+  "alternatives": [
+   "Programação síncrona bloqueante.",
+   "Programação assíncrona não bloqueante baseada em Promises.",
+   "Criação de threads paralelas reais (isolates).",
+   "Garbage collection manual."
+  ],
+  "correct": 1,
+  "topic": "Dart/Flutter",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 15,
+  "text": "O arquivo `pubspec.yaml` NÃO define:",
+  "alternatives": [
+   "Dependências do projeto (packages).",
+   "Assets (imagens, fontes) incluídos no build.",
+   "Versão e nome do aplicativo.",
+   "Lógica de negócio e controllers da aplicação."
+  ],
+  "correct": 3,
+  "topic": "Dart/Flutter",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 17,
+  "text": "No CSS, o modelo de caixa (`box model`) define que `width` por padrão refere-se a:",
+  "alternatives": [
+   "Content-box (apenas conteúdo, sem padding/border).",
+   "Border-box (conteúdo + padding + border).",
+   "Margin-box (inclui margin).",
+   "Padding-box (conteúdo + padding)."
+  ],
+  "correct": 0,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 18,
+  "text": "Em JavaScript (ES6+), `const` declara:",
+  "alternatives": [
+   "Variável imutável (valor não pode mudar de forma alguma).",
+   "Variável com escopo de bloco, não reatribuível, mas objetos/arrays podem ser mutados.",
+   "Variável com escopo de função, igual a `var`.",
+   "Constante em tempo de compilação."
+  ],
+  "correct": 1,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 19,
+  "text": "`fetch('/api/users').then(r => r.json())` retorna:",
+  "alternatives": [
+   "Uma Promise que resolve com o texto da resposta.",
+   "Uma Promise que resolve com o objeto JSON parseado.",
+   "O JSON diretamente (síncrono).",
+   "Um `XMLHttpRequest` legado."
+  ],
+  "correct": 1,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 20,
+  "text": "Diferença fundamental entre JSON e XML:",
+  "alternatives": [
+   "JSON suporta comentários; XML não.",
+   "JSON é mais verboso e suporta namespaces; XML é leve.",
+   "JSON é subconjunto de JavaScript, menos verboso, sem namespaces nativos; XML é extensível, suporta schemas (XSD), namespaces e tipos complexos.",
+   "XML é nativamente parseado por `JSON.parse()`."
+  ],
+  "correct": 2,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 21,
+  "text": "A 3ª Forma Normal (3FN) exige que:",
+  "alternatives": [
+   "Não haja dependências parciais de chaves candidatas.",
+   "Não haja dependências transitivas de atributos não-chave em relação à chave primária.",
+   "Todos os atributos sejam atômicos (1FN).",
+   "A tabela tenha apenas uma chave candidata."
+  ],
+  "correct": 1,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 22,
+  "text": "Em SQL, qual comando remove uma tabela e seus dados, índices, triggers, constraints e libera o espaço?",
+  "alternatives": [
+   "`DELETE FROM tabela`",
+   "`TRUNCATE TABLE tabela`",
+   "`DROP TABLE tabela`",
+   "`REMOVE TABLE tabela`"
+  ],
+  "correct": 2,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 23,
+  "text": "Para listar departamentos com mais de 5 funcionários, a query correta é:",
+  "alternatives": [
+   "`SELECT dept, COUNT(*) FROM func GROUP BY dept WHERE COUNT(*) > 5`",
+   "`SELECT dept, COUNT(*) FROM func GROUP BY dept HAVING COUNT(*) > 5`",
+   "`SELECT dept FROM func WHERE COUNT(*) > 5 GROUP BY dept`",
+   "`SELECT dept, COUNT(*) FROM func HAVING COUNT(*) > 5`"
+  ],
+  "correct": 1,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 24,
+  "text": "`ACID` em transações significa:",
+  "alternatives": [
+   "Atomicidade, Consistência, Isolamento, Durabilidade.",
+   "Atomicidade, Concorrência, Integridade, Durabilidade.",
+   "Autocommit, Consistência, Isolamento, Deadlock-free.",
+   "Atomicidade, Consistência, Indexação, Durabilidade."
+  ],
+  "correct": 0,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 25,
+  "text": "Um índice `B-Tree` é mais adequado para:",
+  "alternatives": [
+   "Consultas de igualdade exata em colunas de baixa cardinalidade.",
+   "Consultas de intervalo (`BETWEEN`, `>`, `<`) e ordenação.",
+   "Busca full-text em textos longos.",
+   "Colunas com muitos valores nulos (sparse index)."
+  ],
+  "correct": 1,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 26,
+  "text": "Diagrama de Classes UML mostra:",
+  "alternatives": [
+   "Fluxo de mensagens entre objetos ao longo do tempo.",
+   "Estrutura estática: classes, atributos, operações, relacionamentos (associação, herança, dependência).",
+   "Estados de um objeto e transições disparadas por eventos.",
+   "Casos de uso e atores do sistema."
+  ],
+  "correct": 1,
+  "topic": "UML/Modelagem",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 27,
+  "text": "A multiplicidade `1..*` em uma associação significa:",
+  "alternatives": [
+   "Zero ou um.",
+   "Exatamente um.",
+   "Um ou muitos (no mínimo 1).",
+   "Zero ou muitos."
+  ],
+  "correct": 2,
+  "topic": "UML/Modelagem",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 28,
+  "text": "O padrão **Singleton** (GoF) garante:",
+  "alternatives": [
+   "Criação de famílias de objetos relacionados.",
+   "Uma única instância da classe com ponto de acesso global.",
+   "Desacoplamento entre abstração e implementação.",
+   "Notificação automática de dependentes quando estado muda."
+  ],
+  "correct": 1,
+  "topic": "UML/Modelagem",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 29,
+  "text": "Em arquitetura **3-tier (camadas)**, a camada de **aplicação/negócio**:",
+  "alternatives": [
+   "Contém apenas controllers web e DTOs.",
+   "Isola regras de negócio, orquestra casos de uso, não conhece detalhes de UI nem de banco.",
+   "Faz acesso direto a JDBC/SQL.",
+   "Renderiza HTML/JSP para o navegador."
+  ],
+  "correct": 1,
+  "topic": "UML/Modelagem",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 30,
+  "text": "**SOA (Arquitetura Orientada a Serviços)** difere de microsserviços porque:",
+  "alternatives": [
+   "SOA usa ESB/barramento central; microsserviços favorecem comunicação descentralizada (REST/gRPC) e deploy independente.",
+   "SOA é sempre stateless; microsserviços guardam sessão.",
+   "SOA não usa contratos (WSDL); microsserviços usam.",
+   "São sinônimos."
+  ],
+  "correct": 0,
+  "topic": "UML/Modelagem",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 31,
+  "text": "**REST** (Representational State Transfer) NÃO é caracterizado por:",
+  "alternatives": [
+   "Stateless (servidor não guarda estado de sessão do cliente).",
+   "Uso de verbos HTTP (GET, POST, PUT, PATCH, DELETE) semânticos.",
+   "Contrato rígido WSDL/XSD obrigatório.",
+   "Recursos identificados por URIs."
+  ],
+  "correct": 2,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 32,
+  "text": "Em **Domain-Driven Design (DDD)**, um **Agregado** (Aggregate) é:",
+  "alternatives": [
+   "Qualquer entidade com ID único.",
+   "Conjunto de entidades/value objects tratados como unidade transacional, com raiz (Aggregate Root) controlando consistência.",
+   "Um repositório que persiste entidades.",
+   "Um serviço de domínio sem estado."
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 33,
+  "text": "O padrão **Repository** (DDD) serve para:",
+  "alternatives": [
+   "Encapsular lógica de negócio complexa.",
+   "Abstrair persistência, fornecendo interface de coleção em memória para agregados.",
+   "Validar entrada do usuário na camada de apresentação.",
+   "Gerenciar transações distribuídas (Saga)."
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 34,
+  "text": "**CQRS (Command Query Responsibility Segregation)** separa:",
+  "alternatives": [
+   "Camada de apresentação da camada de dados.",
+   "Operações de escrita (Commands) de leitura (Queries), podendo usar modelos/DBs diferentes.",
+   "Microsserviços por bounded context.",
+   "Testes de unidade de testes de integração."
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 35,
+  "text": "**Circuit Breaker** (padrão de resiliência) previne:",
+  "alternatives": [
+   "Vazamento de memória em cache.",
+   "Cascata de falhas ao chamar serviço instável, \"abrindo\" o circuito após limite de erros.",
+   "Duplicidade de requisições (idempotência).",
+   "Injeção de SQL em queries."
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 36,
+  "text": "No **Scrum**, o **Product Owner** é responsável por:",
+  "alternatives": [
+   "Facilitar Daily Scrum e remover impedimentos.",
+   "Definir e priorizar o Product Backlog, maximizar valor do produto.",
+   "Estimar esforço das User Stories em story points.",
+   "Codificar as funcionalidades do Sprint Backlog."
+  ],
+  "correct": 1,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 37,
+  "text": "Eventos formais do Scrum (conforme Guia Oficial) são:",
+  "alternatives": [
+   "Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective, Sprint.",
+   "Sprint Planning, Daily Standup, Sprint Demo, Retrospective, Grooming.",
+   "Kickoff, Daily, Review, Retro, Release Planning.",
+   "Planning, Daily, Review, Retro, Refinement (não é evento oficial)."
+  ],
+  "correct": 0,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 38,
+  "text": "**Extreme Programming (XP)** enfatiza práticas técnicas como:",
+  "alternatives": [
+   "Pair Programming, TDD, Integração Contínua, Design Simples, Refactoring.",
+   "Sprint de 4 semanas, Product Backlog, Definition of Done.",
+   "Kanban board, WIP limits, Lead time, Cycle time.",
+   "User Stories, Story Points, Velocity, Burndown."
+  ],
+  "correct": 0,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 39,
+  "text": "**Definition of Done (DoD)** no Scrum:",
+  "alternatives": [
+   "Critérios de aceitação de uma User Story específica.",
+   "Checklist compartilhado que define quando *qualquer* item do backlog está \"pronto\" (testado, documentado, deployável).",
+   "Contrato entre PO e stakeholders.",
+   "Métrica de velocidade do time."
+  ],
+  "correct": 1,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 40,
+  "text": "Em **Kanban**, o limite de WIP (Work In Progress) serve para:",
+  "alternatives": [
+   "Aumentar a velocidade do time forçando mais tarefas paralelas.",
+   "Reduzir multitarefa, expor gargalos e melhorar fluxo (flow).",
+   "Substituir o Sprint Planning.",
+   "Calcular story points."
+  ],
+  "correct": 1,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 41,
+  "text": "**Teste de Unidade** (Unit Test) caracteriza-se por:",
+  "alternatives": [
+   "Testar o sistema integrado em ambiente de homologação.",
+   "Testar um módulo/classe/função isolado, rápido, determinístico, sem dependências externas (mocks/stubs).",
+   "Validar requisitos de negócio com usuário real.",
+   "Testar performance e carga."
+  ],
+  "correct": 1,
+  "topic": "Testes de Software",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 42,
+  "text": "**Teste de Integração** verifica:",
+  "alternatives": [
+   "Interface do usuário (UI) no navegador.",
+   "Interação entre módulos/serviços/banco de dados, interfaces e contratos.",
+   "Código individual de uma função pura.",
+   "Segurança e penetração."
+  ],
+  "correct": 1,
+  "topic": "Testes de Software",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 43,
+  "text": "**Teste de Regressão** visa:",
+  "alternatives": [
+   "Descobrir novos bugs em funcionalidade nova.",
+   "Garantir que mudanças não quebraram funcionalidades existentes.",
+   "Testar apenas o caminho feliz (happy path).",
+   "Medir tempo de resposta sob carga."
+  ],
+  "correct": 1,
+  "topic": "Testes de Software",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 44,
+  "text": "**TDD (Test-Driven Development)** segue o ciclo:",
+  "alternatives": [
+   "Code → Test → Refactor.",
+   "Red (teste falha) → Green (passa) → Refactor.",
+   "Design → Code → Test → Deploy.",
+   "Refactor → Test → Code."
+  ],
+  "correct": 1,
+  "topic": "Testes de Software",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 45,
+  "text": "**Mock** vs **Stub** em testes:",
+  "alternatives": [
+   "Mock verifica comportamento (chamadas, ordem); Stub fornece respostas pré-definidas.",
+   "São sinônimos.",
+   "Mock é para integração; Stub para unidade.",
+   "Stub verifica comportamento; Mock fornece dados."
+  ],
+  "correct": 0,
+  "topic": "Testes de Software",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 46,
+  "text": "Comando para criar e mudar para novo branch `feature/login`:",
+  "alternatives": [
+   "`git branch feature/login`",
+   "`git checkout -b feature/login`",
+   "`git switch feature/login`",
+   "`git new branch feature/login`"
+  ],
+  "correct": 1,
+  "topic": "Git/Versionamento",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 47,
+  "text": "`git rebase` vs `git merge`:",
+  "alternatives": [
+   "Rebase reescreve histórico linearizando; merge preserva histórico com commit de merge.",
+   "São idênticos.",
+   "Merge reescreve histórico; rebase cria commit extra.",
+   "Rebase só funciona em branches remotos."
+  ],
+  "correct": 0,
+  "topic": "Git/Versionamento",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 48,
+  "text": "Para desfazer o último commit mantendo alterações no working directory (unstaged):",
+  "alternatives": [
+   "`git reset --hard HEAD~1`",
+   "`git reset --soft HEAD~1`",
+   "`git reset --mixed HEAD~1` (ou `git reset HEAD~1`)",
+   "`git revert HEAD`"
+  ],
+  "correct": 2,
+  "topic": "Git/Versionamento",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 49,
+  "text": "`git stash` serve para:",
+  "alternatives": [
+   "Apagar branch local.",
+   "Guardar alterações temporariamente (stack) para limpar working directory.",
+   "Enviar commits para remoto.",
+   "Renomear branch."
+  ],
+  "correct": 1,
+  "topic": "Git/Versionamento",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q",
+  "label": "Específicos S1",
+  "number": 50,
+  "text": "Estratégia de branching **GitFlow** define branches principais:",
+  "alternatives": [
+   "`main` e `develop`; features saem de `develop`, releases/hotfixes de `main`/`develop`.",
+   "Apenas `main` (trunk-based).",
+   "`master`, `staging`, `prod`.",
+   "`feature/*`, `bugfix/*`, `release/*` apenas."
+  ],
+  "correct": 0,
+  "topic": "Git/Versionamento",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 1,
+  "text": "Em criptografia assimétrica (RSA), o tamanho de chave recomendado mínimo atual (2024+) para segurança adequada é:",
+  "alternatives": [
+   "512 bits",
+   "1024 bits",
+   "2048 bits",
+   "4096 bits"
+  ],
+  "correct": 2,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 2,
+  "text": "O algoritmo **SHA-256** produz hash de quantos bits?",
+  "alternatives": [
+   "128",
+   "160",
+   "256",
+   "512"
+  ],
+  "correct": 2,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 3,
+  "text": "**HMAC (Hash-based Message Authentication Code)** combina:",
+  "alternatives": [
+   "Duas chaves públicas.",
+   "Uma função de hash + chave secreta compartilhada.",
+   "Certificado digital + timestamp.",
+   "Criptografia simétrica + assinatura digital."
+  ],
+  "correct": 1,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 4,
+  "text": "Na ICP-Brasil, a **Autoridade Certificadora Raiz (AC Raiz)**:",
+  "alternatives": [
+   "Emite certificados diretamente para usuários finais.",
+   "Credencia Autoridades de Registro (AR) e ACs de nível inferior; seu certificado é autoassinado.",
+   "Armazena chaves privadas dos titulares em HSM compartilhado.",
+   "É operada exclusivamente por bancos."
+  ],
+  "correct": 1,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 5,
+  "text": "**OCSP (Online Certificate Status Protocol)** serve para:",
+  "alternatives": [
+   "Gerar pares de chaves RSA.",
+   "Consultar status de revogação de certificado em tempo real (alternativa ao CRL).",
+   "Criptografar e-mails (S/MIME).",
+   "Assinar código executável (Authenticode)."
+  ],
+  "correct": 1,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 6,
+  "text": "**CRL (Certificate Revocation List)** é:",
+  "alternatives": [
+   "Lista de certificados válidos assinada pela AC.",
+   "Lista de certificados revogados antes do vencimento, assinada pela AC, publicada periodicamente.",
+   "Log de auditoria de emissão de certificados.",
+   "Protocolo de renovação automática."
+  ],
+  "correct": 1,
+  "topic": "Criptografia",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 7,
+  "text": "Em Java, `Stream API` (java.util.stream) permite processamento **funcional** de coleções. Qual operação é **terminal** (dispara execução)?",
+  "alternatives": [
+   "`filter()`",
+   "`map()`",
+   "`collect(Collectors.toList())`",
+   "`sorted()`"
+  ],
+  "correct": 2,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 8,
+  "text": "`Optional<T>` foi introduzido no Java 8 para:",
+  "alternatives": [
+   "Substituir `null` em todos os casos.",
+   "Evitar `NullPointerException` forçando tratamento explícito de ausência de valor.",
+   "Criar objetos imutáveis.",
+   "Paralelizar streams automaticamente."
+  ],
+  "correct": 1,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 9,
+  "text": "No Spring, **Injeção de Dependência por Construtor** é recomendada porque:",
+  "alternatives": [
+   "Permite campos `final`, facilita testes (mock), torna dependências explícitas.",
+   "É mais rápida que field injection.",
+   "Funciona sem `@Autowired`.",
+   "É a única que suporta `@Qualifier`."
+  ],
+  "correct": 0,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 10,
+  "text": "`@Transactional` no Spring gerencia transações via:",
+  "alternatives": [
+   "AOP (proxy) – abre/commita/rollbacks em torno do método anotado.",
+   "JDBC direto no método.",
+   "ThreadLocal manual.",
+   "AspectJ compile-time weaving obrigatório."
+  ],
+  "correct": 0,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 11,
+  "text": "**Spring Boot Actuator** expõe endpoints de monitoramento. Qual endpoint mostra métricas de saúde (health)?",
+  "alternatives": [
+   "`/actuator/health`",
+   "`/actuator/metrics`",
+   "`/actuator/info`",
+   "`/actuator/env`"
+  ],
+  "correct": 0,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 12,
+  "text": "**Spring Data JPA – `@Query`** com JPQL nativo (`nativeQuery = true`) usa:",
+  "alternatives": [
+   "SQL nativo do banco (ex.: PostgreSQL, MySQL).",
+   "JPQL (Java Persistence Query Language).",
+   "Criteria API.",
+   "HQL (Hibernate Query Language)."
+  ],
+  "correct": 0,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 13,
+  "text": "Em **Spring Security**, o filtro `FilterSecurityInterceptor` (último da cadeia) decide:",
+  "alternatives": [
+   "Autenticação (quem é o usuário).",
+   "Autorização (acesso a URL/método baseado em `AccessDecisionManager`).",
+   "Logout e invalidação de sessão.",
+   "Login via OAuth2."
+  ],
+  "correct": 1,
+  "topic": "Java/Spring",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 14,
+  "text": "Em Dart, `const` vs `final`:",
+  "alternatives": [
+   "`const` = valor conhecido em tempo de compilação; `final` = single-assignment em tempo de execução.",
+   "São sinônimos.",
+   "`final` é só para variáveis estáticas; `const` para instância.",
+   "`const` permite mutação posterior."
+  ],
+  "correct": 0,
+  "topic": "Dart/Flutter",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 15,
+  "text": "**Flutter – `ListView.builder`** é preferível a `ListView(children: [...])` quando:",
+  "alternatives": [
+   "Lista tem poucos itens (< 10).",
+   "Lista é grande/infinita (constrói itens sob demanda – lazy).",
+   "Itens têm altura fixa.",
+   "Precisa de separadores customizados."
+  ],
+  "correct": 1,
+  "topic": "Dart/Flutter",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 16,
+  "text": "**Provider / Riverpod / Bloc** são soluções de:",
+  "alternatives": [
+   "Roteamento (navigation).",
+   "Gerenciamento de estado (state management).",
+   "Persistência local (SQLite/SharedPreferences).",
+   "Testes de integração."
+  ],
+  "correct": 1,
+  "topic": "Dart/Flutter",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 17,
+  "text": "`Future.wait([future1, future2])` retorna:",
+  "alternatives": [
+   "O primeiro future que completar.",
+   "Uma `Future<List>` que completa quando **todos** completarem (ou erro no primeiro).",
+   "Uma `Stream` de resultados.",
+   "`void`."
+  ],
+  "correct": 1,
+  "topic": "Dart/Flutter",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 18,
+  "text": "**Flutter Web** compila Dart para:",
+  "alternatives": [
+   "WebAssembly (WASM) apenas.",
+   "JavaScript (via `dart2js`) e/ou WASM (experimental/estável).",
+   "TypeScript transpilado.",
+   "HTML/CSS direto sem JS."
+  ],
+  "correct": 1,
+  "topic": "Dart/Flutter",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 19,
+  "text": "`pubspec.yaml` – `dependencies:` vs `dev_dependencies:`:",
+  "alternatives": [
+   "`dev_dependencies` vão no build de release (APK/IPA).",
+   "`dev_dependencies` são só para desenvolvimento/teste (ex.: `flutter_test`, `mockito`, `build_runner`).",
+   "Não há diferença.",
+   "`dependencies` não podem ter version constraints."
+  ],
+  "correct": 1,
+  "topic": "Dart/Flutter",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 20,
+  "text": "**HTML5** – Atributo `defer` em `<script src=\"...\">`:",
+  "alternatives": [
+   "Executa script imediatamente (bloqueia parsing).",
+   "Baixa assincronamente, executa **depois** do parsing HTML, **antes** de `DOMContentLoaded`, na ordem.",
+   "Baixa e executa assincronamente, fora de ordem.",
+   "Impede execução do script."
+  ],
+  "correct": 1,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 21,
+  "text": "**CSS** – `position: sticky` faz o elemento:",
+  "alternatives": [
+   "Fixar no viewport sempre.",
+   "Comportar-se como `relative` até ultrapassar limite do container, então vira `fixed` relativo ao ancestor scrollável.",
+   "Sai do fluxo normal completamente.",
+   "Sobrepor tudo (`z-index` infinito)."
+  ],
+  "correct": 1,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 22,
+  "text": "**JavaScript** – *Event Loop*: ordem de execução de `setTimeout(fn, 0)`, `Promise.resolve().then(fn)`, código síncrono:",
+  "alternatives": [
+   "Síncrono → `setTimeout` → `Promise`",
+   "Síncrono → `Promise` (microtask) → `setTimeout` (macrotask)",
+   "`Promise` → Síncrono → `setTimeout`",
+   "`setTimeout` → `Promise` → Síncrono"
+  ],
+  "correct": 1,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 23,
+  "text": "**AJAX / Fetch** – Requisição `POST` com JSON: ```js fetch('/api', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({x:1}) }) ``` O header `Content-Type` **indica ao servidor** o formato do body. Se omitido, o padrão do `fetch` para `body` string é:",
+  "alternatives": [
+   "`application/json`",
+   "`text/plain;charset=UTF-8`",
+   "`application/x-www-form-urlencoded`",
+   "`multipart/form-data`"
+  ],
+  "correct": 1,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 24,
+  "text": "**JSON** – Valor **inválido** em JSON:",
+  "alternatives": [
+   "`null`",
+   "`true`",
+   "`undefined`",
+   "`\"string\"`"
+  ],
+  "correct": 2,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 25,
+  "text": "**XML** – **Namespace** serve para:",
+  "alternatives": [
+   "Definir encoding (UTF-8).",
+   "Evitar colisão de nomes de elementos/atributos de vocabulários diferentes (URI único).",
+   "Validar contra DTD obrigatoriamente.",
+   "Comprimir o documento."
+  ],
+  "correct": 1,
+  "topic": "Web (HTML/CSS/JS)",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 26,
+  "text": "**Isolamento `READ COMMITTED`** (padrão PostgreSQL, SQL Server) previne:",
+  "alternatives": [
+   "*Dirty reads* (ler dado não commitado). Permite *non-repeatable reads* e *phantoms*.",
+   "*Dirty reads*, *non-repeatable reads* e *phantoms*.",
+   "Apenas *phantoms*.",
+   "Nenhuma anomalia (serializável)."
+  ],
+  "correct": 0,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 27,
+  "text": "**Índice Parcial (Partial Index)** em PostgreSQL:",
+  "alternatives": [
+   "Índice em todas as linhas, colunas parciais.",
+   "Índice com cláusula `WHERE` (ex.: `CREATE INDEX ON tab (col) WHERE status = 'ATIVO'`).",
+   "Índice apenas em chaves primárias.",
+   "Índice invertido para full-text."
+  ],
+  "correct": 1,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 28,
+  "text": "**`EXPLAIN ANALYZE`** mostra:",
+  "alternatives": [
+   "Plano de execução estimado (custo) sem rodar a query.",
+   "Plano real com tempos, linhas reais, loops, após executar a query.",
+   "Estatísticas de tabela (pg_statistic).",
+   "Locks ativos na tabela."
+  ],
+  "correct": 1,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 29,
+  "text": "**Trigger `BEFORE INSERT`** em PostgreSQL pode:",
+  "alternatives": [
+   "Modificar `NEW` (alterar valores antes de gravar).",
+   "Acessar `OLD` (valores antigos) – inexistente em INSERT.",
+   "Fazer `COMMIT` explícito.",
+   "Retornar `void` obrigatoriamente."
+  ],
+  "correct": 0,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 30,
+  "text": "**Normalização – BCNF (Boyce-Codd)** é mais forte que 3FN quando:",
+  "alternatives": [
+   "Há dependências parciais.",
+   "Há múltiplas chaves candidatas sobrepostas e dependência funcional de atributo não-primo para parte de chave candidata.",
+   "Apenas uma chave candidata existe.",
+   "Não há dependências transitivas."
+  ],
+  "correct": 1,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 31,
+  "text": "**`MERGE` (UPSERT)** – Sintaxe padrão SQL:2003 / PostgreSQL 15+:",
+  "alternatives": [
+   "`INSERT ... ON CONFLICT DO UPDATE`",
+   "`MERGE INTO target USING source ON (...) WHEN MATCHED THEN UPDATE ... WHEN NOT MATCHED THEN INSERT ...`",
+   "`UPSERT INTO ...`",
+   "`REPLACE INTO ...`"
+  ],
+  "correct": 1,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 32,
+  "text": "**Transação distribuída – Two-Phase Commit (2PC)**:",
+  "alternatives": [
+   "Fase 1: *Prepare* (participantes travam recursos e votam yes/no). Fase 2: *Commit* global se todos yes, *Rollback* se algum no.",
+   "Commit imediato em todos os nós sem coordenação.",
+   "Apenas para bancos NoSQL.",
+   "Não garante atomicidade global."
+  ],
+  "correct": 0,
+  "topic": "Banco de Dados/SQL",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 33,
+  "text": "**Diagrama de Sequência** – *Lifeline* (linha de vida) representa:",
+  "alternatives": [
+   "Classe estática.",
+   "Instância/participante ao longo do tempo (eixo vertical = tempo).",
+   "Relacionamento de herança.",
+   "Caso de uso."
+  ],
+  "correct": 1,
+  "topic": "UML/Modelagem",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 34,
+  "text": "**Diagrama de Atividades** – *Fork* (bifurcação) e *Join* (junção) modelam:",
+  "alternatives": [
+   "Decisão (if/else).",
+   "Paralelismo (threads/fluxos concorrentes).",
+   "Início/fim do processo.",
+   "Chamada de operação síncrona."
+  ],
+  "correct": 1,
+  "topic": "UML/Modelagem",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 35,
+  "text": "**Relacionamento de Composição** (losango cheio) em Diagrama de Classes:",
+  "alternatives": [
+   "Parte existe independentemente do todo.",
+   "Parte **não** existe sem o todo (ciclo de vida ligado, multiplicidade 1 ou 0..1 no todo).",
+   "Apenas referência fraca.",
+   "Sinônimo de agregação (losango vazio)."
+  ],
+  "correct": 1,
+  "topic": "UML/Modelagem",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 36,
+  "text": "**Caso de Uso** – Relação `<<include>>`:",
+  "alternatives": [
+   "Caso de uso base **sempre** executa o incluído (obrigatório, parte do fluxo principal).",
+   "Caso de uso base **opcionalmente** executa o estendido (condicional).",
+   "Herança entre atores.",
+   "Generalização de casos de uso."
+  ],
+  "correct": 0,
+  "topic": "UML/Modelagem",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 37,
+  "text": "**Diagrama de Componentes** mostra:",
+  "alternatives": [
+   "Classes e métodos.",
+   "Componentes físicos/lógicos (jars, dlls, serviços, APIs) e dependências entre eles.",
+   "Estados de um objeto.",
+   "Deployment de hardware (nós)."
+  ],
+  "correct": 1,
+  "topic": "UML/Modelagem",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 38,
+  "text": "**Padrão *Factory Method* (GoF)**:",
+  "alternatives": [
+   "Cria objeto sem especificar classe concreta, delegando a subclasse/método fábrica.",
+   "Garante instância única global.",
+   "Adiciona responsabilidades dinamicamente (wrapper).",
+   "Separa construção de representação complexa."
+  ],
+  "correct": 0,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 39,
+  "text": "**Padrão *Strategy*** permite:",
+  "alternatives": [
+   "Trocar algoritmo/comportamento em tempo de execução (ex.: diferentes formas de calcular frete).",
+   "Notificar múltiplos observers.",
+   "Percorrer estrutura de objetos sem expor representação.",
+   "Converter interface de uma classe em outra esperada."
+  ],
+  "correct": 0,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 40,
+  "text": "**SOAP vs REST** – SOAP usa:",
+  "alternatives": [
+   "JSON sobre HTTP/POST apenas.",
+   "XML (Envelope/Body/Header), WSDL, WS-*, geralmente HTTP/POST (também SMTP, JMS).",
+   "Verbos HTTP semânticos (GET/POST/PUT/DELETE) e URIs de recursos.",
+   "GraphQL Schema Definition Language."
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 41,
+  "text": "**gRPC** usa:",
+  "alternatives": [
+   "REST + JSON.",
+   "HTTP/2 + Protocol Buffers (proto3) + code generation multi-linguagem.",
+   "WebSocket + XML.",
+   "MQTT + Avro."
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 42,
+  "text": "**DDD – *Value Object* (Objeto de Valor)**:",
+  "alternatives": [
+   "Tem identidade única (ID) e ciclo de vida próprio.",
+   "**Não tem identidade**; igualdade por **valor** dos atributos; imutável.",
+   "É sinônimo de *Entity*.",
+   "Sempre persistido em tabela separada."
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 43,
+  "text": "**DDD – *Domain Event***:",
+  "alternatives": [
+   "Evento técnico de infraestrutura (log, métrica).",
+   "Fato relevante do domínio ocorrido no passado (ex.: `PedidoPago`), imutável, publicado para outros *bounded contexts*.",
+   "Evento de UI (clique de botão).",
+   "Trigger de banco de dados."
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 44,
+  "text": "**Padrão *Saga* (coreografia/orquestração)** resolve:",
+  "alternatives": [
+   "Consistência forte (ACID) em monólito.",
+   "Transações distribuídas de longa duração sem 2PC, usando eventos/compensação.",
+   "Cache distribuído.",
+   "Rate limiting."
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 45,
+  "text": "**12-Factor App** – *Config* (fator 3) diz que configuração deve vir de:",
+  "alternatives": [
+   "Arquivos `.properties` dentro do JAR/WAR.",
+   "**Variáveis de ambiente** (env vars), separadas por deploy (dev/staging/prod).",
+   "Banco de dados centralizado.",
+   "Constantes no código."
+  ],
+  "correct": 1,
+  "topic": "Arquitetura/Padrões",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 46,
+  "text": "**Scrum – *Sprint Goal* (Objetivo da Sprint)**:",
+  "alternatives": [
+   "Lista de todas as User Stories do Sprint Backlog.",
+   "Objetivo único, mensurável, negociado no Sprint Planning, que dá foco ao time.",
+   "Meta de velocity (story points).",
+   "Data de release do produto."
+  ],
+  "correct": 1,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 47,
+  "text": "**XP – *Continuous Integration* (Integração Contínua)** original (não CI/CD moderno) significa:",
+  "alternatives": [
+   "Deploy automático para produção a cada commit.",
+   "Integrar código na **mainline** (trunk) **múltiplas vezes ao dia**, com build e testes automatizados rodando antes do commit/push.",
+   "Merge de feature branches semanal.",
+   "Code review obrigatório em PR."
+  ],
+  "correct": 1,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 48,
+  "text": "**Scrum – *Product Backlog Refinement* (Grooming)**:",
+  "alternatives": [
+   "Evento oficial obrigatório do Scrum Guide.",
+   "Atividade contínua (não evento formal) onde PO e Time detalham, estimam, ordenam itens do backlog.",
+   "Reunião de retroativa.",
+   "Planejamento de release."
+  ],
+  "correct": 1,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 49,
+  "text": "**Kanban – *Lead Time* vs *Cycle Time***:",
+  "alternatives": [
+   "Lead Time = tempo do commit ao deploy; Cycle Time = tempo do \"In Progress\" a \"Done\".",
+   "Lead Time = tempo da solicitação do cliente à entrega; Cycle Time = tempo de trabalho ativo (In Progress → Done).",
+   "São iguais.",
+   "Lead Time mede bugs; Cycle Time mede features."
+  ],
+  "correct": 1,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-especificos-50q-v2",
+  "label": "Específicos S2",
+  "number": 50,
+  "text": "**Métricas Ágeis – *Velocity* (Velocidade)**:",
+  "alternatives": [
+   "Mede produtividade individual.",
+   "Média de story points **concluídos (Done)** nas últimas sprints; usada para **previsibilidade** (forecast), não para cobrança.",
+   "Número de commits por sprint.",
+   "Tempo médio de code review."
+  ],
+  "correct": 1,
+  "topic": "Metodologias Ágeis",
+  "subjectCode": "ESP"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 1,
+  "text": "Leia o fragmento: > \"A tecnologia, longe de ser neutra, carrega os valores de quem a cria. Quando algoritmos decidem crédito, vagas de emprego ou liberdade, a transparência deixa de ser opcional e vira direito fundamental.\" A ideia central do texto é:",
+  "alternatives": [
+   "A tecnologia é intrinsecamente má e deve ser evitada.",
+   "Algoritmos são neutros e não refletem valores humanos.",
+   "A opacidade algorítmica em decisões sensíveis exige transparência como direito.",
+   "Crédito e emprego não devem ser decididos por máquinas."
+  ],
+  "correct": 2,
+  "topic": "Interpretação",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 2,
+  "text": "Em \"Os desenvolvedores **criaram** soluções inovadoras\", a palavra em destaque é classificada como:",
+  "alternatives": [
+   "Substantivo abstrato.",
+   "Verbo transitivo direto, pretérito perfeito do indicativo.",
+   "Adjetivo pátrio.",
+   "Pronome oblíquo átono."
+  ],
+  "correct": 1,
+  "topic": "Morfologia",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 3,
+  "text": "Em \"**Choveu** muito ontem\", o sujeito é:",
+  "alternatives": [
+   "Simples.",
+   "Composto.",
+   "Inexistente (oração sem sujeito / verbo impessoal).",
+   "Oculto (desinencial)."
+  ],
+  "correct": 2,
+  "topic": "Sintaxe – Sujeito",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 4,
+  "text": "Assinale a frase com concordância CORRETA:",
+  "alternatives": [
+   "\"Fazem **dois anos** que não o vejo.\"",
+   "\"Faz **dois anos** que não o vejo.\"",
+   "\"Houveram muitos candidatos na prova.\"",
+   "\"Houve muitos candidatos na prova.\""
+  ],
+  "correct": 3,
+  "topic": "Concordância Verbal",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 5,
+  "text": "O uso da crase está CORRETO em:",
+  "alternatives": [
+   "\"Ela foi **à** reunião **à** tarde.\"",
+   "\"Ela foi **a** reunião **à** tarde.\"",
+   "\"Ela foi **à** reunião **a** tarde.\"",
+   "\"Ela foi **a** reunião **a** tarde.\""
+  ],
+  "correct": 0,
+  "topic": "Crase",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 6,
+  "text": "A vírgula é OBRIGATÓRIA em:",
+  "alternatives": [
+   "\"O analista, que chegou cedo, começou a trabalhar.\"",
+   "\"O analista que chegou cedo começou a trabalhar.\"",
+   "\"O analista, começou a trabalhar.\"",
+   "\"O analista começou, a trabalhar.\""
+  ],
+  "correct": 0,
+  "topic": "Pontuação",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 7,
+  "text": "Segundo a Nova Ortografia, NÃO tem acento diferencial:",
+  "alternatives": [
+   "**Pôr** (verbo) vs **por** (preposição).",
+   "**Só** (advérbio) vs **so** (verbo soletrar).",
+   "**Mês** (substantivo) vs **mes** (não existe).",
+   "**Têm** (verbo ter) vs **tem** (verbo ter 3ª pes. sing.)."
+  ],
+  "correct": 2,
+  "topic": "Acentuação Gráfica",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 8,
+  "text": "\"O sistema falhou. **Logo**, a equipe foi acionada.\" A conectiva \"logo\" estabelece relação de:",
+  "alternatives": [
+   "Adição.",
+   "Conclusão / consequência.",
+   "Alternância.",
+   "Contraste."
+  ],
+  "correct": 1,
+  "topic": "Interpretação – Inferência",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 9,
+  "text": "\"O gerente **assistiu** à apresentação do projeto.\" A regência está correta porque \"assistir\" no sentido de \"presenciar\" é:",
+  "alternatives": [
+   "Transitivo direto.",
+   "Transitivo indireto (assistir **a** algo).",
+   "Intransitivo.",
+   "Transitivo direto e indireto."
+  ],
+  "correct": 1,
+  "topic": "Regência Verbal",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 10,
+  "text": "Em linguagem formal, a próclise é obrigatória em:",
+  "alternatives": [
+   "\"Ele **me** disse a verdade.\"",
+   "\"**Me** disse a verdade ele.\"",
+   "\"**Não me** diga isso.\"",
+   "\"Diga-**me** a verdade.\""
+  ],
+  "correct": 2,
+  "topic": "Colocação Pronominal",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 11,
+  "text": "A frase na voz passiva analítica correspondente a \"A banca **corrigiu** as provas\" é:",
+  "alternatives": [
+   "\"As provas **foram corrigidas** pela banca.\"",
+   "\"As provas **corrigiram-se** pela banca.\"",
+   "\"As provas **são corrigidas** pela banca.\"",
+   "\"As provas **estão corrigidas** pela banca.\""
+  ],
+  "correct": 0,
+  "topic": "Vozes Verbais",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 12,
+  "text": "\"Estudei muito, **pois** queria passar.\" A oração introduzida por \"pois\" é:",
+  "alternatives": [
+   "Coordenada aditiva.",
+   "Coordenada explicativa.",
+   "Subordinada adverbial causal.",
+   "Subordinada substantiva subjetiva."
+  ],
+  "correct": 1,
+  "topic": "Período Composto",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 13,
+  "text": "\"O relatório foi entregue. **Este** continha erros.\" O recurso de coesão empregado é:",
+  "alternatives": [
+   "Elipse.",
+   "Substituição pronominal (demonstrativo).",
+   "Repetição lexical.",
+   "Conjunção."
+  ],
+  "correct": 1,
+  "topic": "Coesão",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 14,
+  "text": "$\\frac{3}{4} + \\frac{5}{6} - \\frac{1}{3} =$",
+  "alternatives": [
+   "$\\frac{19}{12}$",
+   "$\\frac{17}{12}$",
+   "$\\frac{5}{4}$",
+   "$\\frac{11}{12}$"
+  ],
+  "correct": 0,
+  "topic": "Operações / Frações",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 15,
+  "text": "O MMC de 12, 18 e 30 é:",
+  "alternatives": [
+   "180",
+   "90",
+   "60",
+   "360"
+  ],
+  "correct": 0,
+  "topic": "MMC / MDC",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 16,
+  "text": "Se 5 desenvolvedores codificam 200 linhas em 4 horas, quantas linhas 8 desenvolvedores codificam em 6 horas (mesma produtividade)?",
+  "alternatives": [
+   "480",
+   "400",
+   "360",
+   "520"
+  ],
+  "correct": 0,
+  "topic": "Regra de Três",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 17,
+  "text": "Um servidor recebe R$ 6.205,40. Teve reajuste de 4,5%. Novo salário:",
+  "alternatives": [
+   "R$ 6.484,64",
+   "R$ 6.485,64",
+   "R$ 6.483,64",
+   "R$ 6.486,64"
+  ],
+  "correct": 0,
+  "topic": "Porcentagem",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 18,
+  "text": "Soma das raízes de $2x^2 - 5x - 3 = 0$:",
+  "alternatives": [
+   "2,5",
+   "-2,5",
+   "1,5",
+   "-1,5"
+  ],
+  "correct": 0,
+  "topic": "Equação 2º grau",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 19,
+  "text": "$\\det \\begin{pmatrix} 3 & 2 \\\\ 1 & 4 \\end{pmatrix} =$",
+  "alternatives": [
+   "10",
+   "14",
+   "12",
+   "8"
+  ],
+  "correct": 0,
+  "topic": "Matrizes / Determinante",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 20,
+  "text": "Solução de $\\begin{cases} 2x + y = 7 \\\\ x - y = 2 \\end{cases}$:",
+  "alternatives": [
+   "(3, 1)",
+   "(2, 3)",
+   "(4, -1)",
+   "(1, 5)"
+  ],
+  "correct": 0,
+  "topic": "Sistema Linear",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 21,
+  "text": "Área de um trapézio com bases 8 cm e 12 cm, altura 5 cm:",
+  "alternatives": [
+   "40 cm²",
+   "50 cm²",
+   "60 cm²",
+   "100 cm²"
+  ],
+  "correct": 1,
+  "topic": "Geometria",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 22,
+  "text": "5º termo de uma P.A. com $a_1 = 3$ e $r = 4$:",
+  "alternatives": [
+   "19",
+   "23",
+   "15",
+   "27"
+  ],
+  "correct": 0,
+  "topic": "Progressão Aritmética",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 23,
+  "text": "Lança-se um dado honesto. Probabilidade de sair número par **ou** múltiplo de 3:",
+  "alternatives": [
+   "$\\frac{1}{2}$",
+   "$\\frac{2}{3}$",
+   "$\\frac{1}{3}$",
+   "$\\frac{5}{6}$"
+  ],
+  "correct": 1,
+  "topic": "Probabilidade",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 24,
+  "text": "De quantas formas 5 pessoas sentam em 5 cadeiras distintas?",
+  "alternatives": [
+   "25",
+   "120",
+   "60",
+   "20"
+  ],
+  "correct": 1,
+  "topic": "Análise Combinatória",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 25,
+  "text": "Se $A = \\{1,2,3,4\\}$, $B = \\{3,4,5,6\\}$, então $A \\cup B =$",
+  "alternatives": [
+   "$\\{1,2,3,4,5,6\\}$",
+   "$\\{3,4\\}$",
+   "$\\{1,2,5,6\\}$",
+   "$\\{1,2,3,4\\}$"
+  ],
+  "correct": 0,
+  "topic": "Conjuntos",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 26,
+  "text": "\"Se chover, levo guarda-chuva. Não levei guarda-chuva. Logo:\"",
+  "alternatives": [
+   "Choveu.",
+   "Não choveu. (Modus Tollens)",
+   "Pode ter chovido.",
+   "Nada se conclui."
+  ],
+  "correct": 1,
+  "topic": "Raciocínio Lógico",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 27,
+  "text": "Tecla de atalho para **Travar o computador** (Win 10/11):",
+  "alternatives": [
+   "`Win + L`",
+   "`Ctrl + Alt + Del`",
+   "`Win + D`",
+   "`Alt + F4`"
+  ],
+  "correct": 0,
+  "topic": "Windows",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 28,
+  "text": "Para aplicar **Estilo de Título 1** rapidamente:",
+  "alternatives": [
+   "`Ctrl + Alt + 1`",
+   "`Ctrl + Shift + 1`",
+   "`Alt + 1`",
+   "`Ctrl + 1`"
+  ],
+  "correct": 0,
+  "topic": "Word",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 29,
+  "text": "Função que conta células **não vazias** em A1:A10:",
+  "alternatives": [
+   "`=CONT.VALORES(A1:A10)`",
+   "`=CONTAR(A1:A10)`",
+   "`=CONT.SE(A1:A10;\"<>\")`",
+   "A e C"
+  ],
+  "correct": 3,
+  "topic": "Excel",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 30,
+  "text": "Referência **absoluta** de coluna e linha:",
+  "alternatives": [
+   "`A$1`",
+   "`$A1`",
+   "`$A$1`",
+   "`A1`"
+  ],
+  "correct": 2,
+  "topic": "Excel",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 32,
+  "text": "Diferença fundamental:",
+  "alternatives": [
+   "Internet é pública/global; Intranet é rede privada da organização.",
+   "Intranet usa TCP/IP; Internet usa protocolo proprietário.",
+   "Internet exige firewall; Intranet não.",
+   "São sinônimos."
+  ],
+  "correct": 0,
+  "topic": "Internet/Intranet",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 33,
+  "text": "**Phishing** é:",
+  "alternatives": [
+   "Ataque de negação de serviço (DDoS).",
+   "Engenharia social para obter credenciais/dados via e-mail/falso site.",
+   "Vírus que criptografa arquivos (ransomware).",
+   "Varredura de portas abertas."
+  ],
+  "correct": 1,
+  "topic": "Segurança da Informação",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 34,
+  "text": "A assinatura digital garante:",
+  "alternatives": [
+   "Confidencialidade (somente destinatário lê).",
+   "Autenticidade, integridade e não-repúdio.",
+   "Disponibilidade do sistema.",
+   "Compressão do arquivo."
+  ],
+  "correct": 1,
+  "topic": "Certificação/Assinatura Digital",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 35,
+  "text": "Caminho **absoluto** no Windows:",
+  "alternatives": [
+   "`..\\Documentos\\relatorio.docx`",
+   "`C:\\Users\\Joao\\Documentos\\relatorio.docx`",
+   "`Documentos\\relatorio.docx`",
+   "`~\\relatorio.docx`"
+  ],
+  "correct": 1,
+  "topic": "Gerenciamento de Arquivos",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 36,
+  "text": "Formato **lossless** (sem perdas) para imagens:",
+  "alternatives": [
+   "JPEG",
+   "PNG",
+   "MP3",
+   "MP4"
+  ],
+  "correct": 1,
+  "topic": "Compactação",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 37,
+  "text": "Modelo onde o provedor gerencia infraestrutura (servidores, rede, storage) e o cliente gerencia SO, apps, dados:",
+  "alternatives": [
+   "SaaS",
+   "PaaS",
+   "IaaS",
+   "FaaS"
+  ],
+  "correct": 2,
+  "topic": "Nuvem/Cloud",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 38,
+  "text": "Tecnologia assistiva para deficientes visuais lerem tela:",
+  "alternatives": [
+   "Leitor de tela (ex.: NVDA, JAWS, VoiceOver).",
+   "Teclado virtual.",
+   "Amplificador de som.",
+   "Mouse adaptado."
+  ],
+  "correct": 0,
+  "topic": "Acessibilidade",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 39,
+  "text": "Capital do Paraná:",
+  "alternatives": [
+   "Londrina",
+   "Maringá",
+   "Curitiba",
+   "Foz do Iguaçu"
+  ],
+  "correct": 2,
+  "topic": "Geografia PR",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 40,
+  "text": "Ponta Grossa teve origem ligada a:",
+  "alternatives": [
+   "Ciclo do ouro.",
+   "Tropeirismo e campos de cima da serra (vias de comércio gado/ervamate).",
+   "Imigração alemã no litoral.",
+   "Cafeicultura no norte pioneiro."
+  ],
+  "correct": 1,
+  "topic": "História PG",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 41,
+  "text": "Principal destaque econômico atual de Ponta Grossa:",
+  "alternatives": [
+   "Polo siderúrgico, logística (ferrovia/rodovia), agroindústria, tecnologia (Tecnoparque).",
+   "Turismo de praias.",
+   "Extração de petróleo offshore.",
+   "Mineração de diamantes."
+  ],
+  "correct": 0,
+  "topic": "Economia PG",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 42,
+  "text": "Compete **privativamente** ao Município (art. 30 CF/88 replicado na LOM):",
+  "alternatives": [
+   "Legislar sobre direito civil.",
+   "Instalar e organizar serviços públicos de interesse local (transporte, iluminação, limpeza).",
+   "Criar moeda.",
+   "Declarar guerra."
+  ],
+  "correct": 1,
+  "topic": "Lei Orgânica PG – Competência",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 43,
+  "text": "A Lei Orçamentária Anual (LOA) em Ponta Grossa:",
+  "alternatives": [
+   "É elaborada pelo Judiciário.",
+   "Estima receitas e fixa despesas para o exercício financeiro seguinte, votada pela Câmara.",
+   "Não precisa de audiência pública.",
+   "Vigor por 4 anos (igual PPA)."
+  ],
+  "correct": 1,
+  "topic": "Lei Orgânica PG – Orçamento",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 44,
+  "text": "O **Novo PAC (Programa de Aceleração do Crescimento)** relançado em 2023/2024 prioriza eixos como:",
+  "alternatives": [
+   "Apenas privatizações.",
+   "Transição ecológica, infraestrutura social, urbana, logística, inclusão digital.",
+   "Redução de investimentos públicos.",
+   "Foco exclusivo em grandes centros (SP/RJ)."
+  ],
+  "correct": 1,
+  "topic": "Atualidades Brasil – 2024/2025",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 45,
+  "text": "Bioma predominante no Paraná (área original):",
+  "alternatives": [
+   "Amazônia",
+   "Cerrado",
+   "Mata Atlântica",
+   "Caatinga"
+  ],
+  "correct": 2,
+  "topic": "Meio Ambiente",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 46,
+  "text": "O voto no Brasil é:",
+  "alternatives": [
+   "Facultativo para todos.",
+   "Obrigatório para maiores de 18 anos, facultativo para 16-17, 70+ e analfabetos.",
+   "Obrigatório apenas para homens.",
+   "Facultativo para maiores de 70, obrigatório para demais."
+  ],
+  "correct": 1,
+  "topic": "Política",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 47,
+  "text": "**SUS** – Princípio da **Universalidade** significa:",
+  "alternatives": [
+   "Atendimento apenas para contribuintes da Previdência.",
+   "Acesso garantido a **todos** (brasileiros e estrangeiros residentes), sem discriminação.",
+   "Gratuidade apenas para vacinas.",
+   "Gestão exclusivamente federal."
+  ],
+  "correct": 1,
+  "topic": "Saúde Pública",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 48,
+  "text": "**Fundeb** (Fundo de Manutenção e Desenvolvimento da Educação Básica) financia:",
+  "alternatives": [
+   "Apenas universidades federais.",
+   "Educação básica pública (creche, pré-escola, ensino fundamental e médio).",
+   "Escolas privadas exclusivamente.",
+   "Pós-graduação stricto sensu."
+  ],
+  "correct": 1,
+  "topic": "Educação",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 49,
+  "text": "**LGPD (Lei 13.709/2018)** regula:",
+  "alternatives": [
+   "Comércio exterior.",
+   "Proteção de dados pessoais e privacidade.",
+   "Patentes e propriedade industrial.",
+   "Telecomunicações."
+  ],
+  "correct": 1,
+  "topic": "Tecnologia/Inovação",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q",
+  "label": "Outras S1",
+  "number": 50,
+  "text": "População aproximada de Ponta Grossa (2024):",
+  "alternatives": [
+   "~200 mil",
+   "~350 mil",
+   "~400 mil",
+   "~450 mil"
+  ],
+  "correct": 2,
+  "topic": "Estatística PG – IBGE Censo 2022/estimativas",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 1,
+  "text": " > \"A segurança da informação baseia-se em três pilares fundamentais: confidencialidade, integridade e disponibilidade — a tríade CID. A confidencialidade garante que apenas usuários autorizados acessem a informação. A integridade assegura que a informação não seja alterada indevidamente. A disponibilidade garante que a informação esteja acessível quando necessária.\" Segundo o texto, a **integridade** refere-se a:",
+  "alternatives": [
+   "Acesso restrito a autorizados.",
+   "Proteção contra alterações não autorizadas.",
+   "Acesso contínuo e tempestivo.",
+   "Criptografia de ponta a ponta."
+  ],
+  "correct": 1,
+  "topic": "Interpretação – Texto técnico",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 2,
+  "text": " Em \"**Des**envolvimento\", o prefixo \"**des-**\" indica:",
+  "alternatives": [
+   "Negação / privação / inversão.",
+   "Intensidade / aumento.",
+   "Repetição / reiteracão.",
+   "Localização / lugar."
+  ],
+  "correct": 0,
+  "topic": "Morfologia – Formação de Palavras",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 3,
+  "text": " \"**Embora** cansado, o analista **terminou** o relatório.\" Classificação das orações:",
+  "alternatives": [
+   "Subordinada adverbial concessiva + principal.",
+   "Coordenada adversativa + principal.",
+   "Subordinada adverbial causal + principal.",
+   "Subordinada substantiva subjetiva + principal."
+  ],
+  "correct": 0,
+  "topic": "Sintaxe – Período Composto",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 4,
+  "text": " Assinale a frase CORRETA:",
+  "alternatives": [
+   "\"Os **dois últimos** relatórios foram aprovados.\"",
+   "\"Os **últimos dois** relatórios foram aprovados.\"",
+   "\"Os **dois último** relatórios foram aprovados.\"",
+   "\"Os **último dois** relatórios foram aprovados.\""
+  ],
+  "correct": 0,
+  "topic": "Concordância Nominal",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 5,
+  "text": " O uso da crase está INCORRETO em:",
+  "alternatives": [
+   "\"Ela chegou **às** 10 horas.\"",
+   "\"Foi **à** pé.\"",
+   "\"Está **à** vontade.\"",
+   "\"Referiu-se **à** norma.\""
+  ],
+  "correct": 1,
+  "topic": "Crase – Locuções",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 6,
+  "text": " Os dois-pontos são adequados em:",
+  "alternatives": [
+   "\"O sistema falhou: a equipe foi acionada.\" (explicação/causa)",
+   "\"O analista, chegou cedo.\" (aposto)",
+   "\"Precisamos de: Java, Python, Go.\" (enumeração após verbo transitivo direto)",
+   "\"Ele disse: 'Vou embora'.\" (discurso direto – correto, mas a melhor opção é A)"
+  ],
+  "correct": 0,
+  "topic": "Pontuação – Dois-pontos",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 7,
+  "text": " Segundo a Nova Ortografia, **NÃO** é acentuada:",
+  "alternatives": [
+   "**Ágil** (paroxítona terminada em -l)",
+   "**Fácil** (paroxítona terminada em -l)",
+   "**Cômico** (paroxítona terminada em -o)",
+   "**Rápido** (paroxítona terminada em -o)"
+  ],
+  "correct": 2,
+  "topic": "Acentuação – Paroxítonas",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 8,
+  "text": " \"O relatório está **em conformidade** **com** a lei.\" A regência de \"conformidade\" exige:",
+  "alternatives": [
+   "`em conformidade com`",
+   "`em conformidade a`",
+   "`em conformidade de`",
+   "`conformidade para`"
+  ],
+  "correct": 0,
+  "topic": "Regência Nominal",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 9,
+  "text": " \"Vende-se casas.\" / \"Alugam-se apartamentos.\" Essa estrutura é classificada como:",
+  "alternatives": [
+   "Passiva analítica.",
+   "Passiva sintética (partícula **se** + verbo 3ª pessoa concordando com sujeito).",
+   "Ativa com sujeito indeterminado.",
+   "Impessoal."
+  ],
+  "correct": 1,
+  "topic": "Vozes Verbais – Passiva Sintética",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 10,
+  "text": " No futuro do pretérito, a mesóclise ocorre em:",
+  "alternatives": [
+   "\"Ele **me** dirá a verdade.\"",
+   "\"Dir-**me**-á a verdade.\"",
+   "\"**Não me** dirá a verdade.\"",
+   "\"Dirá-**me** a verdade.\""
+  ],
+  "correct": 1,
+  "topic": "Colocação – Mesóclise",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 11,
+  "text": " \"Entreguei os documentos **àquela** analista.\" A crase ocorre porque:",
+  "alternatives": [
+   "\"Àquela\" = preposição `a` + pronome demonstrativo `aquela` (feminino).",
+   "\"Àquela\" = artigo `a` + pronome `aquela`.",
+   "Verbos de movimento exigem crase antes de pronome.",
+   "Não há crase; correto: \"a aquela\"."
+  ],
+  "correct": 0,
+  "topic": "Crase – Pronome Demonstrativo",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 12,
+  "text": " \"João programou em Java. Maria **também**.\" O recurso de coesão é:",
+  "alternatives": [
+   "Elipse (omissão de \"programou em Java\").",
+   "Substituição pronominal.",
+   "Repetição lexical.",
+   "Conjunção aditiva."
+  ],
+  "correct": 0,
+  "topic": "Coesão – Substituição Elíptica",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 13,
+  "text": " \"Se o backup não for testado, **não se sabe** se funcionará na hora da crise.\" Infere-se que:",
+  "alternatives": [
+   "Testar backup é desnecessário.",
+   "Backup não testado **pode** falhar na restauração.",
+   "Todo backup falha.",
+   "Crises não acontecem."
+  ],
+  "correct": 1,
+  "topic": "Interpretação – Inferência Implícita",
+  "subjectCode": "PORT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 14,
+  "text": " $\\frac{7}{12} - \\frac{1}{8} + \\frac{5}{6} =$",
+  "alternatives": [
+   "$\\frac{25}{24}$",
+   "$\\frac{23}{24}$",
+   "$\\frac{29}{24}$",
+   "$\\frac{19}{24}$"
+  ],
+  "correct": 0,
+  "topic": "Frações / MMC",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 15,
+  "text": " Três sinais piscam em intervalos de 6s, 8s e 12s. Se piscam juntos agora, daqui a quantos segundos piscarão juntos novamente?",
+  "alternatives": [
+   "24",
+   "48",
+   "72",
+   "144"
+  ],
+  "correct": 0,
+  "topic": "MDC / MMC",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 16,
+  "text": " Uma equipe de 6 analistas termina um projeto em 15 dias. Quantos analistas a mais são necessários para terminar em 10 dias?",
+  "alternatives": [
+   "3",
+   "4",
+   "5",
+   "9"
+  ],
+  "correct": 0,
+  "topic": "Regra de Três Composta – Inversamente Proporcional",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 17,
+  "text": " Um equipamento custa R$ 12.000,00. Com desconto de 12% à vista, qual o valor pago?",
+  "alternatives": [
+   "R$ 10.560,00",
+   "R$ 10.650,00",
+   "R$ 10.500,00",
+   "R$ 10.460,00"
+  ],
+  "correct": 0,
+  "topic": "Porcentagem / Juros Simples",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 18,
+  "text": " $2^{x+1} = 32$  →  $x =$",
+  "alternatives": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct": 1,
+  "topic": "Equação Exponencial / Logaritmo",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 19,
+  "text": " Se $A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$ e $B = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$, então $A \\times B =$",
+  "alternatives": [
+   "$\\begin{pmatrix} 2 & 1 \\\\ 4 & 3 \\end{pmatrix}$",
+   "$\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$",
+   "$\\begin{pmatrix} 2 & 1 \\\\ 3 & 4 \\end{pmatrix}$",
+   "$\\begin{pmatrix} 1 & 1 \\\\ 4 & 3 \\end{pmatrix}$"
+  ],
+  "correct": 0,
+  "topic": "Matrizes – Multiplicação",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 20,
+  "text": " $\\begin{cases} x + y + z = 6 \\\\ x - y + z = 2 \\\\ x + y - z = 0 \\end{cases}$  →  $(x, y, z) =$",
+  "alternatives": [
+   "(2, 2, 2)",
+   "(1, 2, 3)",
+   "(2, 3, 1)",
+   "(3, 1, 2)"
+  ],
+  "correct": 0,
+  "topic": "Sistema Linear – 3 incógnitas",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 21,
+  "text": " Volume de um cilindro circular reto com raio 3 cm e altura 10 cm ($\\pi \\approx 3,14$):",
+  "alternatives": [
+   "282,6 cm³",
+   "188,4 cm³",
+   "94,2 cm³",
+   "314,0 cm³"
+  ],
+  "correct": 0,
+  "topic": "Geometria – Volume",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 22,
+  "text": " Soma dos 5 primeiros termos de uma P.G. com $a_1 = 2$ e $q = 3$:",
+  "alternatives": [
+   "242",
+   "121",
+   "243",
+   "80"
+  ],
+  "correct": 0,
+  "topic": "Progressão Geométrica",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 23,
+  "text": " Dois eventos A e B são independentes. $P(A) = 0,4$; $P(B) = 0,5$. $P(A \\cap B) =$",
+  "alternatives": [
+   "0,9",
+   "0,2",
+   "0,1",
+   "0,0"
+  ],
+  "correct": 1,
+  "topic": "Probabilidade – Independência",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 24,
+  "text": " De um grupo de 10 servidores, quantas comissões de 3 pessoas podem ser formadas (ordem não importa)?",
+  "alternatives": [
+   "720",
+   "120",
+   "30",
+   "240"
+  ],
+  "correct": 1,
+  "topic": "Análise Combinatória – Combinação",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 25,
+  "text": " $A = \\{1,2,3,4,5\\}$; $B = \\{4,5,6,7\\}$. $A \\triangle B = (A \\cup B) - (A \\cap B) =$",
+  "alternatives": [
+   "$\\{1,2,3,6,7\\}$",
+   "$\\{4,5\\}$",
+   "$\\{1,2,3,4,5,6,7\\}$",
+   "$\\emptyset$"
+  ],
+  "correct": 0,
+  "topic": "Conjuntos – Diferença Simétrica",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 2,
+  "text": "João é analista de TIC. Conclusão válida:",
+  "alternatives": [
+   "João tem nível superior.",
+   "Quem tem nível superior é analista de TIC.",
+   "João não tem nível superior.",
+   "Alguns analistas não têm nível superior."
+  ],
+  "correct": 0,
+  "topic": "Geral",
+  "subjectCode": "MAT"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 27,
+  "text": "`Win + E` abre:",
+  "alternatives": [
+   "Configurações",
+   "Explorador de Arquivos",
+   "Executar",
+   "Central de Ações"
+  ],
+  "correct": 1,
+  "topic": "Windows 10/11",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 28,
+  "text": "Para **quebrar página** forçadamente (iniciar nova página):",
+  "alternatives": [
+   "`Ctrl + Enter`",
+   "`Shift + Enter`",
+   "`Alt + Enter`",
+   "`Enter` (duas vezes)"
+  ],
+  "correct": 0,
+  "topic": "Word",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 29,
+  "text": "Função `SE(condição; val_se_verdadeiro; val_se_falso)` – aninhada: `=SE(A1>=7; \"Aprovado\"; SE(A1>=5; \"Recuperação\"; \"Reprovado\"))` Se A1 = 6, resultado:",
+  "alternatives": [
+   "\"Aprovado\"",
+   "\"Recuperação\"",
+   "\"Reprovado\"",
+   "Erro"
+  ],
+  "correct": 1,
+  "topic": "Excel",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 30,
+  "text": "`PROCV` (VLOOKUP) – 4º argumento `FALSO` (ou 0) significa:",
+  "alternatives": [
+   "Correspondência aproximada (intervalo).",
+   "Correspondência **exata**.",
+   "Busca da direita para esquerda.",
+   "Retorna linha inteira."
+  ],
+  "correct": 1,
+  "topic": "Excel",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 31,
+  "text": "Para aplicar a **mesma transição** a todos os slides de uma vez:",
+  "alternatives": [
+   "Guia Transições → Aplicar a Todos",
+   "Copiar/colar slide mestre",
+   "`Ctrl + A` no painel de slides → Transição",
+   "Só manualmente slide a slide"
+  ],
+  "correct": 0,
+  "topic": "PowerPoint",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 32,
+  "text": "Protocolo de **e-mail de envio** (cliente → servidor):",
+  "alternatives": [
+   "POP3",
+   "IMAP",
+   "**SMTP**",
+   "HTTP"
+  ],
+  "correct": 2,
+  "topic": "Internet – Protocolos",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 33,
+  "text": "**Ransomware** caracteriza-se por:",
+  "alternatives": [
+   "Roubar senhas (keylogger).",
+   "Criptografar arquivos e exigir resgate (bitcoin) para descriptografar.",
+   "Exibir anúncios indesejados (adware).",
+   "Replicar-se em rede sem interação do usuário (worm)."
+  ],
+  "correct": 1,
+  "topic": "Segurança – Malware",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 34,
+  "text": "O **Certificado Digital do tipo A3** é armazenado em:",
+  "alternatives": [
+   "Arquivo `.pfx` no disco (software).",
+   "**Token USB ou Smart Card** (hardware criptográfico).",
+   "Nuvem da AC.",
+   "Navegador (certificado de máquina)."
+  ],
+  "correct": 1,
+  "topic": "Certificação Digital – ICP-Brasil",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 35,
+  "text": " `chmod 750 arquivo.sh` concede:",
+  "alternatives": [
+   "Dono: rwx; Grupo: r-x; Outros: ---",
+   "Dono: rwx; Grupo: rwx; Outros: r-x",
+   "Dono: r-x; Grupo: rwx; Outros: ---",
+   "Dono: rwx; Grupo: ---; Outros: r-x"
+  ],
+  "correct": 0,
+  "topic": "Arquivos – Permissões Linux / chmod",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 36,
+  "text": " Formato **livre, open-source, alta compressão**, suporta múltiplos algoritmos (LZMA, PPMd):",
+  "alternatives": [
+   "`.zip`",
+   "`.rar`",
+   "**`.7z`**",
+   "`.tar.gz`"
+  ],
+  "correct": 2,
+  "topic": "Compactação – Formatos",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 37,
+  "text": " Em **SaaS** (Software as a Service), o provedor gerencia:",
+  "alternatives": [
+   "Apenas rede física.",
+   "**Tudo**: infraestrutura, SO, middleware, runtime, aplicação, dados.",
+   "Apenas aplicação; cliente gerencia SO e dados.",
+   "Cliente gerencia tudo."
+  ],
+  "correct": 1,
+  "topic": "Cloud – Modelo de Responsabilidade Compartilhada",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 38,
+  "text": "Princípio **Perceptível** (WCAG 2.1) inclui:",
+  "alternatives": [
+   "Navegação por teclado.",
+   "**Alternativas textuais** para não-texto (alt em imagens, legendas em vídeo).",
+   "Legibilidade de código.",
+   "Compatibilidade com tecnologias assistivas (robustez)."
+  ],
+  "correct": 1,
+  "topic": "Acessibilidade – WCAG",
+  "subjectCode": "INF"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 39,
+  "text": "Ponta Grossa localiza-se na região dos **Campos Gerais**, caracterizada por:",
+  "alternatives": [
+   "Floresta densa Amazônica.",
+   "**Formações rochosas (arenitos), campos naturais, cerrado/estepe.**",
+   "Planície litorânea.",
+   "Mata Atlântica de encosta."
+  ],
+  "correct": 1,
+  "topic": "Geografia PG",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 40,
+  "text": "O **tropeirismo** foi fundamental para PG porque:",
+  "alternatives": [
+   "Trazia imigrantes europeus.",
+   "**Rota de mulas (gado, erva-mate, charque) ligando RS/SP/MG → fez surgir o pouso/feira que originou a cidade.**",
+   "Transportava café do norte do PR.",
+   "Era rota do ouro de Cuiabá."
+  ],
+  "correct": 1,
+  "topic": "História PG",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 41,
+  "text": "O **Tecnoparque / Parque Tecnológico de Ponta Grossa** visa:",
+  "alternatives": [
+   "Turismo de aventura.",
+   "**Atrair empresas de base tecnológica, P&D, inovação, startups (TIC, biotecnologia, materiais).**",
+   "Expansão siderúrgica.",
+   "Agronegócio de grãos."
+  ],
+  "correct": 1,
+  "topic": "Economia PG – Atual",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 42,
+  "text": "Estabilidade do servidor público municipal (após estágio probatório) é adquirida após:",
+  "alternatives": [
+   "1 ano",
+   "**2 anos** (CF art. 41 / LOM replica)",
+   "3 anos",
+   "5 anos"
+  ],
+  "correct": 1,
+  "topic": "Lei Orgânica PG – Servidores",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 43,
+  "text": "Modalidade de licitação para **obras e serviços de engenharia** de grande vulto, complexidade técnica, pré-qualificação:",
+  "alternatives": [
+   "Pregão",
+   "Tomada de Preços",
+   "**Concorrência**",
+   "Convite"
+  ],
+  "correct": 2,
+  "topic": "Lei Orgânica PG – Licitação",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 44,
+  "text": "**Reforma Tributária (EC 132/2023 + LC 214/2025)** cria:",
+  "alternatives": [
+   "Imposto único federal (IVA Federal) extinguindo ICMS/ISS.",
+   "**IBS (Imposto sobre Bens e Serviços – estadual/municipal) + CBS (Contribuição sobre Bens e Serviços – federal) + IS (Imposto Seletivo).**",
+   "Fim da tributação sobre consumo.",
+   "Apenas alteração de alíquotas do IPI."
+  ],
+  "correct": 1,
+  "topic": "Atualidades Brasil – 2024/2025",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 45,
+  "text": "**Unidade de Conservação** de Proteção Integral em PG (exemplo):",
+  "alternatives": [
+   "Parque Estadual de **Vila Velha** (arenitos, furnas, lagoa dourada).",
+   "APA da Escarpa Devoniana (Uso Sustentável).",
+   "Reserva Biológica de Guaraqueçaba (litoral).",
+   "Parque Nacional do Iguaçu (Foz)."
+  ],
+  "correct": 0,
+  "topic": "Meio Ambiente – Paraná",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 46,
+  "text": "Competência **comum** (União, Estados, Municípios – CF art. 23):",
+  "alternatives": [
+   "Legislar sobre trânsito.",
+   "**Cuidar da saúde e assistência pública, proteger documentos/obras de valor histórico.**",
+   "Instalar serventias notariais.",
+   "Organizar Guardas Municipais."
+  ],
+  "correct": 1,
+  "topic": "Política – Federação",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 47,
+  "text": "Vetor do vírus da **Dengue, Zika, Chikungunya, Febre Amarela urbana**:",
+  "alternatives": [
+   "*Anopheles*",
+   "*Culex*",
+   "***Aedes aegypti***",
+   "*Aedes albopictus* (secundário)"
+  ],
+  "correct": 2,
+  "topic": "Saúde – Dengue/Arboviroses",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 48,
+  "text": "**Base Nacional Comum Curricular** define:",
+  "alternatives": [
+   "Currículo obrigatório apenas para ensino superior.",
+   "**Competências e habilidades essenciais** que todos os alunos devem desenvolver na Educação Básica (pública/privada).",
+   "Salário mínimo dos professores.",
+   "Calendário escolar unificado."
+  ],
+  "correct": 1,
+  "topic": "Educação – BNCC",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 49,
+  "text": "**LLM (Large Language Models)** como GPT, LLaMA, Gemini:",
+  "alternatives": [
+   "São bancos de dados SQL gigantes.",
+   "**Modelos de linguagem baseados em Transformers, treinados em enorme corpus de texto, geram/entendem linguagem natural.**",
+   "Substituem programadores completamente.",
+   "Funcionam apenas offline."
+  ],
+  "correct": 1,
+  "topic": "Tecnologia – IA Generativa / 2024",
+  "subjectCode": "GER"
+ },
+ {
+  "file": "simulado-outras-disciplinas-50q-v2",
+  "label": "Outras S2",
+  "number": 50,
+  "text": " IDH-M (Índice de Desenvolvimento Humano Municipal) de Ponta Grossa (PNUD/Atlas 2010/atualizado):",
+  "alternatives": [
+   "Muito alto (> 0,800)",
+   "**Alto (0,700 – 0,799)** – PG ~0,740–0,760",
+   "Médio (0,600 – 0,699)",
+   "Baixo (< 0,600)"
+  ],
+  "correct": 1,
+  "topic": "Estatística PG – IBGE / Censo 2022 / Estimativa 2024",
+  "subjectCode": "GER"
+ }
+]
