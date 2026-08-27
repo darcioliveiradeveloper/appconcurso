@@ -10,7 +10,7 @@
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "npm run dev --workspace=backend",
     "dev:frontend": "npm run dev --workspace=frontend",
-    "build": "npm install --workspace=frontend && npm run build --workspace=frontend",
+    "build": "npm install --workspace=frontend --include=dev && npm run build --workspace=frontend",
     "start": "node backend/src/server.js",
     "seed": "npm run seed --workspace=backend",
     "test": "npm run test --workspaces --if-present",
