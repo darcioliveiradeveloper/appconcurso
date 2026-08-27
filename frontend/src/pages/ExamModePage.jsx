@@ -37,18 +37,45 @@ export default function ExamModePage() {
     setPhase('submitting');
     clearInterval(timerRef.current);
 
+    // Timeout de segurança: se travar mais de 30s, volta para running
+    const safetyTimeout = setTimeout(() => {
+      console.error('[ExamMode] TIMEOUT de segurança: submitExam travou >30s');
+      setError('Tempo esgotado ao entregar. Tente novamente ou recarregue a página.');
+      setPhase('running');
+    }, 30000);
+
     try {
+      console.log('[ExamMode] Iniciando submissão da prova...', { sessionId, answersCount: Object.keys(answers).length });
+      
+      // Verifica conectividade rápida antes de enviar tudo
+      await simuladosApi.getQuestion(sessionId, 0).catch(() => {
+        throw new Error('Backend indisponível. Verifique se o servidor está rodando (porta 3000).');
+      });
+      console.log('[ExamMode] Conectividade OK');
+
       // Envia todas as respostas em sequência
       const indices = Object.keys(answers).map(Number).sort((a, b) => a - b);
       for (const idx of indices) {
+        console.log('[ExamMode] Enviando resposta', idx);
         await simuladosApi.submitAnswer(sessionId, idx, answers[idx]);
       }
+      console.log('[ExamMode] Respostas enviadas, finalizando...');
+      
       await simuladosApi.finish(sessionId);
+      console.log('[ExamMode] Prova finalizada no backend');
+      
       localStorage.removeItem(`exam_timer_${sessionId}`);
+      console.log('[ExamMode] Navegando para resultado...');
       navigate(`/simulado/${sessionId}/resultado`);
+      console.log('[ExamMode] Navegação disparada');
     } catch (err) {
-      setError(err.response?.data?.message || 'Erro ao entregar prova');
+      console.error('[ExamMode] ERRO ao submeter:', err);
+      const msg = err.response?.data?.message 
+        || (err.message?.includes('Backend indisponível') ? err.message : 'Erro de conexão com o servidor. Verifique se o backend está rodando na porta 3000.');
+      setError(msg);
       setPhase('running');
+    } finally {
+      clearTimeout(safetyTimeout);
     }
   }, [sessionId, answers, navigate]);
 

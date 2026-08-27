@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
-import { subjectsApi } from '../api/endpoints';
+import { useNavigate } from 'react-router-dom';
+import { subjectsApi, simuladosApi } from '../api/endpoints';
 import { Card, Button, Input } from '../components';
 
 const SUBJECT_INFO = {
@@ -45,24 +44,18 @@ export default function SubjectSelectPage() {
     if (!selectedSubject) return;
     
     try {
-      const res = await subjectsApi.getAll(); // reuse to get API
-      // Actually call simulados start
-      const startRes = await fetch('/api/simulados', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          subjectId: selectedSubject,
-          mode,
-          totalQuestions: parseInt(questionCount)
-        })
+      const res = await simuladosApi.start({
+        subjectId: selectedSubject,
+        mode,
+        totalQuestions: parseInt(questionCount)
       });
-      const data = await startRes.json();
-      if (data.session) {
-        navigate(`/simulado/${data.session.id}/questao/0`);
+      if (res.data.session) {
+        navigate(`/simulado/${res.data.session.id}/questao/0`);
       }
-    } catch (error) {
-      console.error('Erro ao iniciar simulado:', error);
-      alert('Erro ao iniciar simulado');
+    } catch (err) {
+      const msg = err.response?.data?.message 
+        || (err.message?.includes('Backend indisponível') ? err.message : 'Erro de conexão com o servidor. Verifique se o backend está rodando na porta 3000.');
+      alert(msg);
     }
   };
 

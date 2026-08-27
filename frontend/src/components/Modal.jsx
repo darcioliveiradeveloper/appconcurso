@@ -1,22 +1,25 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 
 export default function Modal({ isOpen, onClose, title, children, className = '' }) {
+  const [mounted, setMounted] = useState(false);
+
   useEffect(() => {
+    setMounted(true);
     const handleEscape = (e) => {
       if (e.key === 'Escape') onClose();
     };
-    if (isOpen) {
+    if (isOpen && document.body) {
       document.addEventListener('keydown', handleEscape);
       document.body.style.overflow = 'hidden';
     }
     return () => {
       document.removeEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'unset';
+      if (document.body) document.body.style.overflow = 'unset';
     };
   }, [isOpen, onClose]);
 
-  if (!isOpen) return null;
+  if (!isOpen || !mounted || !document.body) return null;
 
   return createPortal(
     <div className="fixed inset-0 z-50 overflow-y-auto">
@@ -39,5 +42,5 @@ export default function Modal({ isOpen, onClose, title, children, className = ''
         </div>
       </div>
     </div>
-  );
+  , document.body);
 }

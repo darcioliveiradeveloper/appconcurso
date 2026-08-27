@@ -71,7 +71,9 @@ export default function QuestionPage() {
       await simuladosApi.finish(sessionId);
       navigate(`/simulado/${sessionId}/resultado`);
     } catch (err) {
-      setError(err.response?.data?.message || 'Erro ao finalizar');
+      const msg = err.response?.data?.message 
+        || (err.message?.includes('Backend indisponível') ? err.message : 'Erro de conexão com o servidor. Verifique se o backend está rodando na porta 3000.');
+      setError(msg);
     }
   };
 

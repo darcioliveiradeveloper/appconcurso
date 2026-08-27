@@ -20,7 +20,9 @@ export default function ResultPage() {
       const res = await simuladosApi.getDetail(sessionId);
       setResult(res.data.session);
     } catch (err) {
-      setError(err.response?.data?.message || 'Erro ao carregar resultado');
+      const msg = err.response?.data?.message 
+        || (err.message?.includes('Backend indisponível') ? err.message : 'Erro de conexão com o servidor. Verifique se o backend está rodando na porta 3000.');
+      setError(msg);
     } finally {
       setLoading(false);
     }
