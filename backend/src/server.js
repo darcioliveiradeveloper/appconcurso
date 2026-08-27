@@ -66,7 +66,7 @@ app.get('/api/seed', async (req, res) => {
     const subjectMap = {};
     subjects.forEach(s => subjectMap[s.code] = s._id);
 
-    const seedsDir = path.resolve(__dirname, '../seeds');
+    const seedsDir = path.resolve(__dirname, 'seeds');
     const load = f => JSON.parse(fs.readFileSync(path.join(seedsDir, f), 'utf-8'));
     const data = [...load('questions_data.json'), ...load('gemini_questions.json')];
 

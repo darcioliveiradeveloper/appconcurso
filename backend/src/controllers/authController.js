@@ -76,6 +76,9 @@ export const refresh = async (req, res, next) => {
 export const me = async (req, res, next) => {
   try {
     const user = await User.findById(req.user._id);
+    if (!user) {
+      return next(new AppError('Usuário não encontrado', 404));
+    }
     res.json({ user: user.toJSON() });
   } catch (error) {
     next(error);
