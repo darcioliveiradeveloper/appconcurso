@@ -20,7 +20,7 @@ export const simuladosApi = {
   finish: (sessionId) => api.post(`/simulados/${sessionId}/finish`),
   getHistory: (params) => api.get('/simulados/history', { params }),
   getDetail: (id) => api.get(`/simulados/${id}`),
-  clearHistory: () => api.delete('/simulados/history')
+  clearHistory: (params) => api.delete('/simulados/history', { params })
 };
 
 export const cargosApi = {

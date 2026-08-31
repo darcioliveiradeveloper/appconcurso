@@ -40,12 +40,12 @@ export default function HistoryPage() {
   };
 
   const handleClear = async () => {
-    if (!window.confirm('Tem certeza que deseja limpar todo o histórico? Esta ação não pode ser desfeita.')) return;
+    const label = modeFilter ? (MODE_LABELS[modeFilter]?.label || modeFilter) : 'todo o histórico';
+    if (!window.confirm(`Limpar ${label}? Esta ação não pode ser desfeita.`)) return;
     setClearing(true);
     try {
-      await simuladosApi.clearHistory();
-      setSessions([]);
-      setPagination({ page: 1, pages: 1, total: 0 });
+      await simuladosApi.clearHistory(modeFilter ? { mode: modeFilter } : undefined);
+      await loadHistory();
     } catch (err) {
       alert(err.response?.data?.message || 'Erro ao limpar histórico');
     } finally {

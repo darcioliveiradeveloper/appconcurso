@@ -364,7 +364,10 @@ export const getHistory = async (req, res, next) => {
 
 export const clearHistory = async (req, res, next) => {
   try {
-    const result = await SimuladoSession.deleteMany({ user: req.user._id });
+    const { mode } = req.query;
+    const filter = { user: req.user._id };
+    if (mode) filter.mode = mode;
+    const result = await SimuladoSession.deleteMany(filter);
     res.json({ message: 'Histórico limpo', deletedCount: result.deletedCount });
   } catch (error) {
     next(error);
