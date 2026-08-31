@@ -6,7 +6,7 @@ import { Card, Input, Button } from '../components';
 export default function RegisterPage() {
   const { register } = useAuth();
   const navigate = useNavigate();
-  const [form, setForm] = useState({ name: '', email: '', password: '', confirmPassword: '' });
+  const [form, setForm] = useState({ name: '', email: '', password: '', confirmPassword: '', accessCode: '' });
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
@@ -23,6 +23,7 @@ export default function RegisterPage() {
     if (!form.password) newErrors.password = 'Senha é obrigatória';
     else if (form.password.length < 6) newErrors.password = 'Senha deve ter pelo menos 6 caracteres';
     if (form.password !== form.confirmPassword) newErrors.confirmPassword = 'Senhas não coincidem';
+    if (!form.accessCode.trim()) newErrors.accessCode = 'Código de liberação é obrigatório';
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -33,7 +34,7 @@ export default function RegisterPage() {
 
     setLoading(true);
     try {
-      await register(form.name, form.email, form.password);
+      await register(form.name, form.email, form.password, form.accessCode.trim());
       navigate('/');
     } catch (error) {
       setErrors({ submit: error.response?.data?.message || 'Erro ao cadastrar' });
@@ -107,6 +108,21 @@ export default function RegisterPage() {
             placeholder="Repita a senha"
             required
           />
+
+          <Input
+            label="Código de liberação"
+            name="accessCode"
+            type="text"
+            value={form.accessCode}
+            onChange={handleChange}
+            error={errors.accessCode}
+            placeholder="XXXXX-XXXXX"
+            autoComplete="off"
+            required
+          />
+          <p className="text-xs text-gray-500 dark:text-gray-400 -mt-2">
+            Código fornecido pela organização do curso. Uso único.
+          </p>
 
           <Button type="submit" className="w-full" size="lg" loading={loading}>
             Criar conta

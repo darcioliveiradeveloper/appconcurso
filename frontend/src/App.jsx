@@ -11,6 +11,7 @@ import ResultPage from './pages/ResultPage';
 import ExamModePage from './pages/ExamModePage';
 import HistoryPage from './pages/HistoryPage';
 import StatsPage from './pages/StatsPage';
+import AccessCodesPage from './pages/AccessCodesPage';
 
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth();
@@ -56,6 +57,7 @@ export default function App() {
         <Route path="/prova-oficial" element={<ExamModePage />} />
         <Route path="/historico" element={<HistoryPage />} />
         <Route path="/estatisticas" element={<StatsPage />} />
+        <Route path="/admin/codigos" element={<AccessCodesPage />} />
       </Route>
 
       <Route path="*" element={<Navigate to="/" replace />} />

@@ -1,19 +1,37 @@
 import User from '../models/User.js';
+import AccessCode from '../models/AccessCode.js';
 import { generateTokens, verifyRefreshToken } from '../config/jwt.js';
 import { AppError } from '../middlewares/errorHandler.js';
 
 export const register = async (req, res, next) => {
   try {
-    const { name, email, password } = req.body;
-    
+    const { name, email, password, accessCode } = req.body;
+
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return next(new AppError('Email já cadastrado', 400));
     }
-    
+
+    if (!accessCode) {
+      return next(new AppError('Código de liberação é obrigatório', 400));
+    }
+
+    const code = await AccessCode.findOne({ code: accessCode.trim().toUpperCase() });
+    if (!code) {
+      return next(new AppError('Código de liberação inválido', 400));
+    }
+    if (code.usedAt) {
+      return next(new AppError('Código de liberação já utilizado', 400));
+    }
+
     const user = await User.create({ name, email, password, role: 'user' });
+
+    code.usedBy = user._id;
+    code.usedAt = new Date();
+    await code.save();
+
     const { accessToken, refreshToken } = generateTokens(user);
-    
+
     res.status(201).json({
       user: user.toJSON(),
       accessToken,

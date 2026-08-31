@@ -36,6 +36,11 @@ export default function Layout() {
                 <NavLink to="/estatisticas" className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary-600' : 'text-gray-600 dark:text-gray-400 hover:text-primary-600'}`}>
                   Estatísticas
                 </NavLink>
+                {user?.role === 'admin' && (
+                  <NavLink to="/admin/codigos" className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary-600' : 'text-gray-600 dark:text-gray-400 hover:text-primary-600'}`}>
+                    Códigos
+                  </NavLink>
+                )}
               </nav>
             </div>
             <div className="flex items-center gap-4">

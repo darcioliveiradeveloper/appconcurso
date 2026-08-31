@@ -22,7 +22,8 @@ export const schemas = {
   register: z.object({
     name: z.string().min(2, 'Nome deve ter pelo menos 2 caracteres').max(100),
     email: z.string().email('Email inválido'),
-    password: z.string().min(6, 'Senha deve ter pelo menos 6 caracteres')
+    password: z.string().min(6, 'Senha deve ter pelo menos 6 caracteres'),
+    accessCode: z.string().min(10, 'Código de liberação inválido').max(20)
   }),
   
   login: z.object({

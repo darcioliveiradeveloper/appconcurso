@@ -10,6 +10,7 @@ import { errorHandler } from './middlewares/errorHandler.js';
 import authRoutes from './routes/authRoutes.js';
 import subjectRoutes from './routes/subjectRoutes.js';
 import simuladoRoutes from './routes/simuladoRoutes.js';
+import accessCodeRoutes from './routes/accessCodeRoutes.js';
 import Subject from './models/Subject.js';
 import Question from './models/Question.js';
 import User from './models/User.js';
@@ -165,6 +166,7 @@ app.get('/api/seed', async (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/subjects', subjectRoutes);
 app.use('/api/simulados', simuladoRoutes);
+app.use('/api/access-codes', accessCodeRoutes);
 
 if (isProduction) {
   const frontendDist = path.resolve(__dirname, '../../frontend/dist');
