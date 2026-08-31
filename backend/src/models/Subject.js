@@ -4,8 +4,7 @@ const subjectSchema = new mongoose.Schema({
   code: {
     type: String,
     required: true,
-    unique: true,
-    enum: ['PORT', 'MAT', 'INF', 'GER', 'ESP']
+    unique: true
   },
   name: {
     type: String,
@@ -25,6 +24,8 @@ const subjectSchema = new mongoose.Schema({
     type: Number,
     default: 1
   },
+  cargos: [{ type: String }], // vazio = comum a todos; ou lista de cargo codes específicos
+  bloco: { type: String, enum: ['Gerais', 'Específicos', 'Único'], default: 'Único' },
   description: String,
   order: { type: Number, default: 0 }
 }, {

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { simuladosApi } from '../api/endpoints';
+import { simuladosApi, cargosApi } from '../api/endpoints';
 import { Card, Button, RadioOption, Modal } from '../components';
 
 const EXAM_DURATION_MIN = 180;
@@ -18,6 +18,18 @@ export default function ExamModePage() {
   const [showConfirm, setShowConfirm] = useState(false);
   const [error, setError] = useState(null);
   const timerRef = useRef(null);
+  const [cargos, setCargos] = useState([]);
+  const [selectedCargo, setSelectedCargo] = useState('PREF_TI');
+  const [totalQuestions, setTotalQuestions] = useState(40);
+
+  useEffect(() => {
+    cargosApi.getAll().then(res => {
+      setCargos(res.data.cargos);
+      if (res.data.cargos.length > 0 && !res.data.cargos.find(c => c.code === selectedCargo)) {
+        setSelectedCargo(res.data.cargos[0].code);
+      }
+    }).catch(() => {});
+  }, []);
 
   // Carrega questão atual quando navega
   useEffect(() => {
@@ -105,11 +117,15 @@ export default function ExamModePage() {
     }
   }, [timeLeft, sessionId, phase]);
 
+  const selectedCargoData = cargos.find(c => c.code === selectedCargo);
+  const totalQuestionsRef = selectedCargoData?.totalQuestoes || 40;
+
   const startExam = async () => {
     try {
       const res = await simuladosApi.start({
         mode: 'exam',
-        totalQuestions: 40,
+        cargoCode: selectedCargo,
+        totalQuestions: totalQuestionsRef,
         timeLimitMinutes: EXAM_DURATION_MIN
       });
       setSessionId(res.data.session.id);
@@ -117,6 +133,7 @@ export default function ExamModePage() {
       setCurrent(0);
       setAnswers({});
       setMarked(new Set());
+      setTotalQuestions(res.data.session.totalQuestions || totalQuestionsRef);
       setTimeLeft(EXAM_DURATION_MIN * 60);
       setPhase('running');
     } catch (err) {
@@ -158,21 +175,31 @@ export default function ExamModePage() {
           <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">Prova Oficial</h1>
           <p className="text-gray-500 dark:text-gray-400 mb-6">Simulação completa conforme o edital</p>
 
+          {cargos.length > 0 && (
+            <div className="mb-6 text-left max-w-md mx-auto">
+              <label className="label">Escolha o cargo</label>
+              <select value={selectedCargo} onChange={e => setSelectedCargo(e.target.value)} className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100">
+                {cargos.map(c => (
+                  <option key={c.code} value={c.code}>{c.nome} — {c.orgao} ({c.totalQuestoes}q)</option>
+                ))}
+              </select>
+            </div>
+          )}
+
           <div className="grid grid-cols-2 gap-4 mb-8 text-left max-w-md mx-auto">
             <div className="p-4 bg-primary-50 dark:bg-primary-900/20 rounded-lg">
               <p className="text-sm text-gray-500 dark:text-gray-400">Questões</p>
-              <p className="text-2xl font-bold text-primary-600 dark:text-primary-400">40</p>
+              <p className="text-2xl font-bold text-primary-600 dark:text-primary-400">{selectedCargoData?.totalQuestoes || 40}</p>
             </div>
             <div className="p-4 bg-primary-50 dark:bg-primary-900/20 rounded-lg">
               <p className="text-sm text-gray-500 dark:text-gray-400">Duração</p>
               <p className="text-2xl font-bold text-primary-600 dark:text-primary-400">3h</p>
             </div>
-            <div className="p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg col-span-2 text-sm text-gray-600 dark:text-gray-300">
-              Português (5) • Matemática (5) • Informática (5) • Gerais (5) • <strong>Específicos (20)</strong>
-            </div>
-            <div className="p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg col-span-2 text-sm text-yellow-800 dark:text-yellow-300">
-              ⚠️ Eliminatório: ≥ 50 pontos no total + mínimo por disciplina (1 acerto nas básicas, 7 nos específicos)
-            </div>
+            {selectedCargoData && (
+              <div className="p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg col-span-2 text-sm text-gray-600 dark:text-gray-300">
+                {selectedCargoData.distribuicao.map(d => `${d.subjectName} (${d.quantidade})`).join(' • ')}
+              </div>
+            )}
             <div className="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg col-span-2 text-sm text-blue-700 dark:text-blue-400">
               ℹ️ Sem feedback durante a prova — igual ao dia real. Você pode navegar entre questões e marcar para revisão.
             </div>
@@ -211,7 +238,7 @@ export default function ExamModePage() {
           <div>
             <h1 className="font-bold text-lg text-gray-900 dark:text-gray-100">Prova Oficial</h1>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Respondidas: {answeredCount}/40 | Marcadas: {marked.size}
+              Respondidas: {answeredCount}/{totalQuestions} | Marcadas: {marked.size}
             </p>
           </div>
           <div className={`text-2xl font-mono font-bold tabular-nums ${lowTime ? 'text-red-600 animate-pulse' : 'text-gray-900 dark:text-gray-100'}`}>
@@ -234,7 +261,7 @@ export default function ExamModePage() {
             <>
               <div className="flex items-center justify-between mb-4">
                 <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                  Questão {current + 1} de 40 — {question.topic}
+                  Questão {current + 1} de {totalQuestions} — {question.topic}
                 </span>
                 <button
                   onClick={toggleMark}
@@ -279,7 +306,7 @@ export default function ExamModePage() {
             <Button variant="secondary" onClick={() => goToQuestion(current - 1)} disabled={current === 0}>
               ← Anterior
             </Button>
-            <Button onClick={() => goToQuestion(current + 1)} disabled={current === 39}>
+            <Button onClick={() => goToQuestion(current + 1)} disabled={current === totalQuestions - 1}>
               Próxima →
             </Button>
           </div>
@@ -289,7 +316,7 @@ export default function ExamModePage() {
         <Card className="lg:sticky lg:top-40 h-fit">
           <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-3 text-sm">Navegação</h3>
           <div className="grid grid-cols-8 gap-1.5">
-            {Array.from({ length: 40 }).map((_, i) => {
+            {Array.from({ length: totalQuestions }).map((_, i) => {
               const isAnswered = answers[i] !== undefined;
               const isMarked = marked.has(i);
               const isCurrent = current === i;
@@ -316,7 +343,7 @@ export default function ExamModePage() {
           <div className="mt-4 space-y-1.5 text-xs text-gray-500 dark:text-gray-400">
             <div className="flex items-center gap-2"><span className="w-3 h-3 rounded bg-green-500 inline-block" /> Respondida ({answeredCount})</div>
             <div className="flex items-center gap-2"><span className="w-3 h-3 rounded bg-yellow-400 inline-block" /> Marcada ({marked.size})</div>
-            <div className="flex items-center gap-2"><span className="w-3 h-3 rounded bg-gray-200 dark:bg-gray-700 inline-block" /> Não respondida ({40 - answeredCount})</div>
+            <div className="flex items-center gap-2"><span className="w-3 h-3 rounded bg-gray-200 dark:bg-gray-700 inline-block" /> Não respondida ({totalQuestions - answeredCount})</div>
           </div>
 
           <Button variant="danger" className="w-full mt-4" onClick={() => setShowConfirm(true)}>
@@ -328,9 +355,9 @@ export default function ExamModePage() {
       {/* Modal de confirmação */}
       <Modal isOpen={showConfirm} onClose={() => setShowConfirm(false)} title="Entregar prova?">
         <div className="space-y-4">
-          {40 - answeredCount > 0 && (
+          {totalQuestions - answeredCount > 0 && (
             <div className="p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg text-yellow-800 dark:text-yellow-300 text-sm">
-              ⚠️ Você tem <strong>{40 - answeredCount} questão(ões) sem responder</strong>. Lembre-se: cada disciplina zerada é eliminatória!
+              ⚠️ Você tem <strong>{totalQuestions - answeredCount} questão(ões) sem responder</strong>. Lembre-se: cada disciplina zerada é eliminatória!
             </div>
           )}
           <p className="text-gray-600 dark:text-gray-400">

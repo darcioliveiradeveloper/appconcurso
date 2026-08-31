@@ -21,3 +21,8 @@ export const simuladosApi = {
   getHistory: (params) => api.get('/simulados/history', { params }),
   getDetail: (id) => api.get(`/simulados/${id}`)
 };
+
+export const cargosApi = {
+  getAll: () => api.get('/cargos'),
+  getByCode: (code) => api.get(`/cargos/${code}`)
+};

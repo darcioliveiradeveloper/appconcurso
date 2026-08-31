@@ -32,6 +32,7 @@ const simuladoSessionSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Subject'
   },
+  cargoCode: { type: String, uppercase: true, trim: true }, // ex: PREF_TI, DEL_PCPR
   totalQuestions: {
     type: Number,
     required: true

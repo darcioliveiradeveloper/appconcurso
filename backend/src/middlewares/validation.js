@@ -33,6 +33,7 @@ export const schemas = {
   
   createSimulado: z.object({
     subjectId: z.string().optional(),
+    cargoCode: z.string().optional(),
     mode: z.enum(['study', 'exam', 'focus']).default('study'),
     totalQuestions: z.number().int().min(1).max(100).optional(),
     timeLimitMinutes: z.number().int().min(1).max(300).optional()

@@ -11,10 +11,13 @@ import authRoutes from './routes/authRoutes.js';
 import subjectRoutes from './routes/subjectRoutes.js';
 import simuladoRoutes from './routes/simuladoRoutes.js';
 import accessCodeRoutes from './routes/accessCodeRoutes.js';
+import cargoRoutes from './routes/cargoRoutes.js';
 import Subject from './models/Subject.js';
 import Question from './models/Question.js';
 import User from './models/User.js';
+import Cargo from './models/Cargo.js';
 import fs from 'fs';
+import { CARGOS, NEW_SUBJECTS } from './seeds/cargosData.js';
 
 dotenv.config();
 
@@ -64,8 +67,10 @@ app.get('/api/seed', async (req, res) => {
 
     const TARGETS = { PORT: 50, MAT: 50, INF: 50, GER: 50, ESP: 200 };
 
-    await Promise.all([Subject.deleteMany({}), Question.deleteMany({})]);
-    const subjects = await Subject.insertMany(SUBJECTS);
+    await Promise.all([Subject.deleteMany({}), Question.deleteMany({}), Cargo.deleteMany({})]);
+    const allSubjects = [...SUBJECTS, ...NEW_SUBJECTS];
+    const subjects = await Subject.insertMany(allSubjects);
+    await Cargo.insertMany(CARGOS);
     const subjectMap = {};
     subjects.forEach(s => subjectMap[s.code] = s._id);
 
@@ -167,6 +172,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/subjects', subjectRoutes);
 app.use('/api/simulados', simuladoRoutes);
 app.use('/api/access-codes', accessCodeRoutes);
+app.use('/api/cargos', cargoRoutes);
 
 if (isProduction) {
   const frontendDist = path.resolve(__dirname, '../../frontend/dist');

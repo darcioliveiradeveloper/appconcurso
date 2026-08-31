@@ -1,6 +1,7 @@
 import Question from '../models/Question.js';
 import SimuladoSession from '../models/SimuladoSession.js';
 import Subject from '../models/Subject.js';
+import Cargo from '../models/Cargo.js';
 import { recommendationService } from '../services/recommendationService.js';
 import { AppError } from '../middlewares/errorHandler.js';
 
@@ -23,25 +24,45 @@ function shuffleArray(array) {
 
 export const startSimulado = async (req, res, next) => {
   try {
-    const { subjectId, mode = 'study', totalQuestions, timeLimitMinutes } = req.body;
+    const { subjectId, cargoCode, mode = 'study', totalQuestions, timeLimitMinutes } = req.body;
     const userId = req.user._id;
     
     let questions = [];
     let subject = null;
+    let cargo = null;
     
     if (mode === 'exam') {
-      // Modo prova oficial: distribuição fixa do edital
-      const subjects = await Subject.find().lean();
-      for (const subj of subjects) {
-        const config = EXAM_CONFIG[subj.code];
-        const qCount = config?.weight || 5;
-        const subjQuestions = await Question.aggregate([
-          { $match: { subject: subj._id } },
-          { $sample: { size: qCount } }
-        ]);
-        questions.push(...subjQuestions);
+      const targetCargoCode = (cargoCode || 'PREF_TI').toUpperCase();
+      cargo = await Cargo.findOne({ code: targetCargoCode });
+      if (cargo) {
+        for (const item of cargo.distribuicao) {
+          const subj = await Subject.findOne({ code: item.subjectCode });
+          if (!subj) continue;
+          const subjQuestions = await Question.aggregate([
+            { $match: { subject: subj._id } },
+            { $sample: { size: item.quantidade } }
+          ]);
+          questions.push(...subjQuestions);
+        }
+        questions = shuffleArray(questions);
+        if (questions.length > cargo.totalQuestoes) {
+          questions = questions.slice(0, cargo.totalQuestoes);
+        }
+      } else {
+        // fallback legado PREF_TI
+        const subjects = await Subject.find().lean();
+        for (const subj of subjects) {
+          const config = EXAM_CONFIG[subj.code];
+          if (!config) continue;
+          const qCount = config?.weight || 5;
+          const subjQuestions = await Question.aggregate([
+            { $match: { subject: subj._id } },
+            { $sample: { size: qCount } }
+          ]);
+          questions.push(...subjQuestions);
+        }
+        questions = shuffleArray(questions).slice(0, 40);
       }
-      questions = shuffleArray(questions).slice(0, 40);
     } else if (mode === 'focus') {
       // Modo foco nas difíceis
       questions = await recommendationService.getFocusQuestions(userId, totalQuestions || 20);
@@ -72,6 +93,7 @@ export const startSimulado = async (req, res, next) => {
       user: userId,
       mode,
       subject: subject?._id || null,
+      cargoCode: cargo?.code || cargoCode?.toUpperCase() || (mode === 'exam' ? 'PREF_TI' : null),
       totalQuestions: questions.length,
       config: {
         timeLimitMinutes: timeLimitMinutes || (mode === 'exam' ? 180 : 0),
@@ -225,17 +247,6 @@ export const finishSimulado = async (req, res, next) => {
     const bySubject = [];
     
     if (session.mode === 'exam') {
-      // Verifica notas mínimas por disciplina
-      const subjects = await Subject.find().lean();
-      for (const subj of subjects) {
-        const subjQuestions = session.questionOrder.filter(qId => 
-          session.answers.some(a => a.question.toString() === qId.toString() && 
-            session.answers.find(a => a.question.toString() === qId.toString()).question.toString() === qId.toString())
-        );
-        // Simplificado: agrupa por subject da questão
-      }
-      
-      // Implementação simplificada - agrupa respostas por subject
       const subjectStats = {};
       for (const answer of session.answers) {
         const q = await Question.findById(answer.question).select('subject');
@@ -245,12 +256,27 @@ export const finishSimulado = async (req, res, next) => {
         subjectStats[subjId].total++;
         if (answer.correct) subjectStats[subjId].correct++;
       }
+
+      let cargoDistMap = null;
+      if (session.cargoCode) {
+        const cargoDoc = await Cargo.findOne({ code: session.cargoCode });
+        if (cargoDoc) {
+          cargoDistMap = {};
+          cargoDoc.distribuicao.forEach(d => { cargoDistMap[d.subjectCode] = d; });
+        }
+      }
       
       for (const [subjId, stats] of Object.entries(subjectStats)) {
         const subj = await Subject.findById(subjId);
         const config = EXAM_CONFIG[subj.code];
         const percentage = Math.round((stats.correct / stats.total) * 100);
-        const minRequired = config?.minScore || 1;
+        let minRequired = 1;
+        if (cargoDistMap && cargoDistMap[subj.code]) {
+          // PCPR não tem nota mínima por matéria no edital, mantém 1 como alerta mas não elimina
+          minRequired = 1;
+        } else if (config) {
+          minRequired = config.minScore;
+        }
         
         bySubject.push({
           subject: subjId,
