@@ -1,4 +1,5 @@
 import AccessCode from '../models/AccessCode.js';
+import User from '../models/User.js';
 import { AppError } from '../middlewares/errorHandler.js';
 import crypto from 'crypto';
 
@@ -84,11 +85,44 @@ export const revokeAccessCode = async (req, res, next) => {
     if (!code) {
       return next(new AppError('Código não encontrado', 404));
     }
-    if (code.usedAt) {
-      return next(new AppError('Código já utilizado, não pode ser revogado', 400));
+    if (code.usedAt && code.usedBy) {
+      // Código já usado: exclui e bloqueia o usuário (mantém cadastro)
+      await code.deleteOne();
+      await User.findByIdAndUpdate(code.usedBy, { isActive: false });
+      return res.json({ message: 'Código excluído e usuário bloqueado (cadastro mantido)' });
     }
     await code.deleteOne();
     res.json({ message: 'Código revogado' });
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const generateForUser = async (req, res, next) => {
+  try {
+    const { userId } = req.body;
+    if (!userId) return next(new AppError('userId é obrigatório', 400));
+    const user = await User.findById(userId);
+    if (!user) return next(new AppError('Usuário não encontrado', 404));
+
+    let code;
+    let exists = true;
+    while (exists) {
+      code = generateCode();
+      exists = await AccessCode.exists({ code });
+    }
+    const doc = await AccessCode.create({
+      code,
+      createdBy: req.user._id,
+      usedBy: user._id,
+      usedAt: new Date()
+    });
+    // Garante que o usuário fique ativo ao gerar novo código
+    if (!user.isActive) {
+      user.isActive = true;
+      await user.save({ validateBeforeSave: false });
+    }
+    res.status(201).json({ code: doc.code, user: { _id: user._id, name: user.name, email: user.email } });
   } catch (error) {
     next(error);
   }

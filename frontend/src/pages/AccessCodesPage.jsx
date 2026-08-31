@@ -50,13 +50,27 @@ export default function AccessCodesPage() {
     alert('Códigos copiados!');
   };
 
-  const revoke = async (id) => {
-    if (!window.confirm('Revogar este código?')) return;
+  const revoke = async (id, isUsed) => {
+    const msg = isUsed
+      ? 'Excluir este código e BLOQUEAR o usuário? (cadastro mantido, mas não poderá usar o app)'
+      : 'Revogar este código?';
+    if (!window.confirm(msg)) return;
     try {
       await api.delete(`/access-codes/${id}`);
       await loadCodes();
     } catch (e) {
       setError(e.response?.data?.message || 'Erro ao revogar');
+    }
+  };
+
+  const generateForUser = async (userId, userName) => {
+    if (!window.confirm(`Gerar novo código para ${userName}? O usuário será desbloqueado se estava bloqueado.`)) return;
+    try {
+      const res = await api.post('/access-codes/for-user', { userId });
+      setNewCodes([res.data.code]);
+      await loadCodes();
+    } catch (e) {
+      setError(e.response?.data?.message || 'Erro ao gerar código para usuário');
     }
   };
 
@@ -136,11 +150,22 @@ export default function AccessCodesPage() {
                       : 'Disponível'}
                   </div>
                 </div>
-                {!c.used && (
-                  <button onClick={() => revoke(c._id)} className="text-xs text-red-600 dark:text-red-400 hover:underline">
-                    Revogar
-                  </button>
-                )}
+                <div className="flex items-center gap-2">
+                  {c.used ? (
+                    <>
+                      <button onClick={() => generateForUser(c.usedBy?._id, c.usedBy?.name || 'usuário')} className="text-xs text-blue-600 dark:text-blue-400 hover:underline">
+                        Gerar novo
+                      </button>
+                      <button onClick={() => revoke(c._id, true)} className="text-xs text-red-600 dark:text-red-400 hover:underline">
+                        Excluir (bloquear)
+                      </button>
+                    </>
+                  ) : (
+                    <button onClick={() => revoke(c._id, false)} className="text-xs text-red-600 dark:text-red-400 hover:underline">
+                      Revogar
+                    </button>
+                  )}
+                </div>
               </div>
             ))}
           </div>
