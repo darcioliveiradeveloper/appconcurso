@@ -5,6 +5,7 @@ import Layout from './components/Layout';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
+import CargoSelectPage from './pages/CargoSelectPage';
 import SubjectSelectPage from './pages/SubjectSelectPage';
 import QuestionPage from './pages/QuestionPage';
 import ResultPage from './pages/ResultPage';
@@ -50,7 +51,8 @@ export default function App() {
       <Route path="/register" element={<PublicRoute><RegisterPage /></PublicRoute>} />
 
       <Route element={<ProtectedRoute><Layout /></ProtectedRoute>}>
-        <Route path="/" element={<DashboardPage />} />
+        <Route path="/" element={<CargoSelectPage />} />
+        <Route path="/inicio" element={<DashboardPage />} />
         <Route path="/simulado/novo" element={<SubjectSelectPage />} />
         <Route path="/simulado/:sessionId/questao/:questionIndex" element={<QuestionPage />} />
         <Route path="/simulado/:sessionId/resultado" element={<ResultPage />} />

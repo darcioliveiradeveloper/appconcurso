@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { Card, Button } from '../components';
@@ -39,10 +39,15 @@ const CARGO_ORDER = ['PREF_TI', 'DEL_PCPR', 'AGENTE_PCPR', 'PAPILO_PCPR'];
 
 export default function DashboardPage() {
   const { user } = useAuth();
+  const navigate = useNavigate();
   const [cargos, setCargos] = useState([]);
-  const [selectedCargo, setSelectedCargo] = useState(() => localStorage.getItem('selectedCargo') || null);
+  const [selectedCargo] = useState(() => localStorage.getItem('selectedCargo') || null);
 
   useEffect(() => {
+    if (!selectedCargo) {
+      navigate('/', { replace: true });
+      return;
+    }
     cargosApi.getAll().then(res => {
       const sorted = [...res.data.cargos].sort((a, b) => {
         const ia = CARGO_ORDER.indexOf(a.code);
@@ -54,12 +59,7 @@ export default function DashboardPage() {
       });
       setCargos(sorted);
     }).catch(() => {});
-  }, []);
-
-  const handleSelectCargo = (code) => {
-    setSelectedCargo(code);
-    localStorage.setItem('selectedCargo', code);
-  };
+  }, [selectedCargo, navigate]);
 
   return (
     <div>
@@ -72,37 +72,19 @@ export default function DashboardPage() {
         </p>
       </div>
 
-      {cargos.length > 0 && (
-        <div className="mb-8">
-          <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Escolha o cargo para estudar</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {cargos.map(cargo => {
-              const isSelected = selectedCargo === cargo.code;
-              return (
-                <button
-                  key={cargo.code}
-                  onClick={() => handleSelectCargo(cargo.code)}
-                  className={`card text-left transition-all ${isSelected ? 'ring-2 ring-primary-500 border-primary-500 bg-primary-50 dark:bg-primary-900/20' : 'hover:shadow-md'}`}
-                >
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-mono bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">{cargo.code}</span>
-                    {isSelected && <span className="text-xs bg-primary-500 text-white px-2 py-1 rounded-full">✓ Selecionado</span>}
-                  </div>
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100 text-sm">{cargo.nome}</h3>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">{cargo.orgao}</p>
-                  <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">{cargo.totalQuestoes} questões • {cargo.distribuicao.length} disciplinas</p>
-                  <p className={`text-xs mt-2 ${cargo.disponivel < cargo.total ? 'text-yellow-600' : 'text-green-600'}`}>
-                    {cargo.disponivel}/{cargo.total} questões disponíveis
-                  </p>
-                </button>
-              );
-            })}
+      {(() => {
+        const sel = cargos.find(c => c.code === selectedCargo);
+        if (!sel) return null;
+        return (
+          <div className="mb-8 p-4 bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800 rounded-lg flex items-center justify-between gap-4 flex-wrap">
+            <div>
+              <p className="text-sm font-semibold text-primary-700 dark:text-primary-300">{sel.nome} — {sel.orgao} ({sel.code}) • {sel.totalQuestoes} questões</p>
+              <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">{sel.distribuicao.map(d => `${d.subjectName} (${d.quantidade})`).join(' • ')}</p>
+            </div>
+            <Button variant="secondary" size="sm" onClick={() => navigate('/')}>Trocar cargo</Button>
           </div>
-          <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-            Cargo selecionado será usado em "Novo Simulado" e "Prova Oficial". Monte seu próprio estudo filtrando matérias do cargo escolhido.
-          </p>
-        </div>
-      )}
+        );
+      })()}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {QUICK_ACTIONS.map((action) => (

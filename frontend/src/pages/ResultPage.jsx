@@ -20,7 +20,7 @@ export default function ResultPage() {
     window.history.pushState(null, '', window.location.href);
     const handlePopState = () => {
       window.history.pushState(null, '', window.location.href);
-      navigate('/', { replace: true });
+      navigate('/inicio', { replace: true });
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
@@ -188,7 +188,7 @@ export default function ResultPage() {
         </Link>
       </div>
       <div className="text-center pt-2">
-        <Link to="/" className="inline-block w-full sm:w-auto">
+        <Link to="/inicio" className="inline-block w-full sm:w-auto">
           <Button variant="secondary" className="w-full sm:w-auto" size="lg">🏠 Voltar ao início</Button>
         </Link>
       </div>
