@@ -35,13 +35,25 @@ const QUICK_ACTIONS = [
   }
 ];
 
+const CARGO_ORDER = ['PREF_TI', 'DEL_PCPR', 'AGENTE_PCPR', 'PAPILO_PCPR'];
+
 export default function DashboardPage() {
   const { user } = useAuth();
   const [cargos, setCargos] = useState([]);
-  const [selectedCargo, setSelectedCargo] = useState(() => localStorage.getItem('selectedCargo') || 'PREF_TI');
+  const [selectedCargo, setSelectedCargo] = useState(() => localStorage.getItem('selectedCargo') || null);
 
   useEffect(() => {
-    cargosApi.getAll().then(res => setCargos(res.data.cargos)).catch(() => {});
+    cargosApi.getAll().then(res => {
+      const sorted = [...res.data.cargos].sort((a, b) => {
+        const ia = CARGO_ORDER.indexOf(a.code);
+        const ib = CARGO_ORDER.indexOf(b.code);
+        if (ia === -1 && ib === -1) return a.code.localeCompare(b.code);
+        if (ia === -1) return 1;
+        if (ib === -1) return -1;
+        return ia - ib;
+      });
+      setCargos(sorted);
+    }).catch(() => {});
   }, []);
 
   const handleSelectCargo = (code) => {
@@ -114,65 +126,58 @@ export default function DashboardPage() {
         ))}
       </div>
 
-      <div className="mt-10">
-        <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-          Estrutura da Prova Oficial (Edital)
-        </h2>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="text-left text-gray-500 dark:text-gray-400 border-b border-gray-200 dark:border-gray-700">
-                <th className="pb-2 font-medium">Disciplina</th>
-                <th className="pb-2 font-medium text-center">Questões</th>
-                <th className="pb-2 font-medium text-center">Pontos</th>
-                <th className="pb-2 font-medium text-center">Mínimo</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-100 dark:divide-gray-700">
-              <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
-                <td className="py-3 font-medium text-gray-900 dark:text-gray-100">Língua Portuguesa</td>
-                <td className="py-3 text-center">5</td>
-                <td className="py-3 text-center">12,50</td>
-                <td className="py-3 text-center">2,50 (1 acerto)</td>
-              </tr>
-              <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
-                <td className="py-3 font-medium text-gray-900 dark:text-gray-100">Matemática</td>
-                <td className="py-3 text-center">5</td>
-                <td className="py-3 text-center">12,50</td>
-                <td className="py-3 text-center">2,50 (1 acerto)</td>
-              </tr>
-              <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
-                <td className="py-3 font-medium text-gray-900 dark:text-gray-100">Informática Básica</td>
-                <td className="py-3 text-center">5</td>
-                <td className="py-3 text-center">12,50</td>
-                <td className="py-3 text-center">2,50 (1 acerto)</td>
-              </tr>
-              <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
-                <td className="py-3 font-medium text-gray-900 dark:text-gray-100">Conhecimentos Gerais</td>
-                <td className="py-3 text-center">5</td>
-                <td className="py-3 text-center">12,50</td>
-                <td className="py-3 text-center">2,50 (1 acerto)</td>
-              </tr>
-              <tr className="bg-primary-50 dark:bg-primary-900/20 font-semibold">
-                <td className="py-3 text-gray-900 dark:text-gray-100">Conhecimentos Específicos</td>
-                <td className="py-3 text-center text-primary-600 dark:text-primary-400">20</td>
-                <td className="py-3 text-center text-primary-600 dark:text-primary-400">50,00</td>
-                <td className="py-3 text-center text-primary-600 dark:text-primary-400">17,50 (7 acertos)</td>
-              </tr>
-              <tr className="bg-gray-50 dark:bg-gray-800/50 font-bold">
-                <td className="py-3 text-gray-900 dark:text-gray-100">TOTAL</td>
-                <td className="py-3 text-center">40</td>
-                <td className="py-3 text-center">100,00</td>
-                <td className="py-3 text-center">≥ 50,00 pontos</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        
-        <div className="mt-4 p-4 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg text-sm text-yellow-800 dark:text-yellow-300">
-          <strong>⚠️ Regras de Eliminação:</strong> Você precisa acertar pelo menos 1 questão em <strong>CADA</strong> disciplina básica e 7 questões em Específicos, além de nota geral ≥ 50 pontos. Não zere nenhuma matéria!
-        </div>
-      </div>
+      {(() => {
+        const sel = cargos.find(c => c.code === selectedCargo);
+        if (!sel) {
+          return (
+            <div className="mt-10 p-6 bg-gray-50 dark:bg-gray-800 rounded-lg text-center text-gray-500 dark:text-gray-400">
+              👆 Selecione um cargo acima para ver a estrutura da prova oficial
+            </div>
+          );
+        }
+        const isPref = sel.code === 'PREF_TI';
+        return (
+          <div className="mt-10">
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">
+              Estrutura da Prova Oficial — {sel.nome} ({sel.orgao})
+            </h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Conforme edital • {sel.totalQuestoes} questões • {isPref ? '2,5 pts por questão' : '1 ponto por questão'}</p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="text-left text-gray-500 dark:text-gray-400 border-b border-gray-200 dark:border-gray-700">
+                    <th className="pb-2 font-medium">Disciplina</th>
+                    <th className="pb-2 font-medium text-center">Questões</th>
+                    <th className="pb-2 font-medium text-center">Pontos</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100 dark:divide-gray-700">
+                  {sel.distribuicao.map(item => (
+                    <tr key={item.subjectCode} className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+                      <td className="py-2.5 font-medium text-gray-900 dark:text-gray-100">
+                        {item.subjectName}
+                        <span className="ml-2 text-xs px-1.5 py-0.5 rounded bg-gray-100 dark:bg-gray-700 text-gray-500">{item.bloco}</span>
+                      </td>
+                      <td className="py-2.5 text-center">{item.quantidade}</td>
+                      <td className="py-2.5 text-center">{(item.quantidade * (isPref ? 2.5 : 1)).toFixed(2).replace('.', ',')}</td>
+                    </tr>
+                  ))}
+                  <tr className="bg-gray-50 dark:bg-gray-800/50 font-bold">
+                    <td className="py-3 text-gray-900 dark:text-gray-100">TOTAL</td>
+                    <td className="py-3 text-center">{sel.totalQuestoes}</td>
+                    <td className="py-3 text-center">100,00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            {isPref && (
+              <div className="mt-4 p-4 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg text-sm text-yellow-800 dark:text-yellow-300">
+                <strong>⚠️ Regras de Eliminação (Prefeitura):</strong> ≥ 1 acerto em cada básica, 7 em Específicos e ≥ 50 pontos no total.
+              </div>
+            )}
+          </div>
+        );
+      })()}
     </div>
   );
 }

@@ -19,7 +19,7 @@ export default function ExamModePage() {
   const [error, setError] = useState(null);
   const timerRef = useRef(null);
   const [cargos, setCargos] = useState([]);
-  const [selectedCargo, setSelectedCargo] = useState(() => localStorage.getItem('selectedCargo') || 'PREF_TI');
+  const [selectedCargo, setSelectedCargo] = useState(() => localStorage.getItem('selectedCargo') || null);
   const [totalQuestions, setTotalQuestions] = useState(40);
 
   useEffect(() => {
@@ -175,7 +175,11 @@ export default function ExamModePage() {
           <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">Prova Oficial</h1>
           <p className="text-gray-500 dark:text-gray-400 mb-6">Simulação completa conforme o edital</p>
 
-          {selectedCargoData && (
+          {!selectedCargo ? (
+            <div className="mb-6 p-4 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 rounded-lg text-yellow-800 dark:text-yellow-300 text-sm">
+              ⚠️ Escolha um cargo na tela inicial antes de iniciar a prova oficial.
+            </div>
+          ) : selectedCargoData && (
             <div className="mb-6 text-left max-w-md mx-auto p-3 bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800 rounded-lg">
               <p className="text-sm font-semibold text-primary-700 dark:text-primary-300">Cargo: {selectedCargoData.nome} — {selectedCargoData.orgao} ({selectedCargoData.code})</p>
               <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">{selectedCargoData.distribuicao.map(d => `${d.subjectName} (${d.quantidade})`).join(' • ')}</p>
@@ -208,9 +212,15 @@ export default function ExamModePage() {
             </div>
           )}
 
-          <Button onClick={startExam} size="lg" className="w-full max-w-xs">
-            🚀 Iniciar Prova
-          </Button>
+          {!selectedCargo ? (
+            <a href="/" className="inline-block w-full max-w-xs">
+              <Button variant="secondary" size="lg" className="w-full">← Voltar ao início</Button>
+            </a>
+          ) : (
+            <Button onClick={startExam} size="lg" className="w-full max-w-xs">
+              🚀 Iniciar Prova
+            </Button>
+          )}
         </Card>
       </div>
     );

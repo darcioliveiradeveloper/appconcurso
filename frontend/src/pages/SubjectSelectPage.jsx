@@ -19,7 +19,7 @@ export default function SubjectSelectPage() {
   const [questionCount, setQuestionCount] = useState(20);
   const [mode, setMode] = useState('study');
   const [cargos, setCargos] = useState([]);
-  const [selectedCargo, setSelectedCargo] = useState(() => localStorage.getItem('selectedCargo') || 'PREF_TI');
+  const [selectedCargo] = useState(() => localStorage.getItem('selectedCargo') || null);
 
   useEffect(() => {
     loadSubjects();
@@ -81,7 +81,12 @@ export default function SubjectSelectPage() {
         <p className="text-gray-500 dark:text-gray-400 mt-1">Escolha a matéria e configure seu simulado — cargo define as matérias disponíveis</p>
       </div>
 
-      {cargoData && (
+      {!selectedCargo ? (
+        <div className="mb-6 p-6 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 rounded-lg text-center">
+          <p className="text-yellow-800 dark:text-yellow-300">⚠️ Escolha um cargo na tela inicial antes de montar o simulado.</p>
+          <a href="/" className="text-sm text-primary-600 hover:underline mt-2 inline-block">← Voltar ao início</a>
+        </div>
+      ) : cargoData && (
         <div className="mb-6 p-4 bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800 rounded-lg">
           <p className="text-sm font-semibold text-primary-700 dark:text-primary-300">Cargo selecionado: {cargoData.nome} — {cargoData.orgao} ({cargoData.code})</p>
           <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">{cargoData.distribuicao.map(d => `${d.subjectName} (${d.quantidade})`).join(' • ')}</p>
@@ -89,8 +94,9 @@ export default function SubjectSelectPage() {
         </div>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-        {filteredSubjects.map((subject) => {
+      {selectedCargo && (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+          {filteredSubjects.map((subject) => {
           const info = SUBJECT_INFO[subject.code] || { name: subject.name, icon: '📚', color: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400' };
           const isSelected = selectedSubject === subject._id;
           
@@ -123,9 +129,10 @@ export default function SubjectSelectPage() {
             </button>
           );
         })}
-      </div>
+        </div>
+      )}
 
-      {selectedSubject && (
+      {selectedCargo && selectedSubject && (
         <Card className="max-w-md mx-auto">
           <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-6">Configurar Simulado</h2>
           

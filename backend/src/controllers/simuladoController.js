@@ -197,14 +197,22 @@ export const submitAnswer = async (req, res, next) => {
     question.avgTimeMs = Math.round((question.avgTimeMs * (question.timesAnswered - 1) + timeMs) / question.timesAnswered);
     await question.save();
     
-    // Adiciona resposta à sessão
-    session.answers.push({
-      question: question._id,
-      selectedIndex,
-      correct,
-      timeMs,
-      answeredAt: new Date()
-    });
+    // Atualiza ou adiciona resposta (evita duplicar se voltar e responder de novo)
+    const existingIdx = session.answers.findIndex(a => a.question.toString() === question._id.toString());
+    if (existingIdx !== -1) {
+      session.answers[existingIdx].selectedIndex = selectedIndex;
+      session.answers[existingIdx].correct = correct;
+      session.answers[existingIdx].timeMs = timeMs;
+      session.answers[existingIdx].answeredAt = new Date();
+    } else {
+      session.answers.push({
+        question: question._id,
+        selectedIndex,
+        correct,
+        timeMs,
+        answeredAt: new Date()
+      });
+    }
     session.currentQuestionIndex = index;
     await session.save();
     
@@ -239,16 +247,21 @@ export const finishSimulado = async (req, res, next) => {
     session.status = 'finished';
     session.finishedAt = new Date();
     
-    // Calcula resultado
-    const correctAnswers = session.answers.filter(a => a.correct).length;
-    const score = Math.round((correctAnswers / session.totalQuestions) * 100);
+    // Deduplica por questão (pega última resposta de cada questão)
+    const latestByQuestion = new Map();
+    for (const a of session.answers) {
+      latestByQuestion.set(a.question.toString(), a);
+    }
+    const deduped = [...latestByQuestion.values()];
+    const correctAnswers = deduped.filter(a => a.correct).length;
+    const score = Math.min(100, Math.round((correctAnswers / session.totalQuestions) * 100));
     
     let passed = true;
     const bySubject = [];
     
     if (session.mode === 'exam') {
       const subjectStats = {};
-      for (const answer of session.answers) {
+      for (const answer of deduped) {
         const q = await Question.findById(answer.question).select('subject');
         if (!q) continue;
         const subjId = q.subject.toString();
@@ -292,8 +305,10 @@ export const finishSimulado = async (req, res, next) => {
       if (score < 50) passed = false;
     }
     
-    // Gera recomendações
-    const recommendations = await recommendationService.generate(session);
+    // Gera recomendações (usa respostas deduplicadas)
+    const sessionForRec = session.toObject ? session.toObject() : { ...session };
+    sessionForRec.answers = deduped;
+    const recommendations = await recommendationService.generate(sessionForRec);
     
     session.result = {
       score,
