@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { subjectsApi, simuladosApi, cargosApi } from '../api/endpoints';
 import { Card, Button, Input } from '../components';
@@ -20,11 +20,18 @@ export default function SubjectSelectPage() {
   const [mode, setMode] = useState('study');
   const [cargos, setCargos] = useState([]);
   const [selectedCargo] = useState(() => localStorage.getItem('selectedCargo') || null);
+  const configRef = useRef(null);
 
   useEffect(() => {
     loadSubjects();
     cargosApi.getAll().then(res => setCargos(res.data.cargos)).catch(() => {});
   }, []);
+
+  useEffect(() => {
+    if (selectedSubject && configRef.current) {
+      setTimeout(() => configRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    }
+  }, [selectedSubject]);
 
   const loadSubjects = async () => {
     try {
@@ -45,12 +52,13 @@ export default function SubjectSelectPage() {
 
   const handleStart = async () => {
     if (!selectedSubject) return;
-    
+    const qty = parseInt(questionCount);
+    const total = isNaN(qty) ? 20 : Math.max(1, Math.min(100, qty));
     try {
       const res = await simuladosApi.start({
         subjectId: selectedSubject,
         mode,
-        totalQuestions: parseInt(questionCount)
+        totalQuestions: total
       });
       if (res.data.session) {
         navigate(`/simulado/${res.data.session.id}/questao/0`);
@@ -133,6 +141,7 @@ export default function SubjectSelectPage() {
       )}
 
       {selectedCargo && selectedSubject && (
+        <div ref={configRef}>
         <Card className="max-w-md mx-auto">
           <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-6">Configurar Simulado</h2>
           
@@ -171,7 +180,17 @@ export default function SubjectSelectPage() {
                 type="number"
                 name="questionCount"
                 value={questionCount}
-                onChange={(e) => setQuestionCount(Math.max(1, Math.min(100, parseInt(e.target.value) || 1)))}
+                onFocus={(e) => e.target.select()}
+                onChange={(e) => {
+                  const v = e.target.value;
+                  if (v === '') { setQuestionCount(''); return; }
+                  const n = parseInt(v, 10);
+                  if (isNaN(n)) return;
+                  setQuestionCount(Math.max(1, Math.min(100, n)));
+                }}
+                onBlur={() => {
+                  if (questionCount === '' || isNaN(parseInt(questionCount))) setQuestionCount(1);
+                }}
                 min="1"
                 max="100"
               />
@@ -187,6 +206,7 @@ export default function SubjectSelectPage() {
             </Button>
           </div>
         </Card>
+        </div>
       )}
     </div>
   );
