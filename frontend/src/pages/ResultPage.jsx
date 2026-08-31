@@ -15,6 +15,17 @@ export default function ResultPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sessionId]);
 
+  // Bloqueia voltar para as questões após finalizar
+  useEffect(() => {
+    window.history.pushState(null, '', window.location.href);
+    const handlePopState = () => {
+      window.history.pushState(null, '', window.location.href);
+      navigate('/', { replace: true });
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [navigate]);
+
   const loadResult = async () => {
     try {
       const res = await simuladosApi.getDetail(sessionId);
@@ -174,6 +185,11 @@ export default function ResultPage() {
         </Link>
         <Link to="/historico" className="block">
           <Button variant="secondary" className="w-full" size="lg">📊 Ver Histórico</Button>
+        </Link>
+      </div>
+      <div className="text-center pt-2">
+        <Link to="/" className="inline-block w-full sm:w-auto">
+          <Button variant="secondary" className="w-full sm:w-auto" size="lg">🏠 Voltar ao início</Button>
         </Link>
       </div>
     </div>

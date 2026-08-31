@@ -81,15 +81,11 @@ export default function SubjectSelectPage() {
         <p className="text-gray-500 dark:text-gray-400 mt-1">Escolha a matéria e configure seu simulado — cargo define as matérias disponíveis</p>
       </div>
 
-      {cargos.length > 0 && (
-        <div className="mb-6">
-          <label className="label">Cargo</label>
-          <select value={selectedCargo} onChange={e => { setSelectedCargo(e.target.value); localStorage.setItem('selectedCargo', e.target.value); setSelectedSubject(null); }} className="w-full max-w-md p-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100">
-            {cargos.map(c => (
-              <option key={c.code} value={c.code}>{c.nome} — {c.orgao} ({c.totalQuestoes}q)</option>
-            ))}
-          </select>
-          {cargoData && <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">{cargoData.distribuicao.map(d => `${d.subjectName} (${d.quantidade})`).join(' • ')}</p>}
+      {cargoData && (
+        <div className="mb-6 p-4 bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800 rounded-lg">
+          <p className="text-sm font-semibold text-primary-700 dark:text-primary-300">Cargo selecionado: {cargoData.nome} — {cargoData.orgao} ({cargoData.code})</p>
+          <p className="text-xs text-gray-600 dark:text-gray-300 mt-1">{cargoData.distribuicao.map(d => `${d.subjectName} (${d.quantidade})`).join(' • ')}</p>
+          <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Escolhido na tela inicial. Para trocar, volte ao início.</p>
         </div>
       )}
 

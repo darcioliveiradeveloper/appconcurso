@@ -22,6 +22,16 @@ export default function QuestionPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sessionId, index]);
 
+  // Bloqueia voltar do navegador/celular durante o simulado
+  useEffect(() => {
+    const handlePopState = () => {
+      window.history.pushState(null, '', window.location.href);
+    };
+    window.history.pushState(null, '', window.location.href);
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
   const loadQuestion = async () => {
     setLoading(true);
     setError(null);
@@ -60,7 +70,7 @@ export default function QuestionPage() {
   const goNext = () => {
     const next = index + 1;
     if (next < sessionInfo.totalQuestions) {
-      navigate(`/simulado/${sessionId}/questao/${next}`);
+      navigate(`/simulado/${sessionId}/questao/${next}`, { replace: true });
     } else {
       finish();
     }
@@ -69,7 +79,7 @@ export default function QuestionPage() {
   const finish = async () => {
     try {
       await simuladosApi.finish(sessionId);
-      navigate(`/simulado/${sessionId}/resultado`);
+      navigate(`/simulado/${sessionId}/resultado`, { replace: true });
     } catch (err) {
       const msg = err.response?.data?.message 
         || (err.message?.includes('Backend indisponível') ? err.message : 'Erro de conexão com o servidor. Verifique se o backend está rodando na porta 3000.');
