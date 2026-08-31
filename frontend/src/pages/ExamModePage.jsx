@@ -46,10 +46,10 @@ export default function ExamModePage() {
 
   const submitExam = useCallback(async () => {
     if (!sessionId) return;
+    setShowConfirm(false);
     setPhase('submitting');
     clearInterval(timerRef.current);
 
-    // Timeout de segurança: se travar mais de 30s, volta para running
     const safetyTimeout = setTimeout(() => {
       console.error('[ExamMode] TIMEOUT de segurança: submitExam travou >30s');
       setError('Tempo esgotado ao entregar. Tente novamente ou recarregue a página.');
@@ -58,14 +58,7 @@ export default function ExamModePage() {
 
     try {
       console.log('[ExamMode] Iniciando submissão da prova...', { sessionId, answersCount: Object.keys(answers).length });
-      
-      // Verifica conectividade rápida antes de enviar tudo
-      await simuladosApi.getQuestion(sessionId, 0).catch(() => {
-        throw new Error('Backend indisponível. Verifique se o servidor está rodando (porta 3000).');
-      });
-      console.log('[ExamMode] Conectividade OK');
 
-      // Envia todas as respostas em sequência
       const indices = Object.keys(answers).map(Number).sort((a, b) => a - b);
       for (const idx of indices) {
         console.log('[ExamMode] Enviando resposta', idx);
@@ -78,14 +71,16 @@ export default function ExamModePage() {
       
       localStorage.removeItem(`exam_timer_${sessionId}`);
       console.log('[ExamMode] Navegando para resultado...');
-      navigate(`/simulado/${sessionId}/resultado`);
+      navigate(`/simulado/${sessionId}/resultado`, { replace: true });
       console.log('[ExamMode] Navegação disparada');
     } catch (err) {
       console.error('[ExamMode] ERRO ao submeter:', err);
       const msg = err.response?.data?.message 
-        || (err.message?.includes('Backend indisponível') ? err.message : 'Erro de conexão com o servidor. Verifique se o backend está rodando na porta 3000.');
+        || err.message
+        || 'Erro de conexão com o servidor.';
       setError(msg);
       setPhase('running');
+      alert(msg);
     } finally {
       clearTimeout(safetyTimeout);
     }
