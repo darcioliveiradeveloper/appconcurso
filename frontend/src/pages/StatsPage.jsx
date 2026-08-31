@@ -4,12 +4,14 @@ import {
   BarChart, Bar, Cell
 } from 'recharts';
 import api from '../api/axios';
-import { Card } from '../components';
+import { Card, Button } from '../components';
+import { simuladosApi } from '../api/endpoints';
 
 export default function StatsPage() {
   const [sessions, setSessions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [topicStats, setTopicStats] = useState({}); // topic -> {correct,total}
+  const [clearing, setClearing] = useState(false);
 
   useEffect(() => {
     loadStats();
@@ -84,11 +86,32 @@ export default function StatsPage() {
     );
   }
 
+  const handleClear = async () => {
+    if (!window.confirm('Limpar histórico e estatísticas? Esta ação não pode ser desfeita.')) return;
+    setClearing(true);
+    try {
+      await simuladosApi.clearHistory();
+      setSessions([]);
+      setTopicStats({});
+    } catch (err) {
+      alert(err.response?.data?.message || 'Erro ao limpar');
+    } finally {
+      setClearing(false);
+    }
+  };
+
   return (
     <div className="max-w-5xl mx-auto space-y-6">
-      <div>
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">📈 Estatísticas</h1>
-        <p className="text-gray-500 dark:text-gray-400 mt-1">Sua evolução e pontos fracos</p>
+      <div className="flex items-center justify-between flex-wrap gap-4">
+        <div>
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">📈 Estatísticas</h1>
+          <p className="text-gray-500 dark:text-gray-400 mt-1">Sua evolução e pontos fracos</p>
+        </div>
+        {sessions.length > 0 && (
+          <Button variant="danger" size="sm" onClick={handleClear} loading={clearing}>
+            🗑️ Limpar
+          </Button>
+        )}
       </div>
 
       {/* Cards de resumo */}

@@ -19,7 +19,8 @@ export const simuladosApi = {
   submitAnswer: (sessionId, questionIndex, selectedIndex) => api.post(`/simulados/${sessionId}/question/${questionIndex}/answer`, { selectedIndex }),
   finish: (sessionId) => api.post(`/simulados/${sessionId}/finish`),
   getHistory: (params) => api.get('/simulados/history', { params }),
-  getDetail: (id) => api.get(`/simulados/${id}`)
+  getDetail: (id) => api.get(`/simulados/${id}`),
+  clearHistory: () => api.delete('/simulados/history')
 };
 
 export const cargosApi = {

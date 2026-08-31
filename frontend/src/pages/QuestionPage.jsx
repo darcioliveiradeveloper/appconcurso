@@ -16,21 +16,35 @@ export default function QuestionPage() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
   const questionStartRef = useRef(Date.now());
+  const maxReachedRef = useRef(parseInt(sessionStorage.getItem(`max_${sessionId}`) || '0'));
 
   useEffect(() => {
+    // Bloqueia voltar para questão anterior
+    if (index < maxReachedRef.current) {
+      navigate(`/simulado/${sessionId}/questao/${maxReachedRef.current}`, { replace: true });
+      return;
+    }
+    if (index > maxReachedRef.current) {
+      maxReachedRef.current = index;
+      sessionStorage.setItem(`max_${sessionId}`, String(index));
+    }
     loadQuestion();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sessionId, index]);
 
   // Bloqueia voltar do navegador/celular durante o simulado
   useEffect(() => {
-    const handlePopState = () => {
+    const handlePopState = (e) => {
+      e.preventDefault();
       window.history.pushState(null, '', window.location.href);
+      if (index < maxReachedRef.current) {
+        navigate(`/simulado/${sessionId}/questao/${maxReachedRef.current}`, { replace: true });
+      }
     };
     window.history.pushState(null, '', window.location.href);
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, []);
+  }, [index, sessionId, navigate]);
 
   const loadQuestion = async () => {
     setLoading(true);
@@ -78,6 +92,7 @@ export default function QuestionPage() {
 
   const finish = async () => {
     try {
+      sessionStorage.removeItem(`max_${sessionId}`);
       await simuladosApi.finish(sessionId);
       navigate(`/simulado/${sessionId}/resultado`, { replace: true });
     } catch (err) {

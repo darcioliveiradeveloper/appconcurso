@@ -197,22 +197,18 @@ export const submitAnswer = async (req, res, next) => {
     question.avgTimeMs = Math.round((question.avgTimeMs * (question.timesAnswered - 1) + timeMs) / question.timesAnswered);
     await question.save();
     
-    // Atualiza ou adiciona resposta (evita duplicar se voltar e responder de novo)
-    const existingIdx = session.answers.findIndex(a => a.question.toString() === question._id.toString());
-    if (existingIdx !== -1) {
-      session.answers[existingIdx].selectedIndex = selectedIndex;
-      session.answers[existingIdx].correct = correct;
-      session.answers[existingIdx].timeMs = timeMs;
-      session.answers[existingIdx].answeredAt = new Date();
-    } else {
-      session.answers.push({
-        question: question._id,
-        selectedIndex,
-        correct,
-        timeMs,
-        answeredAt: new Date()
-      });
+    // Bloqueia re-resposta (não deixa voltar e corrigir)
+    const alreadyAnswered = session.answers.some(a => a.question.toString() === question._id.toString());
+    if (alreadyAnswered) {
+      return next(new AppError('Você já respondeu esta questão', 400));
     }
+    session.answers.push({
+      question: question._id,
+      selectedIndex,
+      correct,
+      timeMs,
+      answeredAt: new Date()
+    });
     session.currentQuestionIndex = index;
     await session.save();
     
@@ -361,6 +357,15 @@ export const getHistory = async (req, res, next) => {
         pages: Math.ceil(total / limit)
       }
     });
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const clearHistory = async (req, res, next) => {
+  try {
+    const result = await SimuladoSession.deleteMany({ user: req.user._id });
+    res.json({ message: 'Histórico limpo', deletedCount: result.deletedCount });
   } catch (error) {
     next(error);
   }

@@ -15,6 +15,7 @@ export default function HistoryPage() {
   const [pagination, setPagination] = useState({ page: 1, pages: 1, total: 0 });
   const [modeFilter, setModeFilter] = useState('');
   const [loading, setLoading] = useState(true);
+  const [clearing, setClearing] = useState(false);
 
   useEffect(() => {
     loadHistory();
@@ -38,6 +39,20 @@ export default function HistoryPage() {
     }
   };
 
+  const handleClear = async () => {
+    if (!window.confirm('Tem certeza que deseja limpar todo o histórico? Esta ação não pode ser desfeita.')) return;
+    setClearing(true);
+    try {
+      await simuladosApi.clearHistory();
+      setSessions([]);
+      setPagination({ page: 1, pages: 1, total: 0 });
+    } catch (err) {
+      alert(err.response?.data?.message || 'Erro ao limpar histórico');
+    } finally {
+      setClearing(false);
+    }
+  };
+
   const scoreColor = (score) =>
     score >= 70 ? 'text-green-600 dark:text-green-400' : score >= 50 ? 'text-yellow-600 dark:text-yellow-400' : 'text-red-600 dark:text-red-400';
 
@@ -49,16 +64,23 @@ export default function HistoryPage() {
           <p className="text-gray-500 dark:text-gray-400 mt-1">Todos os seus simulados finalizados</p>
         </div>
 
-        <select
-          value={modeFilter}
-          onChange={(e) => { setModeFilter(e.target.value); setPagination(p => ({ ...p, page: 1 })); }}
-          className="input w-auto"
-        >
-          <option value="">Todos os modos</option>
-          <option value="study">Estudo Livre</option>
-          <option value="exam">Prova Oficial</option>
-          <option value="focus">Focado nas Difíceis</option>
-        </select>
+        <div className="flex items-center gap-3">
+          <select
+            value={modeFilter}
+            onChange={(e) => { setModeFilter(e.target.value); setPagination(p => ({ ...p, page: 1 })); }}
+            className="input w-auto"
+          >
+            <option value="">Todos os modos</option>
+            <option value="study">Estudo Livre</option>
+            <option value="exam">Prova Oficial</option>
+            <option value="focus">Focado nas Difíceis</option>
+          </select>
+          {sessions.length > 0 && (
+            <Button variant="danger" size="sm" onClick={handleClear} loading={clearing}>
+              🗑️ Limpar
+            </Button>
+          )}
+        </div>
       </div>
 
       {loading ? (
