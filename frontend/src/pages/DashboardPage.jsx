@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { Card, Button } from '../components';
+import { cargosApi } from '../api/endpoints';
 
 const QUICK_ACTIONS = [
   { 
@@ -35,6 +37,17 @@ const QUICK_ACTIONS = [
 
 export default function DashboardPage() {
   const { user } = useAuth();
+  const [cargos, setCargos] = useState([]);
+  const [selectedCargo, setSelectedCargo] = useState(() => localStorage.getItem('selectedCargo') || 'PREF_TI');
+
+  useEffect(() => {
+    cargosApi.getAll().then(res => setCargos(res.data.cargos)).catch(() => {});
+  }, []);
+
+  const handleSelectCargo = (code) => {
+    setSelectedCargo(code);
+    localStorage.setItem('selectedCargo', code);
+  };
 
   return (
     <div>
@@ -43,9 +56,41 @@ export default function DashboardPage() {
           Olá, {user?.name?.split(' ')[0] || 'Estudante'}! 👋
         </h1>
         <p className="text-gray-500 dark:text-gray-400 mt-1">
-          Escolha como quer estudar hoje
+          Escolha o cargo e como quer estudar hoje
         </p>
       </div>
+
+      {cargos.length > 0 && (
+        <div className="mb-8">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Escolha o cargo para estudar</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {cargos.map(cargo => {
+              const isSelected = selectedCargo === cargo.code;
+              return (
+                <button
+                  key={cargo.code}
+                  onClick={() => handleSelectCargo(cargo.code)}
+                  className={`card text-left transition-all ${isSelected ? 'ring-2 ring-primary-500 border-primary-500 bg-primary-50 dark:bg-primary-900/20' : 'hover:shadow-md'}`}
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-mono bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">{cargo.code}</span>
+                    {isSelected && <span className="text-xs bg-primary-500 text-white px-2 py-1 rounded-full">✓ Selecionado</span>}
+                  </div>
+                  <h3 className="font-semibold text-gray-900 dark:text-gray-100 text-sm">{cargo.nome}</h3>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">{cargo.orgao}</p>
+                  <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">{cargo.totalQuestoes} questões • {cargo.distribuicao.length} disciplinas</p>
+                  <p className={`text-xs mt-2 ${cargo.disponivel < cargo.total ? 'text-yellow-600' : 'text-green-600'}`}>
+                    {cargo.disponivel}/{cargo.total} questões disponíveis
+                  </p>
+                </button>
+              );
+            })}
+          </div>
+          <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
+            Cargo selecionado será usado em "Novo Simulado" e "Prova Oficial". Monte seu próprio estudo filtrando matérias do cargo escolhido.
+          </p>
+        </div>
+      )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {QUICK_ACTIONS.map((action) => (

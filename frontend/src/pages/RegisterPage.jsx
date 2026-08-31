@@ -10,9 +10,17 @@ export default function RegisterPage() {
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
+  const formatAccessCode = (v) => {
+    const raw = v.replace(/[^A-Za-z0-9]/g, '').toUpperCase().slice(0, 10);
+    if (raw.length > 5) return `${raw.slice(0, 5)}-${raw.slice(5)}`;
+    return raw;
+  };
+
   const handleChange = (e) => {
-    setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
-    if (errors[e.target.name]) setErrors(prev => ({ ...prev, [e.target.name]: '' }));
+    const { name, value } = e.target;
+    const nextVal = name === 'accessCode' ? formatAccessCode(value) : value;
+    setForm(prev => ({ ...prev, [name]: nextVal }));
+    if (errors[name]) setErrors(prev => ({ ...prev, [name]: '' }));
   };
 
   const validate = () => {

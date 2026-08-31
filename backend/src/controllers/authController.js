@@ -16,7 +16,10 @@ export const register = async (req, res, next) => {
       return next(new AppError('Código de liberação é obrigatório', 400));
     }
 
-    const code = await AccessCode.findOne({ code: accessCode.trim().toUpperCase() });
+    const normalized = accessCode.replace(/[^A-Za-z0-9]/g, '').toUpperCase();
+    const withHyphen = normalized.length === 10 ? `${normalized.slice(0, 5)}-${normalized.slice(5)}` : normalized;
+    let code = await AccessCode.findOne({ code: withHyphen });
+    if (!code) code = await AccessCode.findOne({ code: normalized });
     if (!code) {
       return next(new AppError('Código de liberação inválido', 400));
     }

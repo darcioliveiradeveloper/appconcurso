@@ -19,7 +19,7 @@ export default function ExamModePage() {
   const [error, setError] = useState(null);
   const timerRef = useRef(null);
   const [cargos, setCargos] = useState([]);
-  const [selectedCargo, setSelectedCargo] = useState('PREF_TI');
+  const [selectedCargo, setSelectedCargo] = useState(() => localStorage.getItem('selectedCargo') || 'PREF_TI');
   const [totalQuestions, setTotalQuestions] = useState(40);
 
   useEffect(() => {
@@ -178,7 +178,7 @@ export default function ExamModePage() {
           {cargos.length > 0 && (
             <div className="mb-6 text-left max-w-md mx-auto">
               <label className="label">Escolha o cargo</label>
-              <select value={selectedCargo} onChange={e => setSelectedCargo(e.target.value)} className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100">
+              <select value={selectedCargo} onChange={e => { setSelectedCargo(e.target.value); localStorage.setItem('selectedCargo', e.target.value); }} className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100">
                 {cargos.map(c => (
                   <option key={c.code} value={c.code}>{c.nome} — {c.orgao} ({c.totalQuestoes}q)</option>
                 ))}

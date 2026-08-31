@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { subjectsApi, simuladosApi } from '../api/endpoints';
+import { subjectsApi, simuladosApi, cargosApi } from '../api/endpoints';
 import { Card, Button, Input } from '../components';
 
 const SUBJECT_INFO = {
@@ -18,9 +18,12 @@ export default function SubjectSelectPage() {
   const [selectedSubject, setSelectedSubject] = useState(null);
   const [questionCount, setQuestionCount] = useState(20);
   const [mode, setMode] = useState('study');
+  const [cargos, setCargos] = useState([]);
+  const [selectedCargo, setSelectedCargo] = useState(() => localStorage.getItem('selectedCargo') || 'PREF_TI');
 
   useEffect(() => {
     loadSubjects();
+    cargosApi.getAll().then(res => setCargos(res.data.cargos)).catch(() => {});
   }, []);
 
   const loadSubjects = async () => {
@@ -59,6 +62,10 @@ export default function SubjectSelectPage() {
     }
   };
 
+  const cargoData = cargos.find(c => c.code === selectedCargo);
+  const allowedCodes = cargoData ? new Set(cargoData.distribuicao.map(d => d.subjectCode)) : null;
+  const filteredSubjects = allowedCodes ? subjects.filter(s => allowedCodes.has(s.code)) : subjects;
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -71,11 +78,23 @@ export default function SubjectSelectPage() {
     <div>
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">Novo Simulado</h1>
-        <p className="text-gray-500 dark:text-gray-400 mt-1">Escolha a matéria e configure seu simulado</p>
+        <p className="text-gray-500 dark:text-gray-400 mt-1">Escolha a matéria e configure seu simulado — cargo define as matérias disponíveis</p>
       </div>
 
+      {cargos.length > 0 && (
+        <div className="mb-6">
+          <label className="label">Cargo</label>
+          <select value={selectedCargo} onChange={e => { setSelectedCargo(e.target.value); localStorage.setItem('selectedCargo', e.target.value); setSelectedSubject(null); }} className="w-full max-w-md p-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100">
+            {cargos.map(c => (
+              <option key={c.code} value={c.code}>{c.nome} — {c.orgao} ({c.totalQuestoes}q)</option>
+            ))}
+          </select>
+          {cargoData && <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">{cargoData.distribuicao.map(d => `${d.subjectName} (${d.quantidade})`).join(' • ')}</p>}
+        </div>
+      )}
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-        {subjects.map((subject) => {
+        {filteredSubjects.map((subject) => {
           const info = SUBJECT_INFO[subject.code] || { name: subject.name, icon: '📚', color: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400' };
           const isSelected = selectedSubject === subject._id;
           
