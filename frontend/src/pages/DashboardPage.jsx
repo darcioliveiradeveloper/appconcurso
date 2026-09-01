@@ -1,6 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { useAuth } from '../contexts/AuthContext';
 import { Card, Button } from '../components';
 import { cargosApi } from '../api/endpoints';
 
@@ -24,9 +23,9 @@ const QUICK_ACTIONS = [
 const CARGO_ORDER = ['PREF_TI', 'DEL_PCPR', 'AGENTE_PCPR', 'PAPILO_PCPR'];
 
 export default function DashboardPage() {
-  const { user } = useAuth();
   const navigate = useNavigate();
   const [cargos, setCargos] = useState([]);
+  const [cargosLoading, setCargosLoading] = useState(true);
   const [selectedCargo] = useState(() => localStorage.getItem('selectedCargo') || null);
 
   useEffect(() => {
@@ -44,21 +43,19 @@ export default function DashboardPage() {
         return ia - ib;
       });
       setCargos(sorted);
-    }).catch(() => {});
+    }).catch(() => {}).finally(() => setCargosLoading(false));
   }, [selectedCargo, navigate]);
 
   return (
     <div>
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
-          Olá, {user?.name?.split(' ')[0] || 'Estudante'}! 👋
-        </h1>
-        <p className="text-gray-500 dark:text-gray-400 mt-1">
-          Escolha o cargo e como quer estudar hoje
-        </p>
-      </div>
-
       {(() => {
+        if (cargosLoading) {
+          return (
+            <div className="mb-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg text-center text-gray-500 dark:text-gray-400">
+              Aguarde enquanto as informações do cargo escolhido estão sendo carregadas...
+            </div>
+          );
+        }
         const sel = cargos.find(c => c.code === selectedCargo);
         if (!sel) return null;
         return (
@@ -95,6 +92,13 @@ export default function DashboardPage() {
       </div>
 
       {(() => {
+        if (cargosLoading) {
+          return (
+            <div className="mt-10 p-6 bg-gray-50 dark:bg-gray-800 rounded-lg text-center text-gray-500 dark:text-gray-400">
+              Aguarde enquanto as informações do cargo escolhido estão sendo carregadas...
+            </div>
+          );
+        }
         const sel = cargos.find(c => c.code === selectedCargo);
         if (!sel) {
           return (
