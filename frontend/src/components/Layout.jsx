@@ -22,9 +22,6 @@ export default function Layout() {
               </NavLink>
               <nav className="hidden md:flex items-center gap-6">
                 <NavLink to="/" className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary-600' : 'text-gray-600 dark:text-gray-400 hover:text-primary-600'}`}>
-                  Cargos
-                </NavLink>
-                <NavLink to="/inicio" className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary-600' : 'text-gray-600 dark:text-gray-400 hover:text-primary-600'}`}>
                   Início
                 </NavLink>
                 <NavLink to="/simulado/novo" className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary-600' : 'text-gray-600 dark:text-gray-400 hover:text-primary-600'}`}>

@@ -45,9 +45,24 @@ export default function CargoSelectPage() {
           Olá, {user?.name?.split(' ')[0] || 'Estudante'}! 👋
         </h1>
         <p className="text-gray-500 dark:text-gray-400 mt-1">
-          Escolha o cargo que deseja estudar
+          Bem-vindo ao Concurso TI — sua plataforma de simulados
         </p>
       </div>
+
+      <div className="card mb-8 bg-gradient-to-br from-primary-50 to-blue-50 dark:from-primary-900/20 dark:to-blue-900/20 border-primary-200 dark:border-primary-800">
+        <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3">📚 O que é este app?</h2>
+        <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-3">
+          Plataforma de estudos com <strong>simulados por matéria</strong>, <strong>foco nas suas dificuldades</strong> e <strong>Prova Oficial</strong> conforme o edital — com timer, navegação e correção detalhada.
+        </p>
+        <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-3">
+          Crie simulados personalizados escolhendo a matéria e a quantidade de questões, ou encare a prova completa no tempo real. Ao final, veja <strong>histórico, estatísticas e recomendações</strong> do que estudar mais.
+        </p>
+        <p className="text-gray-500 dark:text-gray-400 text-xs">
+          Escolha abaixo o cargo para começar. Você poderá trocar a qualquer momento voltando em <strong>Início</strong>.
+        </p>
+      </div>
+
+      <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Cargos disponíveis</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {cargos.map(cargo => (

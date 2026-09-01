@@ -14,24 +14,10 @@ const QUICK_ACTIONS = [
   },
   { 
     title: 'Prova Oficial', 
-    desc: 'Simulado completo: 40 questões, 3 horas (conforme edital)', 
+    desc: 'Simulado completo conforme o edital', 
     icon: '📋', 
     href: '/prova-oficial',
     color: 'bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400'
-  },
-  { 
-    title: 'Histórico', 
-    desc: 'Veja todos os seus simulados anteriores', 
-    icon: '📊', 
-    href: '/historico',
-    color: 'bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400'
-  },
-  { 
-    title: 'Estatísticas', 
-    desc: 'Acompanhe sua evolução e pontos fracos', 
-    icon: '📈', 
-    href: '/estatisticas',
-    color: 'bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400'
   }
 ];
 
@@ -86,7 +72,7 @@ export default function DashboardPage() {
         );
       })()}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl">
         {QUICK_ACTIONS.map((action) => (
           <Link key={action.title} to={action.href} className="block">
             <Card className="h-full hover:shadow-md transition-shadow cursor-pointer group">
