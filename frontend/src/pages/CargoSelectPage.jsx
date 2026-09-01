@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
 import { cargosApi } from '../api/endpoints';
 
 const CARGO_ORDER = ['PREF_TI', 'DEL_PCPR', 'AGENTE_PCPR', 'PAPILO_PCPR'];
 
 export default function CargoSelectPage() {
-  const { user } = useAuth();
   const navigate = useNavigate();
   const [cargos, setCargos] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -40,16 +38,16 @@ export default function CargoSelectPage() {
 
   return (
     <div>
-      <div className="mb-8">
+      <div className="mb-6">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
-          Olá, {user?.name?.split(' ')[0] || 'Estudante'}! 👋
+          Bem vindo ao Vou Passar
         </h1>
         <p className="text-gray-500 dark:text-gray-400 mt-1">
-          Bem-vindo ao Concurso TI — sua plataforma de simulados
+          Sua plataforma de simulados para concursos
         </p>
       </div>
 
-      <div className="card mb-8 bg-gradient-to-br from-primary-50 to-blue-50 dark:from-primary-900/20 dark:to-blue-900/20 border-primary-200 dark:border-primary-800">
+      <div className="card mb-6 bg-gradient-to-br from-primary-50 to-blue-50 dark:from-primary-900/20 dark:to-blue-900/20 border-primary-200 dark:border-primary-800">
         <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3">📚 O que é este app?</h2>
         <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-3">
           Plataforma de estudos com <strong>simulados por matéria</strong>, <strong>foco nas suas dificuldades</strong> e <strong>Prova Oficial</strong> conforme o edital — com timer, navegação e correção detalhada.

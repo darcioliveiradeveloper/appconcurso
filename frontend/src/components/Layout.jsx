@@ -18,17 +18,11 @@ export default function Layout() {
             <div className="flex items-center gap-8">
               <NavLink to="/" className="flex items-center gap-2">
                 <span className="text-2xl">🎯</span>
-                <span className="font-bold text-xl text-primary-600 dark:text-primary-400">Concurso TI</span>
+                <span className="font-bold text-xl text-primary-600 dark:text-primary-400">Vou Passar</span>
               </NavLink>
               <nav className="hidden md:flex items-center gap-6">
                 <NavLink to="/" className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary-600' : 'text-gray-600 dark:text-gray-400 hover:text-primary-600'}`}>
                   Início
-                </NavLink>
-                <NavLink to="/simulado/novo" className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary-600' : 'text-gray-600 dark:text-gray-400 hover:text-primary-600'}`}>
-                  Novo Simulado
-                </NavLink>
-                <NavLink to="/prova-oficial" className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary-600' : 'text-gray-600 dark:text-gray-400 hover:text-primary-600'}`}>
-                  Prova Oficial
                 </NavLink>
                 <NavLink to="/historico" className={({ isActive }) => `text-sm font-medium transition-colors ${isActive ? 'text-primary-600' : 'text-gray-600 dark:text-gray-400 hover:text-primary-600'}`}>
                   Histórico
@@ -47,7 +41,7 @@ export default function Layout() {
               {user && (
                 <div className="flex items-center gap-3">
                   <span className="text-sm text-gray-600 dark:text-gray-400 hidden sm:block">
-                    {user.name}
+                    Olá, {user.name.split(' ')[0]}
                   </span>
                   <button onClick={handleLogout} className="btn-secondary text-sm">
                     Sair
