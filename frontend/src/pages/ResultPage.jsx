@@ -57,8 +57,11 @@ export default function ResultPage() {
   }
 
   const { result: r, mode, totalQuestions } = result;
-  const correct = r?.score != null ? Math.round((r.score / 100) * totalQuestions) : null;
-  const wrong = totalQuestions - (correct ?? 0);
+  const answeredCount = result.answers?.length ?? 0;
+  const correct = r?.score != null ? Math.round((r.score / 100) * totalQuestions) : (result.answers?.filter(a => a.correct).length ?? 0);
+  const wrongAnswered = Math.max(0, answeredCount - (correct ?? 0));
+  const notAnswered = Math.max(0, totalQuestions - answeredCount);
+  const wrong = mode === 'exam' && notAnswered > 0 ? wrongAnswered : totalQuestions - (correct ?? 0);
   const scoreColor = r?.score >= 70 ? 'text-green-600 dark:text-green-400' : r?.score >= 50 ? 'text-yellow-600 dark:text-yellow-400' : 'text-red-600 dark:text-red-400';
 
   const priorityStyles = {
@@ -183,48 +186,51 @@ export default function ResultPage() {
             {result.answers?.length || 0} respondidas de {totalQuestions} • Clique na questão para revisar
           </p>
           <div className="space-y-6">
-            {result.questionOrder.map((q, idx) => {
-              const qId = q._id?.toString() || q.toString();
-              const ans = result.answers?.find(a => (a.question?._id?.toString() || a.question?.toString()) === qId);
-              const selectedIdx = ans?.selectedIndex;
-              const isAnswered = ans !== undefined;
-              const isCorrect = ans?.correct;
-              const correctIdx = q.correctIndex;
-
-              return (
-                <div key={qId} className={`p-4 rounded-lg border ${!isAnswered ? 'bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700' : isCorrect ? 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800' : 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800'}`}>
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-mono text-gray-500 dark:text-gray-400">Questão {idx + 1} • {q.topic || 'Geral'}</span>
-                    <span className={`text-xs font-bold px-2 py-1 rounded-full ${!isAnswered ? 'bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300' : isCorrect ? 'bg-green-200 dark:bg-green-800 text-green-800 dark:text-green-200' : 'bg-red-200 dark:bg-red-800 text-red-800 dark:text-red-200'}`}>
-                      {!isAnswered ? 'Não respondida' : isCorrect ? '✅ Acertou' : '❌ Errou'}
-                    </span>
+            {(() => {
+              const answeredIds = new Set(result.answers?.map(a => (a.question?._id?.toString() || a.question?.toString())) || []);
+              const filtered = result.questionOrder.filter(q => answeredIds.has(q._id?.toString() || q.toString()));
+              if (filtered.length === 0) {
+                return <p className="text-sm text-gray-500 dark:text-gray-400">Nenhuma questão respondida para revisar.</p>;
+              }
+              return filtered.map((q) => {
+                const qId = q._id?.toString() || q.toString();
+                const idx = result.questionOrder.findIndex(x => (x._id?.toString() || x.toString()) === qId);
+                const ans = result.answers?.find(a => (a.question?._id?.toString() || a.question?.toString()) === qId);
+                const selectedIdx = ans?.selectedIndex;
+                const isCorrect = ans?.correct;
+                const correctIdx = q.correctIndex;
+                return (
+                  <div key={qId} className={`p-4 rounded-lg border ${isCorrect ? 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800' : 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800'}`}>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-mono text-gray-500 dark:text-gray-400">Questão {idx + 1} • {q.topic || 'Geral'}</span>
+                      <span className={`text-xs font-bold px-2 py-1 rounded-full ${isCorrect ? 'bg-green-200 dark:bg-green-800 text-green-800 dark:text-green-200' : 'bg-red-200 dark:bg-red-800 text-red-800 dark:text-red-200'}`}>
+                        {isCorrect ? '✅ Acertou' : '❌ Errou'}
+                      </span>
+                    </div>
+                    <p className="text-sm font-medium text-gray-900 dark:text-gray-100 mb-3 whitespace-pre-line">{q.text}</p>
+                    <div className="space-y-2">
+                      {q.alternatives?.map((alt, i) => {
+                        const isSelected = selectedIdx === i;
+                        const isCorrectAlt = correctIdx === i;
+                        let state = 'default';
+                        if (isCorrectAlt) state = 'correct';
+                        else if (isSelected && !isCorrect) state = 'incorrect';
+                        return (
+                          <RadioOption key={i} selected={isSelected} state={state} disabled={true} onClick={() => {}}>
+                            <span className="font-semibold mr-2">{String.fromCharCode(65 + i)})</span>{alt}
+                            {isSelected && <span className="ml-2 text-xs font-bold">— sua resposta</span>}
+                            {isCorrectAlt && <span className="ml-2 text-xs font-bold">— correta {isSelected ? '(você acertou)' : ''}</span>}
+                          </RadioOption>
+                        );
+                      })}
+                    </div>
+                    {q.explanation && (
+                      <p className="text-xs text-gray-600 dark:text-gray-400 mt-3 bg-white dark:bg-gray-800 p-2 rounded border border-gray-200 dark:border-gray-700">💡 {q.explanation}</p>
+                    )}
                   </div>
-                  <p className="text-sm font-medium text-gray-900 dark:text-gray-100 mb-3 whitespace-pre-line">{q.text}</p>
-                  <div className="space-y-2">
-                    {q.alternatives?.map((alt, i) => {
-                      const isSelected = selectedIdx === i;
-                      const isCorrectAlt = correctIdx === i;
-                      let state = 'default';
-                      if (isCorrectAlt) state = 'correct';
-                      else if (isSelected && !isCorrect) state = 'incorrect';
-                      return (
-                        <RadioOption key={i} selected={isSelected} state={state} disabled={true} onClick={() => {}}>
-                          <span className="font-semibold mr-2">{String.fromCharCode(65 + i)})</span>{alt}
-                          {isSelected && <span className="ml-2 text-xs">— sua resposta</span>}
-                          {isCorrectAlt && !isSelected && <span className="ml-2 text-xs">— correta</span>}
-                        </RadioOption>
-                      );
-                    })}
-                  </div>
-                  {!isAnswered && (
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-3">Você não respondeu esta questão. Resposta correta: <strong>{String.fromCharCode(65 + correctIdx)}</strong></p>
-                  )}
-                  {q.explanation && (
-                    <p className="text-xs text-gray-600 dark:text-gray-400 mt-3 bg-white dark:bg-gray-800 p-2 rounded border border-gray-200 dark:border-gray-700">💡 {q.explanation}</p>
-                  )}
-                </div>
-              );
-            })}
+                );
+              });
+            })()}
           </div>
         </Card>
       )}
