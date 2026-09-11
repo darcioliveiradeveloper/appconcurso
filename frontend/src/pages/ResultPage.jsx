@@ -9,6 +9,7 @@ export default function ResultPage() {
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [expanded, setExpanded] = useState(new Set());
 
   useEffect(() => {
     loadResult();
@@ -184,9 +185,9 @@ export default function ResultPage() {
         <Card>
           <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">📋 Revisão das Questões — veja o que errou</h2>
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-            {result.answers?.length || 0} respondidas de {totalQuestions} • Correta em verde, sua resposta marcada
+            {result.answers?.length || 0} respondidas de {totalQuestions} • Toque na questão para ver a correta
           </p>
-          <div className="space-y-6">
+          <div className="space-y-3">
             {(() => {
               const answeredIds = new Set(result.answers?.map(a => (a.question?._id?.toString() || a.question?.toString())) || []);
               const filtered = result.questionOrder.filter(q => answeredIds.has(q._id?.toString() || q.toString()));
@@ -200,33 +201,49 @@ export default function ResultPage() {
                 const selectedIdx = ans?.selectedIndex;
                 const isCorrect = ans?.correct;
                 const correctIdx = q.correctIndex;
+                const isExpanded = expanded.has(qId);
                 return (
-                  <div key={qId} className={`p-4 rounded-lg border ${isCorrect ? 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800' : 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800'}`}>
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-xs font-mono text-gray-500 dark:text-gray-400">Questão {idx + 1} • {q.topic || 'Geral'}</span>
-                      <span className={`text-xs font-bold px-2 py-1 rounded-full ${isCorrect ? 'bg-green-200 dark:bg-green-800 text-green-800 dark:text-green-200' : 'bg-red-200 dark:bg-red-800 text-red-800 dark:text-red-200'}`}>
-                        {isCorrect ? '✅ Acertou' : '❌ Errou'}
+                  <div key={qId} className={`rounded-lg border overflow-hidden ${isCorrect ? 'bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800' : 'bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800'}`}>
+                    <button
+                      onClick={() => {
+                        const next = new Set(expanded);
+                        if (next.has(qId)) next.delete(qId);
+                        else next.add(qId);
+                        setExpanded(next);
+                      }}
+                      className="w-full flex items-center justify-between p-3 text-left hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                    >
+                      <span className="text-sm font-medium text-gray-900 dark:text-gray-100">Questão {idx + 1} • {q.topic || 'Geral'}</span>
+                      <span className="flex items-center gap-2">
+                        <span className={`text-xs font-bold px-2 py-1 rounded-full ${isCorrect ? 'bg-green-200 dark:bg-green-800 text-green-800 dark:text-green-200' : 'bg-red-200 dark:bg-red-800 text-red-800 dark:text-red-200'}`}>
+                          {isCorrect ? '✅ Acertou' : '❌ Errou'}
+                        </span>
+                        <span className="text-gray-400">{isExpanded ? '▲' : '▼'}</span>
                       </span>
-                    </div>
-                    <p className="text-sm font-medium text-gray-900 dark:text-gray-100 mb-3 whitespace-pre-line">{q.text}</p>
-                    <div className="space-y-2">
-                      {q.alternatives?.map((alt, i) => {
-                        const isSelected = selectedIdx === i;
-                        const isCorrectAlt = correctIdx === i;
-                        let state = 'default';
-                        if (isCorrectAlt) state = 'correct';
-                        else if (isSelected && !isCorrect) state = 'incorrect';
-                        return (
-                          <RadioOption key={i} selected={isSelected} state={state} disabled={true} onClick={() => {}}>
-                            <span className="font-semibold mr-2">{String.fromCharCode(65 + i)})</span>{alt}
-                            {isSelected && <span className="ml-2 text-xs font-bold">— sua resposta</span>}
-                            {isCorrectAlt && <span className="ml-2 text-xs font-bold">— correta {isSelected ? '(você acertou)' : ''}</span>}
-                          </RadioOption>
-                        );
-                      })}
-                    </div>
-                    {q.explanation && (
-                      <p className="text-xs text-gray-600 dark:text-gray-400 mt-3 bg-white dark:bg-gray-800 p-2 rounded border border-gray-200 dark:border-gray-700">💡 {q.explanation}</p>
+                    </button>
+                    {isExpanded && (
+                      <div className="p-4 border-t border-gray-200 dark:border-gray-700 bg-white/50 dark:bg-gray-800/50">
+                        <p className="text-sm font-medium text-gray-900 dark:text-gray-100 mb-3 whitespace-pre-line">{q.text}</p>
+                        <div className="space-y-2">
+                          {q.alternatives?.map((alt, i) => {
+                            const isSelected = selectedIdx === i;
+                            const isCorrectAlt = correctIdx === i;
+                            let state = 'default';
+                            if (isCorrectAlt) state = 'correct';
+                            else if (isSelected && !isCorrect) state = 'incorrect';
+                            return (
+                              <RadioOption key={i} selected={isSelected} state={state} disabled={true} onClick={() => {}}>
+                                <span className="font-semibold mr-2">{String.fromCharCode(65 + i)})</span>{alt}
+                                {isSelected && <span className="ml-2 text-xs font-bold">— sua resposta</span>}
+                                {isCorrectAlt && <span className="ml-2 text-xs font-bold text-green-700 dark:text-green-400">— correta</span>}
+                              </RadioOption>
+                            );
+                          })}
+                        </div>
+                        {q.explanation && (
+                          <p className="text-xs text-gray-600 dark:text-gray-400 mt-3 bg-white dark:bg-gray-800 p-2 rounded border border-gray-200 dark:border-gray-700">💡 {q.explanation}</p>
+                        )}
+                      </div>
                     )}
                   </div>
                 );
