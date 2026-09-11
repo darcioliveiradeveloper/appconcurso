@@ -126,14 +126,15 @@ export default function ResultPage() {
           <div className="space-y-3">
             {r.bySubject.map((s) => {
               const passedMin = s.correct >= s.minRequired;
+              const displayName = s.subjectName || s.subject?.name || s.subject?.code || 'Disciplina';
               return (
-                <div key={s.subject} className="flex items-center gap-4">
+                <div key={s.subject?._id || s.subject} className="flex items-center gap-4">
                   <span className={`w-24 text-right text-sm font-medium ${passedMin ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
                     {passedMin ? '✓ OK' : '✗ Zerou/Risco'}
                   </span>
                   <div className="flex-1">
                     <div className="flex justify-between text-sm mb-1">
-                      <span className="font-medium text-gray-900 dark:text-gray-100">{s.subjectName || 'Disciplina'}</span>
+                      <span className="font-medium text-gray-900 dark:text-gray-100">{displayName}</span>
                       <span className="text-gray-500 dark:text-gray-400">{s.correct}/{s.total} (mín. {s.minRequired})</span>
                     </div>
                     <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
@@ -183,7 +184,7 @@ export default function ResultPage() {
         <Card>
           <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">📋 Revisão das Questões — veja o que errou</h2>
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-            {result.answers?.length || 0} respondidas de {totalQuestions} • Clique na questão para revisar
+            {result.answers?.length || 0} respondidas de {totalQuestions} • Correta em verde, sua resposta marcada
           </p>
           <div className="space-y-6">
             {(() => {

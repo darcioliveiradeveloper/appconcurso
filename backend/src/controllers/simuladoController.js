@@ -281,7 +281,6 @@ export const finishSimulado = async (req, res, next) => {
         const percentage = Math.round((stats.correct / stats.total) * 100);
         let minRequired = 1;
         if (cargoDistMap && cargoDistMap[subj.code]) {
-          // PCPR não tem nota mínima por matéria no edital, mantém 1 como alerta mas não elimina
           minRequired = 1;
         } else if (config) {
           minRequired = config.minScore;
@@ -289,6 +288,7 @@ export const finishSimulado = async (req, res, next) => {
         
         bySubject.push({
           subject: subjId,
+          subjectName: subj?.name || subj?.code || 'Disciplina',
           correct: stats.correct,
           total: stats.total,
           percentage,
@@ -379,7 +379,8 @@ export const getSessionDetail = async (req, res, next) => {
     const session = await SimuladoSession.findById(req.params.id)
       .populate('subject', 'name code')
       .populate('questionOrder', 'text alternatives correctIndex explanation topic subject')
-      .populate('answers.question', 'text alternatives correctIndex explanation topic subject');
+      .populate('answers.question', 'text alternatives correctIndex explanation topic subject')
+      .populate('result.bySubject.subject', 'name code');
     
     if (!session) {
       return next(new AppError('Sessão não encontrada', 404));
