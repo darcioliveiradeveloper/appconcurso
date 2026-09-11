@@ -49,7 +49,7 @@ const simuladoSessionSchema = new mongoose.Schema({
   startedAt: { type: Date, default: Date.now },
   finishedAt: Date,
   currentQuestionIndex: { type: Number, default: 0 },
-  questionOrder: [mongoose.Schema.Types.ObjectId],
+  questionOrder: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Question' }],
   answers: [answerSchema],
   result: {
     score: Number,
