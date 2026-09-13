@@ -1,0 +1,482 @@
+[
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 8,
+    "text": "Qual dos seguintes municípios **não** faz limite territorial direto com Ponta Grossa?",
+    "alternatives": ["Carambeí", "Castro", "Curitiba", "Palmeira"],
+    "correct": 2,
+    "topic": "Geografia e História de PG e Campos Gerais",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 9,
+    "text": "A festa típica e tradicional realizada em Ponta Grossa que celebra a cultura alemã e movimenta o turismo regional é a:",
+    "alternatives": ["Oktoberfest", "Münchenfest (Festa Nacional do Chope Escuro)", "Festa da Uva", "FENADOCE"],
+    "correct": 1,
+    "topic": "Geografia e História de PG e Campos Gerais",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 10,
+    "text": "O aeroporto regional localizado no município de Ponta Grossa, que atende voos comerciais regulares conectando a região a grandes centros, denomina-se:",
+    "alternatives": ["Aeroporto Internacional Afonso Pena", "Aeroporto Comandante Antonio Amilton Beraldo (Santarém / Lupercio Torres)", "Aeroporto de Bacacheri", "Aeroporto Lauro Kortz"],
+    "correct": 1,
+    "topic": "Geografia e História de PG e Campos Gerais",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 12,
+    "text": "De acordo com a Lei Orgânica do Município de Ponta Grossa, o poder legislativo municipal é exercido por:",
+    "alternatives": ["Tribunal de Contas do Estado", "Câmara Municipal de Vereadores", "Secretaria Municipal de Administração", "Conselho de Cidadãos"],
+    "correct": 1,
+    "topic": "Lei Orgânica e Administração Municipal de PG",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 13,
+    "text": "Conforme a Constituição Federal e a estrutura municipal, o prefeito municipal é o chefe máximo do:",
+    "alternatives": ["Poder Legislativo", "Poder Executivo", "Poder Judiciário", "Ministério Público Estadual"],
+    "correct": 1,
+    "topic": "Lei Orgânica e Administração Municipal de PG",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 14,
+    "text": "A criação, a estruturação e a extinção de secretarias e órgãos da administração pública municipal em Ponta Grossa dependem de:",
+    "alternatives": ["Decreto exclusivo do governador do estado.", "Lei de iniciativa do Poder Executivo (Prefeito) aprovada pela Câmara Municipal.", "Plebiscito popular obrigatório a cada ano.", "Ordem direta do Supremo Tribunal Federal."],
+    "correct": 1,
+    "topic": "Lei Orgânica e Administração Municipal de PG",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 15,
+    "text": "Nos termos da legislação municipal de Ponta Grossa e da Constituição, a fiscalização contábil, financeira, orçamentária e patrimonial do município será exercida pelo Poder Legislativo, mediante controle externo, com o auxílio do:",
+    "alternatives": ["Tribunal de Contas do Estado (TCE-PR)", "Banco Central do Brasil", "Ministério da Fazenda", "Conselho Regional de Economia"],
+    "correct": 0,
+    "topic": "Lei Orgânica e Administração Municipal de PG",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 16,
+    "text": "O mandato do Prefeito, do Vice-Prefeito e dos Vereadores no município de Ponta Grossa tem duração de quantos anos?",
+    "alternatives": ["3 anos", "4 anos", "5 anos", "6 anos"],
+    "correct": 1,
+    "topic": "Lei Orgânica e Administração Municipal de PG",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 17,
+    "text": "O imposto de competência municipal que tem como fato gerador a propriedade, o domínio útil ou a posse de bem imóvel por natureza ou por acessão física, localizado na zona urbana do município, é o:",
+    "alternatives": ["IPVA", "IPTU", "ITBI", "ICMS"],
+    "correct": 1,
+    "topic": "Lei Orgânica e Administração Municipal de PG",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 18,
+    "text": "O imposto municipal incidente sobre a transmissão \"inter vivos\", a qualquer título, por ato oneroso, de bens imóveis e de direitos reais sobre imóveis é o:",
+    "alternatives": ["IPTU", "ITBI", "ISS", "ITR"],
+    "correct": 1,
+    "topic": "Lei Orgânica e Administração Municipal de PG",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 19,
+    "text": "O imposto municipal que incide sobre a prestação de serviços de qualquer natureza, constantes em lista complementar federal, é o:",
+    "alternatives": ["ICMS", "ISS (Imposto Sobre Serviços)", "IPI", "IOF"],
+    "correct": 1,
+    "topic": "Lei Orgânica e Administração Municipal de PG",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 20,
+    "text": "A iniciativa das leis sobre o regime jurídico dos servidores públicos municipais de Ponta Grossa, provimento de cargos, estabilidade e aposentadoria cabe:",
+    "alternatives": ["Exclusivamente à Câmara de Vereadores.", "Ao Prefeito Municipal (privativa do Chefe do Executivo).", "A qualquer cidadão por meio de abaixo-assinado simples.", "Ao Sindicato dos Servidores sem aval do executivo."],
+    "correct": 1,
+    "topic": "Lei Orgânica e Administração Municipal de PG",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 21,
+    "text": "A implantação de portais de transparência nos municípios brasileiros atende diretamente aos princípios fundamentais da administração pública previstos no art. 37 da Constituição Federal, com destaque para o princípio da:",
+    "alternatives": ["Impessoalidade sigilosa", "Publicidade e moralidade", "Centralização burocrática rígida", "Omissão informativa voluntária"],
+    "correct": 1,
+    "topic": "Direito Administrativo e Princípios Constitucionais",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 22,
+    "text": "O princípio da administração pública que estabelece que os atos administrativos devem ser praticados visando exclusivamente ao interesse público, vedando perseguições ou favoritismos pessoais, é o princípio da:",
+    "alternatives": ["Legalidade", "Impessoalidade", "Moralidade", "Supremacia restrita"],
+    "correct": 1,
+    "topic": "Direito Administrativo e Princípios Constitucionais",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 23,
+    "text": "De acordo com o princípio da **Legalidade**, o administrador público só pode fazer aquilo que:",
+    "alternatives": ["Sua vontade pessoal determinar.", "A lei expressamente autoriza ou determina.", "Os partidos políticos acordarem em reuniões fechadas.", "For mais lucrativo para o erário."],
+    "correct": 1,
+    "topic": "Direito Administrativo e Princípios Constitucionais",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 24,
+    "text": "O princípio que impõe à administração pública a atuação com rapidez, rendimento e qualidade na prestação dos serviços públicos aos cidadãos é o da:",
+    "alternatives": ["Eficiência", "Legalidade", "Aututela", "Hierarquia"],
+    "correct": 0,
+    "topic": "Direito Administrativo e Princípios Constitucionais",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 25,
+    "text": "O ato administrativo praticado por autoridade incompetente ou com vício insanável de finalidade é considerado:",
+    "alternatives": ["Perfeito e irrevogável", "Nulo (ilegal)", "Discricionário válido", "Válido por decurso de prazo"],
+    "correct": 1,
+    "topic": "Direito Administrativo e Princípios Constitucionais",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 26,
+    "text": "Qual é a capital do Estado do Paraná?",
+    "alternatives": ["Londrina", "Ponta Grossa", "Curitiba", "Cascavel"],
+    "correct": 2,
+    "topic": "Geografia e História do Paraná",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 27,
+    "text": "Historicamente, o ciclo econômico que impulsionou fortemente a ocupação territorial do norte e noroeste do Paraná em meados do século XX foi a cultura de:",
+    "alternatives": ["Cana-de-açúcar", "Café", "Soja transgênica", "Erva-mate"],
+    "correct": 1,
+    "topic": "Geografia e História do Paraná",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 28,
+    "text": "No contexto hidrográfico paranaense, o maior rio inteiramente paranaense em extensão e bacia hidrográfica que deságua no Rio Paraná é o:",
+    "alternatives": ["Rio Tibagi", "Rio Iguaçu", "Rio Paranapanema", "Rio Itajaí"],
+    "correct": 0,
+    "topic": "Geografia e História do Paraná",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 29,
+    "text": "A hidrelétrica binacional de grande importância energética situada na fronteira do Paraná com o Paraguai, no Rio Paraná, é a Usina de:",
+    "alternatives": ["Itaipu", "Tucuruí", "Belo Monte", "Furnas"],
+    "correct": 0,
+    "topic": "Geografia e História do Paraná",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 30,
+    "text": "O principal produto agrícola de exportação que lidera a pauta econômica do agronegócio paranaense na atualidade é a produção combinada de:",
+    "alternatives": ["Soja e milho", "Trigo e centeio", "Fumo e maçã", "Algodão e cacau"],
+    "correct": 0,
+    "topic": "Geografia e História do Paraná",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 31,
+    "text": "A **Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)** tem como principal objetivo institucional:",
+    "alternatives": ["Proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural relativos ao tratamento de dados pessoais.", "Regulamentar exclusivamente a compra e importação de softwares corporativos privados.", "Permitir a comercialização irrestrita de cadastros de servidores públicos.", "Substituir a Lei Orgânica Municipal em prefeituras."],
+    "correct": 0,
+    "topic": "Atualidades, Cidadania e Legislação Federal",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 32,
+    "text": "A **Lei de Acesso à Informação (LAI - Lei nº 12.527/2011)** tem como diretriz fundamental:",
+    "alternatives": ["O sigilo absoluto de todos os atos da administração pública.", "A publicidade como preceito geral e o sigilo como exceção, garantindo o direito de acesso a informações públicas.", "A restrição de consultas de balanços financeiros apenas a tribunais federais.", "A proibição de portais eletrônicos de transparência municipal."],
+    "correct": 1,
+    "topic": "Atualidades, Cidadania e Legislação Federal",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 33,
+    "text": "A lei federal que estabelece normas gerais sobre licitações e contratos administrativos para a Administração Pública direta, autárquica e fundacional da União, Estados, Distrito Federal e Municípios é a:",
+    "alternatives": ["Lei nº 8.666/1993 (revogada integralmente pelo novo marco) e a atual **Lei nº 14.133/2021**", "Lei de Responsabilidade Fiscal exclusiva", "CLT (Consolidação das Leis do Trabalho)", "Código de Trânsito Brasileiro"],
+    "correct": 0,
+    "topic": "Atualidades, Cidadania e Legislação Federal",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 34,
+    "text": "A **Lei de Responsabilidade Fiscal (LRF - Lei Complementar nº 101/2000)** estabelece normas de finanças públicas voltadas para a responsabilidade na gestão fiscal, impondo limites, por exemplo, para os gastos com:",
+    "alternatives": ["Publicidade institucional privada", "Pessoal (folha de pagamento de servidores públicos)", "Aquisição de veículos de luxo particulares", "Viagens internacionais de vereadores"],
+    "correct": 1,
+    "topic": "Atualidades, Cidadania e Legislação Federal",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 35,
+    "text": "No âmbito dos direitos políticos previstos na Constituição Federal de 1988, o alistamento eleitoral e o voto são:",
+    "alternatives": ["Obrigatórios para todos os analfabetos.", "Facultativos para os analfabetos, para os maiores de 70 anos e para os maiores de 16 e menores de 18 anos.", "Proibidos para maiores de 60 anos.", "Facultativos para todos os cidadãos em idade ativa."],
+    "correct": 1,
+    "topic": "Atualidades, Cidadania e Legislação Federal",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 36,
+    "text": "A forma de Estado adotada pela República Federativa do Brasil é a de:",
+    "alternatives": ["Estado Unitário Centralizado", "Federação (República Federativa formada pela união indissolúvel dos Estados, Municípios e do Distrito Federal)", "Confederação de Estados autônomos separatistas", "Monarquia Constitucional Parlamentarista"],
+    "correct": 1,
+    "topic": "Atualidades, Cidadania e Legislação Federal",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 37,
+    "text": "O sistema de governo adotado pela Constituição Federal brasileira de 1988 é o:",
+    "alternatives": ["Parlamentarismo", "Presidencialismo", "Absolutismo", "Semipresidencialismo puro"],
+    "correct": 1,
+    "topic": "Atualidades, Cidadania e Legislação Federal",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 38,
+    "text": "De acordo com a Constituição Federal, são Poderes da União, independentes e harmônicos entre si:",
+    "alternatives": ["O Poder Executivo, o Poder Legislativo e o Poder Judiciário.", "O Poder Executivo, o Ministério Público e a Polícia Federal.", "O Tribunal de Contas, o Senado Federal e o Supremo Tribunal.", "A Presidência da República, os Governos Estaduais e as Prefeituras."],
+    "correct": 0,
+    "topic": "Atualidades, Cidadania e Legislação Federal",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 39,
+    "text": "O direito à saúde, à educação, ao trabalho, à moradia, ao lazer, à segurança, à previdência social, à proteção à maternidade e à infância são classificados constitucionalmente como direitos:",
+    "alternatives": ["Individuais clássicos de primeira geração", "Sociais (direitos fundamentais de segunda geração)", "Políticos de participação partidária", "Exclusivamente militares"],
+    "correct": 1,
+    "topic": "Atualidades, Cidadania e Legislação Federal",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 40,
+    "text": "O remédio constitucional instituído para proteger direito líquido e certo, não amparado por *habeas corpus* ou *habeas data*, quando o responsável pela ilegalidade ou abuso de poder for autoridade pública ou agente de pessoa jurídica no exercício de atribuições do poder público, é o:",
+    "alternatives": ["Mandado de Segurança", "Ação Popular", "Mandado de Injunção", "Ação Civil Pública"],
+    "correct": 0,
+    "topic": "Atualidades, Cidadania e Legislação Federal",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 41,
+    "text": "O conceito de **Desenvolvimento Sustentável**, amplamente difundido em políticas públicas globais e locais, pressupõe:",
+    "alternatives": ["A exploração exaustiva de recursos minerais sem reposição.", "O atendimento às necessidades do presente sem comprometer a capacidade de as gerações futuras atenderem às suas próprias necessidades.", "A estagnação industrial total para evitar emissões de carbono.", "O crescimento econômico sem qualquer restrição ambiental."],
+    "correct": 1,
+    "topic": "Meio Ambiente, Sustentabilidade e Organização Urbana",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 42,
+    "text": "No planejamento urbano e municipal, o instrumento básico da política de expansão e do desenvolvimento urbano, obrigatório para cidades com mais de 20.000 habitantes (como Ponta Grossa), é o:",
+    "alternatives": ["Estatuto da Cidade e o Plano Diretor Municipal", "Código Penal Civil", "Código de Defesa do Consumidor", "Regimento interno de licitações"],
+    "correct": 0,
+    "topic": "Meio Ambiente, Sustentabilidade e Organização Urbana",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 43,
+    "text": "A política nacional de resíduos sólidos estabelece a responsabilidade compartilhada pelo ciclo de vida dos produtos, destacando a importância da logística reversa, da reciclagem e da extinção gradual de:",
+    "alternatives": ["Aterros sanitários controlados modernos", "Lixões a céu aberto", "Usinas de triagem automatizada", "Cooperativas de catadores de materiais recicláveis"],
+    "correct": 1,
+    "topic": "Meio Ambiente, Sustentabilidade e Organização Urbana",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 44,
+    "text": "O bioma nativo original predominante na região dos Campos Gerais do Paraná, que caracteriza a paisagem natural histórica do município de Ponta Grossa, é formado por:",
+    "alternatives": ["Floresta Amazônica densa", "Campos Limpos associados a capões de Mata de Araucária (Floresta Ombrófila Mista)", "Caatinga semiárida", "Pantanal mato-grossense"],
+    "correct": 1,
+    "topic": "Meio Ambiente, Sustentabilidade e Organização Urbana",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 45,
+    "text": "A árvore símbolo do Estado do Paraná, protegida por leis ambientais rigorosas e presente nos ecossistemas de Ponta Grossa, é o(a):",
+    "alternatives": ["Ipê-amarelo", "Pinheiro-do-paraná (Araucária angustifolia)", "Pau-brasil", "Eucalipto híbrido"],
+    "correct": 1,
+    "topic": "Meio Ambiente, Sustentabilidade e Organização Urbana",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 47,
+    "text": "No cenário econômico dos Campos Gerais paranaenses, a diversificação industrial tem atraído grandes investimentos internacionais e nacionais nos setores de:",
+    "alternatives": ["Celulose, metalomecânica, agroindústria alimentícia e cervejeiro", "Extração de petróleo em alto mar", "Construção de navios de grande porte", "Produção de diamantes industriais"],
+    "correct": 0,
+    "topic": "Economia, Demografia e Infraestrutura Regional",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 48,
+    "text": "A Região Metropolitana dos Campos Gerais, instituída com o objetivo de integrar a organização, o planejamento e a execução de funções públicas de interesse comum, tem como município polo central:",
+    "alternatives": ["Curitiba", "Ponta Grossa", "Guarapuava", "Irati"],
+    "correct": 1,
+    "topic": "Economia, Demografia e Infraestrutura Regional",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 49,
+    "text": "O índice estatístico oficial utilizado no Brasil para medir a inflação oficial do governo, calculado pelo IBGE e acompanhado de perto pelas políticas econômicas e municipais, é o:",
+    "alternatives": ["IPCA (Índice Nacional de Preços ao Consumidor Amplo)", "IGPM fixo imobiliário", "SELIC básica bancária", "INCC de construções"],
+    "correct": 0,
+    "topic": "Economia, Demografia e Infraestrutura Regional",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "ConhecGerais2",
+    "label": "Gerais S2",
+    "number": 50,
+    "text": "Em termos demográficos, a taxa de urbanização nos municípios paranaenses de médio e grande porte, como Ponta Grossa, caracteriza-se historicamente por apresentar:",
+    "alternatives": ["Predominância esmagadora da população residente em áreas urbanas em relação às áreas rurais.", "População estritamente rural superior a 80%.", "Ausência total de migração campo-cidade.", "População nômade sazonal sem residência fixa."],
+    "correct": 0,
+    "topic": "Economia, Demografia e Infraestrutura Regional",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "Complemeto3",
+    "label": "Gerais S3",
+    "number": 51,
+    "text": "O princípio da administração pública que obriga a divulgação oficial dos atos, programas, obras e serviços públicos — salvo hipóteses legais de sigilo — para conhecimento dos cidadãos é o da:",
+    "alternatives": ["Impessoalidade", "Publicidade", "Moralidade", "Supremacia restrita"],
+    "correct": 1,
+    "topic": "Direito Administrativo e Princípios Constitucionais",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "Complemento4",
+    "label": "Gerais S4",
+    "number": 52,
+    "text": "O processo histórico que marcou a transição do trabalho escravo para o trabalho livre no Brasil, culminando na abolição formal da escravidão em 1888, foi precedido por importantes leis abolicionistas, entre as quais destaca-se a **Lei do Ventre Livre** (1871), que determinava que:",
+    "alternatives": ["Os filhos de mulheres escravas nascidos a partir daquela data seriam considerados livres.", "Todos os escravos com mais de 60 anos ganhavam a liberdade imediata sem indenização.", "A importação de novos escravos da África passava a ser crime hediondo punido com morte.", "Os escravos poderiam comprar sua alforria usando fundos públicos obrigatórios."],
+    "correct": 0,
+    "topic": "História do Brasil",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "Complemento4",
+    "label": "Gerais S4",
+    "number": 53,
+    "text": "No contexto da geografia física mundial, o fenômeno climático caracterizado pelo aquecimento anormal das águas superficiais do Oceano Pacífico equatorial, provocando alterações drásticas nos regimes de chuvas e secas em várias regiões do planeta (incluindo o Brasil), é denominado:",
+    "alternatives": ["La Niña", "El Niño", "Corrente de Humboldt", "El Ninho Oscilação Sul Atlântica"],
+    "correct": 1,
+    "topic": "Geografia Geral",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "Complemento4",
+    "label": "Gerais S4",
+    "number": 54,
+    "text": "O **Estatuto da Cidade (Lei nº 10.257/2001)** estabelece normas de ordem pública e interesse social que regulam o uso da propriedade urbana em prol do bem coletivo. Entre os instrumentos de política urbana previstos na lei para combater a retenção especulativa de imóveis urbanos vazios ou subutilizados, encontra-se a figura do IPTU progressivo no tempo, que consiste em:",
+    "alternatives": ["Isentar o proprietário de impostos caso ele doe o terreno para o município.", "Elevar a alíquota do IPTU sucessivamente ao longo dos anos para compelir o proprietário a dar destinação útil ao imóvel.", "Reduzir o imposto para incentivar a construção de condomínios fechados de luxo.", "Substituir o imposto municipal por taxas federais de zoneamento ambiental."],
+    "correct": 1,
+    "topic": "Estatuto da Cidade",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "Complemento4",
+    "label": "Gerais S4",
+    "number": 55,
+    "text": "A **Lei de Responsabilidade Fiscal (Lei Complementar nº 101/2000)** impõe rígidos controles sobre as contas públicas brasileiras. No que tange aos limites de despesas com pessoal para os Municípios, a LRF estabelece que o limite máximo de comprometimento da Receita Corrente Líquida (RCL) com gastos de pessoal do Poder Executivo municipal é de:",
+    "alternatives": ["30% da RCL", "50% da RCL", "54% da RCL", "60% da RCL"],
+    "correct": 2,
+    "topic": "LRF e Finanças Públicas",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "Complemento4",
+    "label": "Gerais S4",
+    "number": 56,
+    "text": "A nova **Lei de Licitações e Contratos Administrativos (Lei nº 14.133/2021)** introduziu modalidades de licitação e inovações processuais na administração pública brasileira. Qual das seguintes modalidades **deixou de existir** formalmente com a revogação da antiga Lei nº 8.666/1993, não constando mais na nova lei?",
+    "alternatives": ["Pregão", "Concurso", "Tomada de Preços", "Diálogo Competitivo"],
+    "correct": 2,
+    "topic": "Lei de Licitações (14.133/2021)",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "Complemento4",
+    "label": "Gerais S4",
+    "number": 57,
+    "text": "No período da História do Brasil conhecido como **República Oligárquica** (1894–1930), a política nacional era fortemente marcada pelo acordo político informal entre os estados de Minas Gerais e São Paulo, alternando na presidência da república figuras ligadas às oligarquias agrárias cafeeiras e pecuárias. Esse arranjo político ficou historicamente conhecido como:",
+    "alternatives": ["Política dos Governadores", "Política do Café com Leite", "Convênio de Taubaté", "Pacto de San Tiago Dantas"],
+    "correct": 1,
+    "topic": "História do Brasil",
+    "subjectCode": "GER"
+  }
+]

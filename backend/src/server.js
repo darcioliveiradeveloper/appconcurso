@@ -65,7 +65,7 @@ app.get('/api/seed', async (req, res) => {
       { code: 'ESP', name: 'Conhecimentos Específicos', icon: '⚙️', color: '#EF4444', examWeight: 20, examQuestions: 20, minScore: 7, order: 5 }
     ];
 
-    const TARGETS = { PORT: 50, MAT: 50, INF: 50, GER: 50, ESP: 200 };
+    const TARGETS = { PORT: 100, MAT: 100, INF: 100, GER: 100, ESP: 200 };
 
     await Promise.all([Subject.deleteMany({}), Question.deleteMany({}), Cargo.deleteMany({})]);
     const allSubjects = [...SUBJECTS, ...NEW_SUBJECTS];
@@ -76,7 +76,7 @@ app.get('/api/seed', async (req, res) => {
 
     const seedsDir = path.resolve(__dirname, 'seeds');
     const load = f => JSON.parse(fs.readFileSync(path.join(seedsDir, f), 'utf-8'));
-    const data = [...load('questions_data.json'), ...load('gemini_questions.json')];
+    const data = [...load('questions_data.json'), ...load('gemini_questions.json'), ...load('matematica2.json'), ...load('portugues2.json'), ...load('informatica2.json'), ...load('gerais2.json'), ...load('complemento2.json')];
 
     const docs = [];
     for (const q of data) {

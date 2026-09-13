@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 dotenv.config();
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const TARGETS = { PORT: 50, MAT: 50, INF: 50, GER: 50, ESP: 200 };
+const TARGETS = { PORT: 100, MAT: 100, INF: 100, GER: 100, ESP: 200 };
 
 // Questoes novas para completar cotas
 const NOVAS = {

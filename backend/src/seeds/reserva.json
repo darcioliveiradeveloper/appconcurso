@@ -1,0 +1,52 @@
+[
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2 (reserva)",
+    "number": 4,
+    "text": "Assinale a alternativa em que a colocação pronominal (próclise, mesóclise ou ênclise) respeita rigorosamente a norma-padrão:",
+    "alternatives": ["Me disseram que o sistema caiu.", "Não contaram-me sobre o novo prazo.", "Jamais revelarei-lhe os dados confidenciais.", "Não lhe direi a verdade até amanhã."],
+    "correct": 3,
+    "topic": "Sintaxe da Oração e do Período",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2 (reserva)",
+    "number": 6,
+    "text": "Na frase *\"O funcionário **dedicado** resolveu o problema\"*, a palavra destacada exerce a função sintática de:",
+    "alternatives": ["Adjunto adnominal", "Predicativo do objeto", "Objeto direto", "Complemento nominal"],
+    "correct": 0,
+    "topic": "Sintaxe da Oração e do Período",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2 (reserva)",
+    "number": 9,
+    "text": "Assinale a alternativa em que a pontuação está incorreta:",
+    "alternatives": ["O analista de sistemas, cansado da rotina, pediu demissão.", "Fui à prefeitura, mas o setor estava fechado.", "Os computadores que compraram ontem já apresentaram defeito.", "Comprei cadernos, canetas, e pastas."],
+    "correct": 3,
+    "topic": "Pontuação e Coesão Textual",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2 (reserva)",
+    "number": 10,
+    "text": "Na oração *\"Têm surgido **muitos** problemas na rede\"*, a palavra destacada funciona morfologicamente como:",
+    "alternatives": ["Pronome indefinido adnominal", "Advérbio de intensidade", "Pronome substantivo", "Numeral cardinal"],
+    "correct": 0,
+    "topic": "Morfologia (Classes de Palavras)",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2 (reserva)",
+    "number": 10,
+    "text": "Em bancos de dados relacionais e sistemas web, a linguagem padrão utilizada para gerenciar, consultar e manipular dados em tabelas é a:",
+    "alternatives": ["HTML", "SQL", "CSS", "JSON"],
+    "correct": 1,
+    "topic": "Correio Eletrônico e Ferramentas Web",
+    "subjectCode": "INF"
+  }
+]

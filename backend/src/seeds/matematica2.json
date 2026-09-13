@@ -1,0 +1,502 @@
+[
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 1,
+    "text": "Se 5 operários concluem uma obra em 12 dias, trabalhando no mesmo ritmo, em quantos dias 6 operários concluiriam a mesma obra?",
+    "alternatives": ["8 dias", "10 dias", "15 dias", "18 dias"],
+    "correct": 1,
+    "topic": "Razão, Proporção e Regra de Três",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 2,
+    "text": "A razão entre o número de homens e de mulheres em uma repartição pública é de 3 para 5. Sabendo que o total de funcionários é 120, o número de mulheres nessa repartição é:",
+    "alternatives": ["45", "60", "75", "90"],
+    "correct": 2,
+    "topic": "Razão, Proporção e Regra de Três",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 3,
+    "text": "Uma máquina produz 300 peças em 4 horas de funcionamento contínuo. Mantendo-se o mesmo ritmo de produção, quantas peças essa mesma máquina produzirá em 10 horas?",
+    "alternatives": ["600", "750", "900", "1200"],
+    "correct": 1,
+    "topic": "Razão, Proporção e Regra de Três",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 4,
+    "text": "Se 8 máquinas operando 6 horas por dia produzem determinado lote de mercadorias em 5 dias, quantas horas por dia 10 máquinas deverão operar para produzir o mesmo lote em 4 dias?",
+    "alternatives": ["4 horas", "6 horas", "8 horas", "10 horas"],
+    "correct": 1,
+    "topic": "Razão, Proporção e Regra de Três",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 5,
+    "text": "Dois números estão na razão de 2 para 7. Se a soma desses dois números é 108, qual é o valor do menor número?",
+    "alternatives": ["24", "28", "30", "36"],
+    "correct": 0,
+    "topic": "Razão, Proporção e Regra de Três",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 6,
+    "text": "Uma mercadoria que custava R$ 2.400,00 sofreu um desconto de 15% em uma liquidação. Qual foi o valor pago pela mercadoria?",
+    "alternatives": ["R$ 2.000,00", "R$ 2.040,00", "R$ 2.100,00", "R$ 2.220,00"],
+    "correct": 1,
+    "topic": "Porcentagem e Matemática Financeira",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 7,
+    "text": "Um capital de R$ 5.000,00 foi aplicado a juros simples à taxa de 2% ao mês durante 6 meses. O montante total ao final desse período foi de:",
+    "alternatives": ["R$ 5.600,00", "R$ 5.800,00", "R$ 6.000,00", "R$ 6.200,00"],
+    "correct": 0,
+    "topic": "Porcentagem e Matemática Financeira",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 8,
+    "text": "O preço de um equipamento de informática passou de R$ 800,00 para R$ 1.000,00. Qual foi o percentual de aumento aplicado sobre o preço original?",
+    "alternatives": ["15%", "20%", "25%", "30%"],
+    "correct": 2,
+    "topic": "Porcentagem e Matemática Financeira",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 9,
+    "text": "Um produto teve seu preço aumentado em 20% e, posteriormente, o novo preço sofreu um desconto de 20%. Em relação ao valor inicial, o preço final do produto:",
+    "alternatives": ["Permaneceu o mesmo", "Teve um aumento de 4%", "Teve uma redução de 4%", "Teve uma redução de 20%"],
+    "correct": 2,
+    "topic": "Porcentagem e Matemática Financeira",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 10,
+    "text": "Quanto rende um capital de R$ 10.000,00 aplicado a juros compostos à taxa de 10% ao ano, ao término de 2 anos?",
+    "alternatives": ["R$ 2.000,00", "R$ 2.100,00", "R$ 2.200,00", "R$ 2.500,00"],
+    "correct": 1,
+    "topic": "Porcentagem e Matemática Financeira",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 11,
+    "text": "O Mínimo Múltiplo Comum (MMC) entre os números 12 e 18 é:",
+    "alternatives": ["6", "24", "36", "72"],
+    "correct": 2,
+    "topic": "MMC, MDC e Operações Básicas",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 12,
+    "text": "O Máximo Divisor Comum (MDC) entre os números 24 e 36 é:",
+    "alternatives": ["6", "12", "18", "24"],
+    "correct": 1,
+    "topic": "MMC, MDC e Operações Básicas",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 13,
+    "text": "Qual é o valor da expressão com frações: $\\frac{1}{2} + \\frac{3}{4} \\times \\frac{2}{3}$?",
+    "alternatives": ["$1$", "$\\frac{3}{4}$", "$\\frac{5}{6}$", "$\\frac{1}{3}$"],
+    "correct": 0,
+    "topic": "MMC, MDC e Operações Básicas",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 14,
+    "text": "Três sirenes soam em intervalos regulares: a primeira a cada 15 minutos, a segunda a cada 20 minutos e a terceira a cada 25 minutos. Se soarem juntas agora, daqui a quantas horas voltarão a soar juntas pela primeira vez?",
+    "alternatives": ["5 horas", "10 horas", "15 horas", "50 horas"],
+    "correct": 0,
+    "topic": "MMC, MDC e Operações Básicas",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 15,
+    "text": "Simplificando a expressão numérica $\\frac{2^5 \\times 3^2}{6^2}$, obtém-se:",
+    "alternatives": ["2", "4", "8", "16"],
+    "correct": 2,
+    "topic": "MMC, MDC e Operações Básicas",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 16,
+    "text": "Dada a equação de 1º grau $3x - 5 = 2x + 7$, qual é o valor de $x$?",
+    "alternatives": ["2", "7", "10", "12"],
+    "correct": 3,
+    "topic": "Equações e Sistemas de Equações",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 17,
+    "text": "Resolvendo a equação de 2º grau $x^2 - 5x + 6 = 0$, as raízes reais da equação são:",
+    "alternatives": ["1 e 6", "2 e 3", "-2 e -3", "0 e 5"],
+    "correct": 1,
+    "topic": "Equações e Sistemas de Equações",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 18,
+    "text": "A soma de dois números é 45 e a diferença entre eles é 15. Qual é o valor do maior desses números?",
+    "alternatives": ["15", "25", "30", "35"],
+    "correct": 2,
+    "topic": "Equações e Sistemas de Equações",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 19,
+    "text": "Em um estacionamento há carros e motos totalizando 30 veículos. Se o total de rodas contadas é 90, o número de carros no estacionamento é:",
+    "alternatives": ["10", "15", "20", "25"],
+    "correct": 1,
+    "topic": "Equações e Sistemas de Equações",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 20,
+    "text": "Se a idade de um pai é o triplo da idade de seu filho hoje, e daqui a 10 anos será o dobro, qual é a idade atual do filho?",
+    "alternatives": ["10 anos", "15 anos", "20 anos", "30 anos"],
+    "correct": 0,
+    "topic": "Equações e Sistemas de Equações",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 21,
+    "text": "Em uma Progressão Aritmética (PA) onde o primeiro termo é $3$ e a razão é $4$, qual é o quinto termo dessa sequência?",
+    "alternatives": ["15", "19", "23", "27"],
+    "correct": 1,
+    "topic": "Progressões (PA e PG)",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 22,
+    "text": "Dada a PA onde o primeiro termo é 5 e o décimo termo é 32, a razão dessa progressão aritmética vale:",
+    "alternatives": ["2", "3", "4", "5"],
+    "correct": 1,
+    "topic": "Progressões (PA e PG)",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 23,
+    "text": "A soma dos 10 primeiros termos de uma PA cujo primeiro termo é 2 e o décimo termo é 20 é igual a:",
+    "alternatives": ["100", "110", "120", "200"],
+    "correct": 1,
+    "topic": "Progressões (PA e PG)",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 24,
+    "text": "Em uma Progressão Geométrica (PG) em que o primeiro termo é 3 e a razão é 2, o quarto termo dessa sequência é:",
+    "alternatives": ["12", "18", "24", "48"],
+    "correct": 2,
+    "topic": "Progressões (PA e PG)",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 25,
+    "text": "Qual é a soma dos infinitos termos da PG decrescente: $8, 4, 2, 1, \\dots$?",
+    "alternatives": ["12", "16", "20", "24"],
+    "correct": 1,
+    "topic": "Progressões (PA e PG)",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 26,
+    "text": "Quantas comissões de 3 pessoas podem ser formadas a partir de um grupo de 6 pessoas disponíveis?",
+    "alternatives": ["10", "15", "20", "60"],
+    "correct": 2,
+    "topic": "Análise Combinatória e Probabilidade",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 27,
+    "text": "Quantas senhas de 2 letras distintas podem ser formadas utilizando as letras A, B, C e D?",
+    "alternatives": ["6", "12", "16", "24"],
+    "correct": 1,
+    "topic": "Análise Combinatória e Probabilidade",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 28,
+    "text": "De quantas maneiras diferentes 4 pessoas podem se organizar em uma fila indiana?",
+    "alternatives": ["12", "24", "48", "120"],
+    "correct": 1,
+    "topic": "Análise Combinatória e Probabilidade",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 29,
+    "text": "Lançando-se um dado comum de 6 faces não tendencioso, qual é a probabilidade de se obter um número par?",
+    "alternatives": ["$\\frac{1}{6}$", "$\\frac{1}{3}$", "$\\frac{1}{2}$", "$\\frac{2}{3}$"],
+    "correct": 2,
+    "topic": "Análise Combinatória e Probabilidade",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 30,
+    "text": "Retirando-se ao acaso uma carta de um baralho comum de 52 cartas, qual é a probabilidade de que essa carta seja um ás ou uma carta de copas?",
+    "alternatives": ["$\\frac{4}{13}$", "$\\frac{10}{52}$", "$\\frac{17}{52}$", "$\\frac{4}{52}$"],
+    "correct": 0,
+    "topic": "Análise Combinatória e Probabilidade",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 31,
+    "text": "A média aritmética simples de cinco notas obtidas por um aluno em avaliações foi 7,4. Se quatro dessas notas foram 6,0, 7,0, 8,0 e 8,5, qual foi a quinta nota?",
+    "alternatives": ["6,5", "7,0", "7,5", "8,0"],
+    "correct": 2,
+    "topic": "Estatística Básica",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 32,
+    "text": "Qual é a mediana do conjunto de dados numéricos ordenados: $\\{3, 7, 9, 12, 15, 20, 25\\}$?",
+    "alternatives": ["9", "12", "13,5", "15"],
+    "correct": 1,
+    "topic": "Estatística Básica",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 33,
+    "text": "Qual é a moda do seguinte conjunto de dados: $\\{4, 5, 5, 7, 8, 9, 5, 10\\}$?",
+    "alternatives": ["4", "5", "7", "8"],
+    "correct": 1,
+    "topic": "Estatística Básica",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 34,
+    "text": "Em uma turma com 10 alunos, a média das notas dos meninos (4 alunos) foi 6,0 e a média das notas das meninas (6 alunas) foi 8,0. Qual foi a média geral dessa turma?",
+    "alternatives": ["7,0", "7,2", "7,4", "7,5"],
+    "correct": 1,
+    "topic": "Estatística Básica",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 35,
+    "text": "Dada a amostra $\\{2, 4, 6, 8, 10\\}$ com média 6 e soma dos desvios ao quadrado igual a 40, dividindo por 4, qual é o valor da variância?",
+    "alternatives": ["4", "8", "10", "16"],
+    "correct": 2,
+    "topic": "Estatística Básica",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 36,
+    "text": "No que tange à lógica proposicional, se a proposição $P$ é verdadeira e a proposição $Q$ é falsa, o valor lógico da conjunção $P \\land Q$ (\"P e Q\") é:",
+    "alternatives": ["Verdadeiro", "Falso", "Indeterminado", "Tautológico"],
+    "correct": 1,
+    "topic": "Lógica Proposicional e Tabelas-Verdade",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 37,
+    "text": "Dadas duas proposições $P$ e $Q$, a disjunção inclusiva $P \\lor Q$ (\"P ou Q\") só será falsa quando:",
+    "alternatives": ["Ambas forem verdadeiras.", "$P$ for verdadeira e $Q$ for falsa.", "Ambas forem falsas.", "$P$ for falsa e $Q$ for verdadeira."],
+    "correct": 2,
+    "topic": "Lógica Proposicional e Tabelas-Verdade",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 38,
+    "text": "A implicação material (condicional) $P \\rightarrow Q$ (\"Se P, então Q\") possui valor lógico FALSO apenas quando:",
+    "alternatives": ["$P$ é V e $Q$ é V.", "$P$ é V e $Q$ é F.", "$P$ é F e $Q$ é V.", "$P$ é F e $Q$ é F."],
+    "correct": 1,
+    "topic": "Lógica Proposicional e Tabelas-Verdade",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 39,
+    "text": "Uma proposição composta cujo valor lógico é sempre verdadeiro, independentemente dos valores lógicos das proposições simples que a compõem, é chamada de:",
+    "alternatives": ["Contradição", "Contingência", "Tautologia", "Falácia"],
+    "correct": 2,
+    "topic": "Lógica Proposicional e Tabelas-Verdade",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 40,
+    "text": "Se a proposição condicional \"Se chove, então a rua fica molhada\" é verdadeira, qual das seguintes proposições é logicamente equivalente a ela?",
+    "alternatives": ["Se a rua fica molhada, então chove.", "Se a rua não fica molhada, então não chove.", "Chove e a rua não fica molhada.", "Não chove ou a rua não fica molhada."],
+    "correct": 1,
+    "topic": "Lógica Proposicional e Tabelas-Verdade",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 41,
+    "text": "A negação da proposição \"O analista é estudioso e focado\" é:",
+    "alternatives": ["O analista não é estudioso e não é focado.", "O analista não é estudioso ou não é focado.", "Se o analista não é estudioso, então não é focado.", "O analista é estudioso ou focado."],
+    "correct": 1,
+    "topic": "Equivalências e Negações Lógicas",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 42,
+    "text": "A negação da proposição condicional \"Se o sistema cai, então o cliente reclama\" é:",
+    "alternatives": ["Se o sistema não cai, então o cliente não reclama.", "O sistema cai e o cliente não reclama.", "O sistema não cai ou o cliente reclama.", "Se o cliente reclama, o sistema cai."],
+    "correct": 1,
+    "topic": "Equivalências e Negações Lógicas",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 43,
+    "text": "Dada a proposição \"Todo computador tem memória RAM\", sua negação lógica correta é:",
+    "alternatives": ["Nenhum computador tem memória RAM.", "Algum computador não tem memória RAM.", "Todo computador não tem memória RAM.", "Algum computador tem memória RAM."],
+    "correct": 1,
+    "topic": "Equivalências e Negações Lógicas",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 44,
+    "text": "Assinale a alternativa que apresenta uma proposição equivalente à afirmação: \"Ou estudo lógica, ou passo no concurso\":",
+    "alternatives": ["Se estudo lógica, passo no concurso.", "Se não estudo lógica, passo no concurso.", "Estudo lógica e passo no concurso.", "Não estudo lógica se e somente se passo no concurso."],
+    "correct": 1,
+    "topic": "Equivalências e Negações Lógicas",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 45,
+    "text": "Na argumentação lógica, um silogismo válido é aquele em que:",
+    "alternatives": ["As premissas são obrigatoriamente falsas.", "A conclusão decorre necessariamente das premissas apresentadas.", "A conclusão contradiz o enunciado principal.", "Não há relação de causalidade entre as partes."],
+    "correct": 1,
+    "topic": "Equivalências e Negações Lógicas",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 46,
+    "text": "Qual é o próximo termo da sequência lógica numérica: $2, 6, 12, 20, 30, \\dots$?",
+    "alternatives": ["38", "40", "42", "46"],
+    "correct": 2,
+    "topic": "Sequências Lógicas e Padrões Numéricos",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 47,
+    "text": "Qual é o número que completa a sequência lógica numérica: $3, 5, 9, 17, 33, \\dots$?",
+    "alternatives": ["49", "65", "71", "81"],
+    "correct": 1,
+    "topic": "Sequências Lógicas e Padrões Numéricos",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 48,
+    "text": "Dada a sequência de letras: $A, C, F, J, O, \\dots$, qual é a próxima letra que completa essa sequência seguindo o alfabeto padrão de 26 letras?",
+    "alternatives": ["Q", "R", "S", "U"],
+    "correct": 3,
+    "topic": "Sequências Lógicas e Padrões Numéricos",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 49,
+    "text": "Em uma sequência lógica, os termos seguem o padrão de adicionar números ímpares sucessivos: $1, 2, 5, 10, 17, \\dots$. Qual é o próximo termo dessa sequência?",
+    "alternatives": ["24", "26", "28", "30"],
+    "correct": 1,
+    "topic": "Sequências Lógicas e Padrões Numéricos",
+    "subjectCode": "MAT"
+  },
+  {
+    "file": "Matematica2",
+    "label": "Matemática S2",
+    "number": 50,
+    "text": "Se a palavra PROVA é codificada como 16-18-15-22-1 de acordo com a posição das letras no alfabeto, como seria codificada a palavra TELA?",
+    "alternatives": ["20-5-12-1", "19-4-11-26", "21-6-13-2", "20-12-5-1"],
+    "correct": 0,
+    "topic": "Sequências Lógicas e Padrões Numéricos",
+    "subjectCode": "MAT"
+  }
+]

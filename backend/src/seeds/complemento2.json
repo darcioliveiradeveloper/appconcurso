@@ -1,0 +1,132 @@
+[
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2",
+    "number": 1,
+    "text": "Assinale a alternativa em que todas as palavras são acentuadas devido à mesma regra de acentuação:",
+    "alternatives": ["Café, cajá, você", "Lâmpada, fósforo, difícil", "Saúde, baú, vírus", "História, glória, água"],
+    "correct": 0,
+    "topic": "Fonologia e Acentuação Gráfica",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2",
+    "number": 2,
+    "text": "Indique a alternativa em que a regência do verbo **\"agradecer\"** está correta de acordo com a norma-padrão:",
+    "alternatives": ["Agradeci o convite ao gerente.", "Agradeci ao convite o gerente.", "Agradeci com o convite o gerente.", "Agradeci para o gerente o convite."],
+    "correct": 0,
+    "topic": "Regência Verbal e Nominal",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2",
+    "number": 3,
+    "text": "No período *\"O projeto foi concluído **conforme as normas técnicas estabelecidas**\"*, a oração destacada classifica-se sintaticamente como subordinada adverbial:",
+    "alternatives": ["Causal", "Concessiva", "Conformativa", "Comparativa"],
+    "correct": 2,
+    "topic": "Sintaxe da Oração e do Período",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2",
+    "number": 4,
+    "text": "No sistema operacional Windows, qual atalho de teclado abre diretamente a ferramenta **Executar** (*Run*)?",
+    "alternatives": ["Windows + R", "Windows + E", "Windows + D", "Windows + L"],
+    "correct": 0,
+    "topic": "Sistemas Operacionais (Windows)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2",
+    "number": 5,
+    "text": "Em redes de computadores, o endereço **IP versão 4 (IPv4)** é composto por 32 bits, comumente representados por quatro números decimais separados por pontos. Cada um desses números varia no intervalo de:",
+    "alternatives": ["0 a 255", "1 a 100", "0 a 1024", "1 a 512"],
+    "correct": 0,
+    "topic": "Redes de Computadores e Internet",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2",
+    "number": 6,
+    "text": "No Microsoft Word, qual é a tecla de atalho padrão utilizada para o comando **Salvar Como** ou abrir a caixa de salvamento de arquivos novos?",
+    "alternatives": ["F12", "F5", "Ctrl + S", "Ctrl + P"],
+    "correct": 0,
+    "topic": "Processador de Texto (Word/Writer)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2",
+    "number": 7,
+    "text": "No Microsoft Excel, qual função é utilizada para retornar o menor valor numérico presente em um intervalo de células?",
+    "alternatives": ["`MÍNIMO` (ou `MIN`)", "`MÁXIMO`", "`MENOR`", "`EXTR.MIN`"],
+    "correct": 0,
+    "topic": "Planilhas Eletrônicas (Excel/Calc)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2",
+    "number": 8,
+    "text": "No contexto de navegação web, a funcionalidade de navegação anônima (*InPrivate* ou modo anônimo) tem como característica principal:",
+    "alternatives": ["Ocultar completamente o endereço IP do usuário de provedores de internet e governos.", "Não salvar o histórico de navegação, cookies e dados de formulários no computador local após o fechamento da janela.", "Impedir infecções por ransomwares e cavalos de troia durante o download de arquivos.", "Criptografar todas as páginas web abertas com protocolos de chave pública."],
+    "correct": 1,
+    "topic": "Correio Eletrônico e Ferramentas Web",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2",
+    "number": 9,
+    "text": "No explorador de arquivos do Windows, para selecionar todos os arquivos e pastas contidos em uma pasta ativa, o usuário pode pressionar o atalho:",
+    "alternatives": ["Ctrl + A", "Ctrl + T", "Ctrl + E", "Ctrl + C"],
+    "correct": 0,
+    "topic": "Sistemas Operacionais (Windows)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2",
+    "number": 10,
+    "text": "O protocolo de comunicação seguro utilizado para a transferência de arquivos criptografados via internet, sucessor seguro do FTP comum, é o:",
+    "alternatives": ["SFTP (ou FTPS)", "SMTP", "POP3", "DHCP"],
+    "correct": 0,
+    "topic": "Redes de Computadores e Internet",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2",
+    "number": 11,
+    "text": "Na segurança da informação, o ataque cibernético em que criminosos enviam e-mails falsos fingindo ser instituições financeiras ou órgãos públicos para roubar senhas e dados pessoais é conhecido como:",
+    "alternatives": ["Phishing", "Sniffing", "Spoofing de DNS", "Brute Force"],
+    "correct": 0,
+    "topic": "Segurança da Informação e Malware",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2",
+    "number": 12,
+    "text": "O imposto de competência municipal que incide sobre a propriedade territorial urbana de imóveis localizados na zona urbana de Ponta Grossa é o:",
+    "alternatives": ["IPVA", "IPTU", "ICMS", "ITR"],
+    "correct": 1,
+    "topic": "Lei Orgânica e Administração Municipal de PG",
+    "subjectCode": "GER"
+  },
+  {
+    "file": "Complemento2",
+    "label": "Complemento S2",
+    "number": 13,
+    "text": "A **Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)** tem como objetivo principal proteger:",
+    "alternatives": ["Os direitos fundamentais de liberdade e privacidade relativos ao tratamento de dados pessoais.", "Exclusivamente os computadores de empresas privadas contra invasões de hackers.", "O sigilo absoluto e permanente de contas públicas de prefeituras.", "Os hardwares comercializados no varejo nacional."],
+    "correct": 0,
+    "topic": "Atualidades, Cidadania e Legislação Federal",
+    "subjectCode": "GER"
+  }
+]

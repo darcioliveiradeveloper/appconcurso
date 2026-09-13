@@ -1,0 +1,442 @@
+[
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 1,
+    "text": "Assinale a alternativa em que a palavra apresenta encontros vocálicos classificados corretamente como **ditongo crescente**:",
+    "alternatives": ["Pa-ís", "Gló-ria", "Sa-ú-de", "Co-elho"],
+    "correct": 1,
+    "topic": "Fonologia e Acentuação Gráfica",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 2,
+    "text": "Quanto à acentuação gráfica, assinale a palavra que é acentuada pela mesma regra de **\"história\"**:",
+    "alternatives": ["Café", "Chapéu", "tênue", "Pássaro"],
+    "correct": 2,
+    "topic": "Fonologia e Acentuação Gráfica",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 3,
+    "text": "Assinale a alternativa em que todas as palavras são acentuadas por serem **oxítonas**:",
+    "alternatives": ["Lâmpada, vírus, fósforo", "Café, cajá, parabéns", "Pa-ís, sa-ú-de, ba-ú", "História, glória, água"],
+    "correct": 1,
+    "topic": "Fonologia e Acentuação Gráfica",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 4,
+    "text": "A divisão silábica correta da palavra **\"sublinhar\"** encontra-se na alternativa:",
+    "alternatives": ["su-bli-nhar", "sub-li-nhar", "sub-lin-har", "su-blin-har"],
+    "correct": 1,
+    "topic": "Fonologia e Acentuação Gráfica",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 5,
+    "text": "Assinale a alternativa em que o **\"x\"** possui som de /ch/ em todas as palavras:",
+    "alternatives": ["Exceção, exato, exercício", "Xarope, xadrez, enxame", "Máximo, texto, proximidade", "Auxílio, fixo, complexo"],
+    "correct": 1,
+    "topic": "Fonologia e Acentuação Gráfica",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 6,
+    "text": "Assinale a alternativa em que todas as palavras estão grafadas **corretamente**:",
+    "alternatives": ["Reivindicação, adivinhar, sutil", "Exceção, empecilho, excessão", "Paralização, isenção, pretenção", "Xuxu, chuchu, enxarcar"],
+    "correct": 0,
+    "topic": "Ortografia e Emprego de Letras",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 7,
+    "text": "Assinale a alternativa que preenche corretamente as lacunas da frase: *\"_________ não foi entregue o relatório técnico?\"* / *\"O projeto atrasou _________ faltou infraestrutura\"*:",
+    "alternatives": ["Por que / porque", "Por quê / porque", "Por que / por quê", "Porquê / por que"],
+    "correct": 0,
+    "topic": "Ortografia e Emprego de Letras",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 8,
+    "text": "Indique a alternativa em que a palavra preenche corretamente a lacuna: *\"O trabalhador demonstrou grande _________ na solução do problema\"* (emprego de s/z/c/ç):",
+    "alternatives": ["pretenção", "pretensão", "pretenção", "pretenção"],
+    "correct": 1,
+    "topic": "Ortografia e Emprego de Letras",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 9,
+    "text": "As palavras **\"anseio\"**, **\"empecilho\"** e **\"mexerico\"** estão grafadas, respectivamente:",
+    "alternatives": ["Corretamente, corretamente, incorretamente", "Correta, correta e correta", "Incorreta, correta e incorreta", "Incorreta, incorreta e correta"],
+    "correct": 1,
+    "topic": "Ortografia e Emprego de Letras",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 11,
+    "text": "Na frase *\"O livro **que** comprei é excelente\"*, a palavra destacada classifica-se morfologicamente como:",
+    "alternatives": ["Conjunção integrante", "Pronome relativo", "Conjunção subordinativa causal", "Advérbio de intensidade"],
+    "correct": 1,
+    "topic": "Morfologia (Classes de Palavras)",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 13,
+    "text": "Na frase *\"Ele comprou **muitos** livros para o concurso\"*, a palavra destacada atua como:",
+    "alternatives": ["Pronome indefinido adnominal", "Advérbio de intensidade", "Pronome indefinido substantivo", "Numeral cardinal"],
+    "correct": 0,
+    "topic": "Morfologia (Classes de Palavras)",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 16,
+    "text": "O processo de formação da palavra **\"infraestrutura\"** por acréscimo de elemento antes do radical é denominado:",
+    "alternatives": ["Derivação sufixal", "Derivação prefixal", "Composição por aglutinação", "Parassíntese"],
+    "correct": 1,
+    "topic": "Processo de Formação de Palavras",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 17,
+    "text": "O processo de formação da palavra **\"aguardente\"** (formada pela união de *água* + *ardente*, com perda de fonemas) é denominado:",
+    "alternatives": ["Derivação parassintética", "Composição por aglutinação", "Composição por justaposição", "Derivação regressiva"],
+    "correct": 1,
+    "topic": "Processo de Formação de Palavras",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 18,
+    "text": "Assinale a alternativa cujo processo de formação seja **derivação parassintética**:",
+    "alternatives": ["Desleal", "Amanhecer", "Infelizmente", "Pesquisa"],
+    "correct": 1,
+    "topic": "Processo de Formação de Palavras",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 19,
+    "text": "A palavra **\"combate\"**, derivada do verbo *combater*, foi formada por qual processo de derivação?",
+    "alternatives": ["Derivação prefixal", "Derivação imprópria", "Derivação regressiva (deverbal)", "Composição por justaposição"],
+    "correct": 2,
+    "topic": "Processo de Formação de Palavras",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 20,
+    "text": "Assinale a alternativa em que todas as palavras são formadas por **composição por justaposição**:",
+    "alternatives": ["Girassol, pontapé, pernilongo", "Infiel, descumprir, reorganizar", "Pneu, rádio, fax", "Entardecer, emudecer, anoitecer"],
+    "correct": 0,
+    "topic": "Processo de Formação de Palavras",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 21,
+    "text": "Na oração *\"Os técnicos resolveram o problema rapidamente\"*, o termo destacado sintaticamente exerce a função de:",
+    "alternatives": ["Sujeito simples", "Objeto direto", "Adjunto adverbial de modo", "Predicativo do sujeito"],
+    "correct": 2,
+    "topic": "Sintaxe da Oração e do Período",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 22,
+    "text": "Na frase *\"O analista entregou o relatório **ao chefe**\"*, o termo destacado sintaticamente exerce a função de:",
+    "alternatives": ["Objeto direto", "Objeto indireto", "Sujeito simples", "Adjunto adnominal"],
+    "correct": 1,
+    "topic": "Sintaxe da Oração e do Período",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 23,
+    "text": "No trecho *\"O Diretor afirmou **que o sistema seria atualizado**\"*, a oração subordinada substantiva destacada classifica-se como:",
+    "alternatives": ["Subjetiva", "Objetiva Direta", "Completiva Nominal", "Predicativa"],
+    "correct": 1,
+    "topic": "Sintaxe da Oração e do Período",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 24,
+    "text": "No período *\"Estudou muito **para que fosse aprovado**\"*, a oração subordinada destacada classifica-se morfologicamente como:",
+    "alternatives": ["Subordinada adverbial causal", "Subordinada adverbial final", "Subordinada substantiva objetiva direta", "Coordenada explicativa"],
+    "correct": 1,
+    "topic": "Sintaxe da Oração e do Período",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 25,
+    "text": "Assinale a alternativa que apresenta um exemplo de **período composto por coordenação sindética adversativa**:",
+    "alternatives": ["O analista estudou muito e foi aprovado no concurso.", "O sistema caiu, portanto a reunião foi adiada.", "O servidor trabalhou muito, contudo não concluiu a tarefa.", "Choveu bastante, pois as ruas estão molhadas."],
+    "correct": 2,
+    "topic": "Sintaxe da Oração e do Período",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 26,
+    "text": "Assinale a alternativa em que a oração subordinada é classificada como **adjetiva restritiva**:",
+    "alternatives": ["Os analistas, que trabalharam no turno da noite, ganharam folga.", "O livro que comprei na livraria é excelente.", "Sabe-se que o prazo foi prorrogado.", "É necessário que todos participem da reunião."],
+    "correct": 1,
+    "topic": "Sintaxe da Oração e do Período",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 27,
+    "text": "Na oração *\"Faltam **recursos** para o projeto\"*, o termo destacado exerce a função sintática de:",
+    "alternatives": ["Objeto direto", "Sujeito", "Adjunto adnominal", "Complemento nominal"],
+    "correct": 1,
+    "topic": "Sintaxe da Oração e do Período",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 28,
+    "text": "Assinale a alternativa em que o termo destacado funciona como **agente da passiva**:",
+    "alternatives": ["O relatório foi assinado **pelo diretor**.", "O documento chegou **pelo correio**.", "A sala foi limpa **com produtos novos**.", "Os candidatos viajaram **de ônibus**."],
+    "correct": 0,
+    "topic": "Sintaxe da Oração e do Período",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 29,
+    "text": "Em *\"Tenho necessidade **de apoio técnico**\"*, o termo destacado exerce a função sintática de:",
+    "alternatives": ["Objeto indireto", "Complemento nominal", "Adjunto adnominal", "Predicativo do objeto"],
+    "correct": 1,
+    "topic": "Sintaxe da Oração e do Período",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 30,
+    "text": "Assinale a alternativa em que o predicado é classificado como **verbo-nominal**:",
+    "alternatives": ["Os servidores viajaram ontem.", "O gestor permaneceu na sala.", "Os candidatos saíram da prova confiantes.", "O sistema apresentou falhas graves."],
+    "correct": 2,
+    "topic": "Sintaxe da Oração e do Período",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 31,
+    "text": "Assinale a alternativa em que a concordância verbal está **correta** de acordo com a norma-padrão:",
+    "alternatives": ["Faltou recursos para finalizar o projeto de TI.", "Fazem muitos anos que atuo na área de tecnologia.", "Devem existir novos servidores na prefeitura.", "Houveram muitos problemas técnicos na rede."],
+    "correct": 2,
+    "topic": "Concordância Verbal e Nominal",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 33,
+    "text": "Assinale a alternativa em que a concordância verbal preenche corretamente a lacuna: *\"Mais de um candidato _________ a prova\"* / *\"Cerca de trinta servidores _________ da reunião\"*:",
+    "alternatives": ["abandonou / participaram", "abandonaram / participou", "abandonou / participou", "abandonaram / participaram"],
+    "correct": 0,
+    "topic": "Concordância Verbal e Nominal",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 35,
+    "text": "Indique a frase em que o uso do verbo \"fazer\" indicando tempo decorrido está **correto**:",
+    "alternatives": ["Fazem três semanas que o edital foi publicado.", "Faz três semanas que o edital foi publicado.", "Fazer três semanas que o edital foi publicado.", "Fizeram três semanas que o edital foi publicado."],
+    "correct": 1,
+    "topic": "Concordância Verbal e Nominal",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 36,
+    "text": "Indique a alternativa em que a regência do verbo **\"aspirar\"** (no sentido de almejar, desejar) está correta de acordo com a norma-padrão:",
+    "alternatives": ["O analista aspirou o cargo público com dedicação.", "O analista aspirou ao cargo público com dedicação.", "O analista aspirou com o cargo público.", "O analista aspirou por cargo público."],
+    "correct": 1,
+    "topic": "Regência Verbal e Nominal",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 37,
+    "text": "Assinale a alternativa em que o verbo **\"obedecer\"** foi empregado com regência correta de acordo com a norma-padrão:",
+    "alternatives": ["O motorista obedeceu o sinal vermelho.", "O programador obedeceu ao protocolo de segurança.", "Os analistas obedeceram a ordem do diretor.", "Devemos obedecer com as leis municipais."],
+    "correct": 1,
+    "topic": "Regência Verbal e Nominal",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 38,
+    "text": "Quanto à regência do verbo **\"assistir\"**, assinale a alternativa em que o uso está **correto**:",
+    "alternatives": ["Assistimos um excelente filme ontem à noite.", "O médico assistiu o doente com dedicação.", "Assisti ao jogo no estádio municipal.", "O técnico assistiu os operadores na falha."],
+    "correct": 2,
+    "topic": "Regência Verbal e Nominal",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 39,
+    "text": "Assinale a alternativa em que a regência do verbo **\"preferir\"** está de acordo com a norma-padrão:",
+    "alternatives": ["Prefiro muito mais o trabalho presencial do que o remoto.", "Prefiro trabalhar com programação a atuar com suporte técnico.", "Prefiro antes a lógica do que a gramática.", "Prefiro o desenvolvimento mobile do que web."],
+    "correct": 1,
+    "topic": "Regência Verbal e Nominal",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 40,
+    "text": "O verbo **\"implicar\"** (no sentido de acarretar, trazer como consequência) tem regência direta:",
+    "alternatives": ["Implicou em sérios prejuízos ao projeto.", "Implicou sérios prejuízos ao projeto.", "Implicou com sérios prejuízos ao projeto.", "Implicou para sérios prejuízos ao projeto."],
+    "correct": 1,
+    "topic": "Regência Verbal e Nominal",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 41,
+    "text": "Assinale a alternativa em que o uso da **crase** é obrigatório:",
+    "alternatives": ["Entreguei o relatório a ele ontem.", "Fomos a Curitiba participar de um congresso.", "Fiquei cara a cara com o chefe.", "Visitei a matriz da empresa à revelia dos diretores."],
+    "correct": 3,
+    "topic": "Emprego do Sinal Crase",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 42,
+    "text": "Assinale a alternativa em que a crase foi empregada **incorretamente**:",
+    "alternatives": ["Fui à farmácia comprar medicamentos.", "Cheguei cedo à repartição pública.", "Começou a falar às duas horas da tarde.", "Entregou o documento à um funcionário."],
+    "correct": 3,
+    "topic": "Emprego do Sinal Crase",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 43,
+    "text": "Indique a alternativa em que a crase é facultativa:",
+    "alternatives": ["Obedeço à lei municipal.", "Referiu-se à sua proposta de trabalho.", "Falei à diretora sobre o cronograma.", "Dirigiu-se a sede da prefeitura."],
+    "correct": 1,
+    "topic": "Emprego do Sinal Crase",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 44,
+    "text": "Assinale a alternativa correta quanto ao uso da crase diante de pronomes demonstrativos:",
+    "alternatives": ["Fui àqueles lugares no ano passado.", "Entreguei o processo à esta repartição.", "Refiro-me à essa norma técnica.", "Dou preferência àquilo que é prático."],
+    "correct": 0,
+    "topic": "Emprego do Sinal Crase",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 45,
+    "text": "Na frase *\"O candidato dirigiu-se **a** prefeitura para protocolar **a** petição\"*, o preenchimento correto das lacunas com ou sem crase é:",
+    "alternatives": ["à / a", "a / à", "à / à", "a / a"],
+    "correct": 0,
+    "topic": "Emprego do Sinal Crase",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 46,
+    "text": "Assinale a alternativa em que a pontuação (uso de vírgulas) está rigorosamente correta:",
+    "alternatives": ["O analista, de TI, concluiu a tarefa rapidamente.", "Servidores da prefeitura, participaram da reunião ontem.", "Quando o sistema caiu, todos os usuários reclamaram.", "A reunião ocorreu na segunda-feira, no entanto, faltou pauta."],
+    "correct": 2,
+    "topic": "Pontuação e Coesão Textual",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 47,
+    "text": "Assinale a frase em que a vírgula foi empregada para isolar um **adjunto adverbial deslocado**:",
+    "alternatives": ["Maria, traga o relatório de TI.", "No último sábado, a equipe realizou a manutenção dos servidores.", "Os analistas, que estavam cansados, foram embora.", "Compramos computadores, mouses e teclados."],
+    "correct": 1,
+    "topic": "Pontuação e Coesão Textual",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 48,
+    "text": "Assinale a alternativa em que o emprego do ponto e vírgula (;) está correto para separar itens de uma enumeração ou orações coordenadas extensas:",
+    "alternatives": ["O primeiro grupo analisará os dados; o segundo implementará o código.", "O sistema caiu; e todos reclamaram.", "Fui ao mercado; comprei frutas.", "Preciso estudar: português; matemática e informática."],
+    "correct": 0,
+    "topic": "Pontuação e Coesão Textual",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 49,
+    "text": "O pronome relativo **\"cujo\"** expressa ideia de:",
+    "alternatives": ["Causa", "Posse", "Tempo", "Oposição"],
+    "correct": 1,
+    "topic": "Pontuação e Coesão Textual",
+    "subjectCode": "PORT"
+  },
+  {
+    "file": "Portugues2",
+    "label": "Português S2",
+    "number": 50,
+    "text": "A coesão textual que se refere à retomada de um termo já expresso anteriormente no texto por meio de pronomes ou sinônimos é denominada:",
+    "alternatives": ["Coesão exafórica", "Coesão catafórica", "Coesão anafórica", "Coesão elíptica"],
+    "correct": 2,
+    "topic": "Pontuação e Coesão Textual",
+    "subjectCode": "PORT"
+  }
+]

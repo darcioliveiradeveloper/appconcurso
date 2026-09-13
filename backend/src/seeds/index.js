@@ -48,7 +48,12 @@ async function seed() {
     const load = f => JSON.parse(fs.readFileSync(path.join(__dirname, f), 'utf-8'));
     const data = [
       ...load('questions_data.json'),
-      ...load('gemini_questions.json')
+      ...load('gemini_questions.json'),
+      ...load('matematica2.json'),
+      ...load('portugues2.json'),
+      ...load('informatica2.json'),
+      ...load('gerais2.json'),
+      ...load('complemento2.json')
     ];
     console.log('📥 Questões no JSON:', data.length);
 

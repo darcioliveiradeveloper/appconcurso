@@ -1,0 +1,422 @@
+[
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 1,
+    "text": "O componente físico principal de um computador responsável por executar as instruções dos programas, realizar cálculos e processar dados é conhecido pela sigla:",
+    "alternatives": ["RAM", "CPU (Processador)", "GPU", "SSD"],
+    "correct": 1,
+    "topic": "Conceitos de Hardware e Periféricos",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 2,
+    "text": "As memórias de computador classificam-se em voláteis e não voláteis. Qual das seguintes opções representa uma memória **volátil** (que perde os dados quando o computador é desligado)?",
+    "alternatives": ["Disco Rígido (HDD)", "Memória RAM", "Memória ROM", "Unidade Flash USB"],
+    "correct": 1,
+    "topic": "Conceitos de Hardware e Periféricos",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 3,
+    "text": "Dispositivo de armazenamento secundário que utiliza semicondutores de estado sólido, sem partes mecânicas móveis, oferecendo taxas de leitura e escrita muito superiores aos discos rígidos tradicionais:",
+    "alternatives": ["CD-ROM", "Fita Magnética", "SSD (Solid State Drive)", "Disquete"],
+    "correct": 2,
+    "topic": "Conceitos de Hardware e Periféricos",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 4,
+    "text": "Na arquitetura de computadores, os periféricos que realizam exclusivamente a entrada de dados para o sistema incluem:",
+    "alternatives": ["Monitor e impressora", "Teclado e mouse", "Caixa de som e projetor", "Impressora multifuncional"],
+    "correct": 1,
+    "topic": "Conceitos de Hardware e Periféricos",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 5,
+    "text": "A memória de acesso rápido localizada no interior ou próxima ao processador para armazenar dados frequentemente acessados é chamada de:",
+    "alternatives": ["Memória Cache", "Memória Virtual", "Memória de Vídeo dedicada", "Memória CMOS"],
+    "correct": 0,
+    "topic": "Conceitos de Hardware e Periféricos",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 6,
+    "text": "No sistema operacional Windows, qual atalho de teclado é comumente utilizado para **copiar** um arquivo ou texto selecionado?",
+    "alternatives": ["Ctrl + C", "Ctrl + V", "Ctrl + X", "Ctrl + Z"],
+    "correct": 0,
+    "topic": "Sistemas Operacionais (Windows)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 10,
+    "text": "Qual é a função da Lixeira no sistema operacional Windows?",
+    "alternatives": ["Apagar permanentemente e de forma irrecuperável qualquer arquivo do disco no momento da exclusão.", "Armazenar temporariamente arquivos e pastas excluídos, permitindo a sua restauração caso necessário.", "compactar arquivos compactados no formato ZIP.", "Monitorar o consumo de energia da CPU."],
+    "correct": 1,
+    "topic": "Sistemas Operacionais (Windows)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 11,
+    "text": "No Windows, a extensão padrão utilizada para identificar arquivos de lote (*batch files*) executáveis por linha de comando é:",
+    "alternatives": [".docx", ".bat", ".xlsx", ".pptx"],
+    "correct": 1,
+    "topic": "Sistemas Operacionais (Windows)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 12,
+    "text": "O utilitário do Windows responsável por organizar os dados e otimizar o espaço em unidades de disco rígido magnéticas tradicionais é conhecido como:",
+    "alternatives": ["Desfragmentador de Disco", "Gerenciador de Dispositivos", "Firewall do Windows", "Editor de Registro"],
+    "correct": 0,
+    "topic": "Sistemas Operacionais (Windows)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 13,
+    "text": "Protocolo de rede utilizado para a transferência segura de páginas web criptografadas através de certificados digitais:",
+    "alternatives": ["HTTP", "HTTPS", "FTP", "SMTP"],
+    "correct": 1,
+    "topic": "Redes de Computadores e Internet",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 14,
+    "text": "Em redes de computadores, o protocolo responsável pela tradução de nomes de domínios legíveis (como `www.pontagrossa.pr.gov.br`) em endereços IP numéricos é o:",
+    "alternatives": ["DHCP", "DNS", "FTP", "HTTP"],
+    "correct": 1,
+    "topic": "Redes de Computadores e Internet",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 15,
+    "text": "Qual dispositivo de rede opera na camada de rede (Camada 3 do modelo OSI) roteando pacotes entre redes distintas?",
+    "alternatives": ["Hub", "Switch não gerenciável", "Roteador (Router)", "Cabo coaxial"],
+    "correct": 2,
+    "topic": "Redes de Computadores e Internet",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 16,
+    "text": "O protocolo de correio eletrônico utilizado especificamente para o **envio** de e-mails de um cliente para um servidor é o:",
+    "alternatives": ["POP3", "IMAP", "SMTP", "HTTP"],
+    "correct": 2,
+    "topic": "Redes de Computadores e Internet",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 17,
+    "text": "O protocolo de acesso a e-mails que mantém as mensagens armazenadas no servidor, permitindo a sincronização em múltiplos dispositivos, é o:",
+    "alternatives": ["POP3", "IMAP", "SMTP", "FTP"],
+    "correct": 1,
+    "topic": "Redes de Computadores e Internet",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 19,
+    "text": "O que significa a sigla URL no contexto da internet?",
+    "alternatives": ["Universal Record Locator", "Uniform Resource Locator", "Unified Registry Link", "User Remote Level"],
+    "correct": 1,
+    "topic": "Redes de Computadores e Internet",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 20,
+    "text": "Em endereçamento IP na versão 4 (IPv4), um endereço IP padrão é composto por quantos blocos de números separados por pontos (octetos)?",
+    "alternatives": ["2 blocos", "3 blocos", "4 blocos", "6 blocos"],
+    "correct": 2,
+    "topic": "Redes de Computadores e Internet",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 21,
+    "text": "Um software malicioso que se disfarça de programa legítimo e útil para enganar o usuário e instalar portas dos fundos (*backdoors*) é chamado de:",
+    "alternatives": ["Vírus de setor de boot", "Cavalo de Troia (Trojan)", "Worm de rede", "Ransomware"],
+    "correct": 1,
+    "topic": "Segurança da Informação e Malware",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 22,
+    "text": "Um tipo de software malicioso que sequestra os dados do computador (criptografando os arquivos) e exige resgate financeiro em criptomoedas é o:",
+    "alternatives": ["Adware", "Ransomware", "Keylogger", "Worm"],
+    "correct": 1,
+    "topic": "Segurança da Informação e Malware",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 24,
+    "text": "O princípio da segurança da informação que garante que a informação seja exata, completa e não sofra modificações indevidas ou não autorizadas é a:",
+    "alternatives": ["Confidencialidade", "Integridade", "Disponibilidade", "Autenticidade"],
+    "correct": 1,
+    "topic": "Segurança da Informação e Malware",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 25,
+    "text": "O conceito de **Disponibilidade** em segurança da informação assegura que:",
+    "alternatives": ["Os dados permaneçam sigilosos contra ataques externos.", "A informação esteja acessível e utilizável sob demanda por usuários autorizados sempre que necessário.", "Os arquivos não sofram alterações indevidas.", "As senhas sejam trocadas periodicamente."],
+    "correct": 1,
+    "topic": "Segurança da Informação e Malware",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 27,
+    "text": "Programa malicioso que se propaga automaticamente pelas redes, explorando vulnerabilidades sem precisar necessariamente de um arquivo hospedeiro, é o:",
+    "alternatives": ["Vírus de macro", "Worm (Verme)", "Cavalo de Troia", "Adware"],
+    "correct": 1,
+    "topic": "Segurança da Informação e Malware",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 28,
+    "text": "Software ou dispositivo físico projetado para monitorar e registrar todas as teclas digitadas pelo usuário no teclado é denominado:",
+    "alternatives": ["Keylogger", "Firewall", "Proxy", "Spammer"],
+    "correct": 0,
+    "topic": "Segurança da Informação e Malware",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 29,
+    "text": "No Microsoft Word, qual guia da faixa de opções concentra as ferramentas de verificação ortográfica, controle de alterações e contagem de palavras?",
+    "alternatives": ["Página Inicial", "Inserir", "Revisão", "Exibição"],
+    "correct": 2,
+    "topic": "Processador de Texto (Word/Writer)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 30,
+    "text": "No Microsoft Word, qual é a tecla de atalho padrão utilizada para acionar o comando **Localizar** (*Find*) de palavras no texto?",
+    "alternatives": ["Ctrl + B", "Ctrl + L (ou Ctrl + F)", "Ctrl + P", "Ctrl + S"],
+    "correct": 1,
+    "topic": "Processador de Texto (Word/Writer)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 31,
+    "text": "No Microsoft Word, a formatação de parágrafo que alinha o texto simultaneamente às margens esquerda e direita é chamada de:",
+    "alternatives": ["Alinhamento à esquerda", "Centralizado", "Justificado", "Alinhamento à direita"],
+    "correct": 2,
+    "topic": "Processador de Texto (Word/Writer)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 32,
+    "text": "Qual atalho de teclado no Microsoft Word aplica o formato **Negrito** ao texto selecionado?",
+    "alternatives": ["Ctrl + N (ou Ctrl + B em inglês)", "Ctrl + I", "Ctrl + S", "Ctrl + U"],
+    "correct": 0,
+    "topic": "Processador de Texto (Word/Writer)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 33,
+    "text": "Qual atalho de teclado no Microsoft Word aplica o formato **Itálico** ao texto selecionado?",
+    "alternatives": ["Ctrl + N", "Ctrl + I", "Ctrl + S", "Ctrl + G"],
+    "correct": 1,
+    "topic": "Processador de Texto (Word/Writer)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 34,
+    "text": "No Microsoft Excel, qual função é utilizada para retornar a média aritmética de um intervalo de células (por exemplo, de A1 até A10)?",
+    "alternatives": ["`SOMA`", "`MÉDIA` (ou `AVERAGE`)", "`CONT.SE`", "`MÁXIMO`"],
+    "correct": 1,
+    "topic": "Planilhas Eletrônicas (Excel/Calc)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 35,
+    "text": "No Microsoft Excel, qual operador matemático é utilizado para indicar exponenciação (por exemplo, 2 elevado à potência 3)?",
+    "alternatives": ["`^`", "`*`", "`//`", "`#`"],
+    "correct": 0,
+    "topic": "Planilhas Eletrônicas (Excel/Calc)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 36,
+    "text": "Em planilhas eletrônicas (Excel / Calc), o resultado da fórmula `=SE(5>3; \"Aprovado\"; \"Reprovado\")` será:",
+    "alternatives": ["Aprovado", "Reprovado", "Erro de sintaxe", "5"],
+    "correct": 0,
+    "topic": "Planilhas Eletrônicas (Excel/Calc)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 37,
+    "text": "No Excel, o símbolo utilizado antes de letras de colunas e números de linhas (ex: `$A$1`) para fixar uma referência absoluta de célula em fórmulas é:",
+    "alternatives": ["`%`", "`$`", "`#`", "`&`"],
+    "correct": 1,
+    "topic": "Planilhas Eletrônicas (Excel/Calc)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 38,
+    "text": "No Microsoft Excel, qual função retorna o maior valor numérico presente em um intervalo de células?",
+    "alternatives": ["`MIN`", "`MÁXIMO` (ou `MAX`)", "`MAIOR`", "`EXTR.MIN`"],
+    "correct": 1,
+    "topic": "Planilhas Eletrônicas (Excel/Calc)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 39,
+    "text": "Qual função do Excel é utilizada para contar a quantidade de células preenchidas com valores numéricos em um intervalo?",
+    "alternatives": ["`CONT.VALORES`", "`CONT.NUM` (ou `COUNT`)", "`CONT.SE`", "`SOMA`"],
+    "correct": 1,
+    "topic": "Planilhas Eletrônicas (Excel/Calc)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 40,
+    "text": "No pacote Microsoft Office, o aplicativo utilizado especificamente para a criação de apresentações de slides multimídia é o:",
+    "alternatives": ["Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint", "Microsoft Access"],
+    "correct": 2,
+    "topic": "Apresentações de Slides (PowerPoint)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 41,
+    "text": "No Microsoft PowerPoint, qual tecla de atalho é utilizada para iniciar a **Apresentação de Slides** a partir do primeiro slide?",
+    "alternatives": ["F2", "F5", "F7", "F12"],
+    "correct": 1,
+    "topic": "Apresentações de Slides (PowerPoint)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 42,
+    "text": "No PowerPoint, os efeitos visuais de transição aplicados na passagem de um slide para o seguinte são configurados prioritariamente na guia:",
+    "alternatives": ["Animações", "Transições", "Apresentação de Slides", "Design"],
+    "correct": 1,
+    "topic": "Apresentações de Slides (PowerPoint)",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 43,
+    "text": "Ao redigir uma mensagem de e-mail, qual campo deve ser preenchido para enviar uma cópia oculta da mensagem para outros destinatários, de modo que os demais não vejam seus endereços?",
+    "alternatives": ["Para (To)", "CC (Cópia Carbono)", "CCO / BCC (Cópia Carbono Oculta)", "Assunto (Subject)"],
+    "correct": 2,
+    "topic": "Correio Eletrônico e Ferramentas Web",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 46,
+    "text": "Em banco de dados relacionais e sistemas web, o comando SQL básico utilizado para recuperar ou consultar dados de tabelas é o:",
+    "alternatives": ["`INSERT`", "`UPDATE`", "`SELECT`", "`DELETE`"],
+    "correct": 2,
+    "topic": "Correio Eletrônico e Ferramentas Web",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 47,
+    "text": "No contexto de computação em nuvem (*Cloud Computing*), o modelo de serviço que fornece infraestrutura virtualizada de servidores, armazenamento e redes sob demanda é conhecido como:",
+    "alternatives": ["SaaS (Software as a Service)", "PaaS (Platform as a Service)", "IaaS (Infrastructure as a Service)", "DaaS (Database as a Service)"],
+    "correct": 2,
+    "topic": "Correio Eletrônico e Ferramentas Web",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 48,
+    "text": "Dispositivos baseados em microprocessadores integrados (semelhantes a cartões de crédito inteligentes) utilizados para armazenamento seguro de certificados digitais e assinaturas são chamados de:",
+    "alternatives": ["Smart-cards", "Hubs de rede", "Repositórios Git remotos", "Servidores proxy reversos"],
+    "correct": 0,
+    "topic": "Correio Eletrônico e Ferramentas Web",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 49,
+    "text": "Qual é a principal finalidade da **Lei de Acesso à Informação (LAI - Lei nº 12.527/2011)** no âmbito público digital?",
+    "alternatives": ["Ocultar dados financeiros de prefeituras.", "Garantir o direito fundamental de acesso dos cidadãos às informações públicas geradas pelos órgãos do governo através de portais eletrônicos.", "Regulamentar o desenvolvimento de softwares comerciais privados.", "Substituir a Lei Geral de Proteção de Dados (LGPD)."],
+    "correct": 1,
+    "topic": "Correio Eletrônico e Ferramentas Web",
+    "subjectCode": "INF"
+  },
+  {
+    "file": "Informatica2",
+    "label": "Informática S2",
+    "number": 50,
+    "text": "A **Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)** tem como foco principal na tecnologia e administração:",
+    "alternatives": ["Proteger os direitos fundamentais de liberdade e privacidade relativos ao tratamento de dados pessoais por meios digitais ou físicos.", "Regulamentar exclusivamente a compra e venda de hardwares no varejo.", "Permitir a comercialização irrestrita de cadastros de cidadãos.", "Substituir as regras de redes de computadores TCP/IP."],
+    "correct": 0,
+    "topic": "Correio Eletrônico e Ferramentas Web",
+    "subjectCode": "INF"
+  }
+]

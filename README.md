@@ -12,7 +12,7 @@ Login: `admin@voupassar.com.br` / `admin123` (após seed)
 
 - **Backend**: Node.js + Express + MongoDB (Mongoose) + JWT
 - **Frontend**: React 18 + Vite + Tailwind CSS + Recharts
-- **Banco**: 400 questões balanceadas (PREF_TI: PORT 50, MAT 50, INF 50, GER 50, ESP 200) + matérias PCPR (RLM, REAL_PAR, TEC_SEG, CIE_FORENSE, BIO, QUIM, FIS, etc. — inicialmente sem questões, aguardando import)
+- **Banco**: 600 questões (PREF_TI: PORT 100, MAT 100, INF 100, GER 100, ESP 200) + matérias PCPR (RLM, REAL_PAR, TEC_SEG, CIE_FORENSE, BIO, QUIM, FIS, etc. — inicialmente sem questões, aguardando import)
 - **Deploy**: Render (Web Service) + MongoDB Atlas
 
 ## Cargos
@@ -82,7 +82,7 @@ Acesse: **http://localhost:5173**
 
 ### Seed remoto
 
-Após o deploy, acesse no navegador para popular o banco (cria cargos, matérias, 400 questões e admin):
+Após o deploy, acesse no navegador para popular o banco (cria cargos, matérias, 600 questões e admin):
 
 ```
 https://appconcurso-m3ov.onrender.com/api/seed?key=admin123
@@ -111,7 +111,7 @@ appconcurso/
 │   │   ├── models/        # User, Subject, Question, SimuladoSession, Cargo, AccessCode
 │   │   ├── routes/        # auth, subjects, simulados, cargos, access-codes
 │   │   ├── services/      # recomendações e foco
-│   │   ├── seeds/         # JSONs de questões + cargosData.js
+│   │   ├── seeds/         # JSONs de questões (base + matematica2/portugues2/informatica2/gerais2/complemento2 + reserva) + cargosData.js
 │   │   └── server.js      # serve frontend em produção + API
 │   └── .env               # NUNCA COMMITAR
 ├── frontend/
@@ -123,7 +123,7 @@ appconcurso/
 │       ├── App.jsx        # rotas: / (cargos), /inicio, /simulado/novo, /prova-oficial, /historico, /estatisticas, /admin/codigos
 │       └── main.jsx
 ├── render.yaml
-└── package.json           # workspaces + scripts root (v1.1.0)
+└── package.json           # workspaces + scripts root (v1.2.0)
 ```
 
 ## Regras da prova
@@ -137,5 +137,7 @@ appconcurso/
 `.env` está no `.gitignore`. `AccessCode` com formato `XXXXX-XXXXX`, normalizado (com/sem hífen). `User.isActive` controla bloqueio ao excluir código. `SimuladoSession.questionOrder` com `ref: 'Question'` para popular revisão.
 
 ## Versão
+
+**v1.2.0** — banco ampliado para 600 questões (100 por básica + 200 ESP), com gabaritos conferidos, correções e deduplicação.
 
 **v1.1.0** — multi-cargo, códigos de liberação, navegação travada, revisão expandível, histórico filtrado.
